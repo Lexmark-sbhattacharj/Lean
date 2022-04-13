@@ -1,0 +1,448 @@
+.mainPadding {
+    padding: 5px 5px;
+	min-height:400px;
+}
+.mainPaddingLogin {
+    padding: 56px 70px;
+	min-height:300px;
+}
+h2#headline {
+	display: block;
+    margin: 0 0 20px 0;
+	font-size: 2.250em;
+}
+
+.privacySection {
+	border-top:1px solid #d7cfca;
+	padding:32px 0 0 0;
+	margin:50px 0 0 0;
+}
+
+.privacySection p {
+	font-size:0.875em;
+}
+
+a.toTop {
+	clear:both;
+	float:left;
+	font-size:0.875em;
+	margin:21px 0 0 0;
+	text-decoration: underline;
+}
+
+.bravo-series .margins {
+	margin: 0 40px;
+}
+
+.margin-top {
+	margin-top: 36px;
+}
+
+#b-zero-banner {
+	display: block;
+}
+
+.subCatHdrBnr {
+	display: block;
+	margin: 0 auto;
+}
+
+#pageDesc, .solutionsLinks {
+	display: block;
+	margin-top: 36px;
+}
+
+#pageDesc {
+    border-right: 1px solid #f03025;
+    margin-left: 0;
+    margin-right: 17px;
+    padding-right: 26px;
+}
+
+#pageDesc h2 {
+    font-size: 1.7em;
+	margin: 0 0 36px 0;
+	line-height: 1.3em;
+}
+
+#pageDesc p {
+    margin: 0 0 24px 0;
+}
+
+#crossSolutionsLinks {
+	margin: 0 0 140px 0;
+}
+
+#crossSolutionsLinks > div.threeCol {
+	margin: 0;
+	padding: 0;
+	width: 290px;
+}
+
+.hrIndSol {
+	width: 100%;
+	margin: 36px auto;
+	background-color: #999;
+	border: none;
+	height: 1px;
+}
+
+/* left subnav menu */
+#leftSubNav {
+	margin-top: 36px;
+	font-size: 0.85em;
+}
+
+#leftSubNav ul {
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+#leftSubNav ul li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#leftSubNav ul li a {
+	display: block;
+	padding:0 10px;
+	color:  #f5680a;
+	background: #faf9f9;
+	line-height:2.4em;
+	width:140px;
+	
+}
+#leftSubNav ul li a.active {
+	color: #51147b;
+	background: #fff;
+}
+
+#leftSubNav #parentCat {
+	display: block;
+	padding-left: 10px;
+	color:  #f5680a;
+}
+
+
+
+/* b-one template */
+.b-one #content{
+	background-color: transparent;
+}
+
+.b-one #contentWrapper{
+	background-color: #fff;
+	border-bottom: 3px solid #e5e0dd;
+}
+
+.b-one .contentList{
+	margin: 0;
+	padding: 0;
+}
+
+.b-one .contentList li.contentBlock {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+.b-one .contentList li.contentBlock:first-child {
+	display: block;
+}
+
+.b-one .sectionLinks ul{
+	margin: 0;
+	padding: 0;
+}
+
+.b-one .sectionLinks ul li {
+	list-style-type: none;
+	margin: 21px 0;
+	padding: 0;
+}
+.b-one .sectionLinks ul li p{
+	font-size: 0.9em;
+}
+.b-one .sectionLinks h5{
+	margin: 5px 0;
+}
+
+
+/* a.0 businessChallenges  */
+/*
+#businessChallenges {
+    margin:0px;
+    padding:0px;
+    text-align:center;
+}
+*/
+
+#crossIndustry .threeCol {
+	margin: 0 50px 150px 0;
+}
+
+#industrySolutions, #businessChallenges, #privacyPolicy {
+	background-color: #FFFFFF;
+    border-bottom: 3px solid #E5E0DD;
+    margin-bottom: -50px;
+    padding-bottom: 20px;
+    z-index: 70;
+    display: inline;
+    float: left;
+    position: relative;
+}
+#privacyPolicy {
+	margin-bottom:0;
+	border-bottom:0;
+}
+
+#privacyPolicy .solutionsLinks {
+	margin-bottom:0;
+}
+
+#privacyPolicy .solutionsLinks ul {
+	margin-bottom:0;
+}
+
+#privacyPolicy.mainPadding {
+    padding: 56px 110px 118px 110px;
+}
+
+#industrySolutions h1, #privacyPolicy h1 {
+	margin-bottom: 0;
+}
+#businessChallenges {
+	padding-bottom:80px;
+}
+
+#businessChallenges .toptext {
+	margin-bottom:0px;
+	margin-top:25px;
+}
+
+#businessChallenges p {
+    font-family:'ProximaNovaRegular', Sans-Serif;
+    line-height:150%;
+    font-size:1em;
+    color:#3d342f;
+    text-align:left;
+    display:block;
+}
+
+#businessChallenges .topblock {
+	margin-bottom: 36px;
+}
+
+#businessChallenges ul.list {
+    text-align:center;
+    display:block;    
+}
+
+#businessChallenges ul.list li {
+    border-top:1px solid #f5f0ed;
+    width:100%;
+    margin-top:36px;
+    margin-left:0px;
+    margin-right:0px;
+    padding:0px;
+    padding-top:50px;
+}
+
+#businessChallenges ul.list li h1 {
+    font-family:'ProximaNovaLight', Sans-Serif;
+    color: #f5680a;
+    font-size: 1.875em; 
+    text-align: left;    
+    margin-left:10px;
+    margin-bottom:0px;
+    line-height: 100%;
+}
+#businessChallenges ul.list li p {
+    font-family:'ProximaNovaRegular', Sans-Serif;
+    line-height:150%;
+    font-size:1em;
+    color:#3d342f;
+    text-align:left;
+    margin-left:10px;
+    margin-bottom:30px;
+}
+#businessChallenges ul.list li img {
+    margin:0px;
+    padding:0px;
+}
+
+
+/*********************
+	SITEMAP STYLES
+*********************/
+
+#sitemap ul h5 {
+	margin: 20px 0 12px 0;
+}
+#sitemap ul h5.first {
+	margin: 0 0 12px 0;
+}
+#sitemap ul ul {
+	margin-bottom: 36px;
+}
+#sitemap ul.grid li h4 {
+    margin-bottom: 20px;
+    min-height: 1px;
+}
+#sitemap ul.grid li li {
+    background: url(../../../common/images/srd20123/solutionsGrayArrow.png) no-repeat 0 2px;
+    padding-left: 15px;
+}
+
+
+.shadow {
+	background: transparent url(../../../common/images/srd20123/shadow.jpg) no-repeat;
+	border-top: 3px solid #D6CEC9;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.fauxBizChallengeCarousel {
+	width:100%;
+	height:505px;
+	margin:0px;
+	padding:0px;
+	background: url(../../../common/images/srd20123/fauxBizChallengeCarousel.jpg);
+	background-position: center;
+}
+
+
+/*********************
+	SEARCH STYLES
+*********************/
+
+#search #solutionsResults {
+	border-right: 1px #d6cec9 solid;
+	margin-right: 40px;
+}
+#search .solutionsLinks ul {
+	margin-bottom: 0;
+	padding-right: 30px;
+}
+#search #solutionsResults li, #search .rightResults {
+	border-bottom: 1px #f5f0ed solid;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	padding-right: 0;
+}
+#search .rightResults {
+	border-bottom: 1px #d6cec9 solid;
+}
+#search li>a {
+	display: inline-block;
+	float: right;
+	text-decoration: none;
+}
+#search #solutionsResults li.lastResult {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#search .rightResults {
+	margin-bottom: 60px;
+}
+#search .results h5 a {
+	text-decoration: underline;
+}
+#search .results p {
+	margin-bottom: 0;
+}
+#search .resultDate {
+	font-family:'ProximaNovaRegularItalic', Sans-Serif;
+}
+#search .resultLinks {
+	font-size: 0.75em;
+}
+#search .allResults {
+	color: #f5680a;
+	font-family: 'ProximaNovaBold', Sans-Serif;
+	font-size: 0.875em;
+	margin-top: 0;
+}
+#search .supportInfo {
+	margin-top: 20px;
+}
+#search h1 {
+	color: #999390;
+	float: left;
+	margin:0 0 36px 0;
+}
+#search form {
+	color: #3d342f;
+	float:left;
+	margin-left: 10px;
+	position: relative;
+}
+#search form input[type=text] {
+	height: 32px;
+	background: #f5f3f2;
+	border-top: 2px solid #d6cec9;
+	padding: 5px 30px 5px 15px;
+	width: 307px;
+}
+
+.ie7 #search form input[type=text],
+.ie8 #search form input[type=text] {
+	height:30px;
+	padding:12px 30px 0 15px;
+}
+
+#search form input[type=submit] {
+	background:url(../../../common/images/srd20123/sprite.png) no-repeat -0px -0px;
+	border:0;
+	margin:0;
+	padding:0;
+	width:34px;
+	height:44px;
+	text-indent:-5000px;
+	position:absolute;
+	right: 16px;
+	cursor: pointer;
+}
+
+
+/*********************
+	CONTACT STYLES
+*********************/
+
+#contactus {
+	position: relative;
+}
+#contactusCenter {
+	margin: 0 auto;
+	width: 700px;
+}
+#directContact {
+	border-bottom: 1px solid #d7cfca;
+}
+
+#contactus form label {
+	display:block;
+	color:#5c5551;
+}
+
+#contactus form button.btn {
+	margin-top:20px;
+}
+
+#directContact > div {
+	padding-right: 10px; 
+}
+
+#corpContactInfo {
+	border-bottom: 1px solid #d7cfca;
+	padding-bottom:30px;
+}
+
+#otherContact {
+	border-bottom: 1px solid #d7cfca;
+	padding:24px 0 30px 0;
+	margin-bottom:35px;
+}
+

@@ -1,0 +1,769 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="LeanDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="LeanDataModelContainer" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="ADD_LHW_TABLES_FROM_HW">
+      <Parameter Name="LEAN_APP" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CREATE_SPECIAL_BIDS">
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="uploadUser" Mode="In" Type="String" />
+      <Parameter Name="Comments" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_SPECIAL_BIDS">
+      <Parameter Name="original_idSpecialBid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GET_ALL_MISMATCH_LHW_TABLES_FROM_HW">
+      <Parameter Name="LEAN_APP" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_SPECIAL_BIDS" ReturnType="Collection(LeanDataModel.GET_SPECIAL_BIDS_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="Filter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GenReportPullbyDate">
+      <Parameter Name="platform" Mode="In" Type="String" />
+      <Parameter Name="from" Mode="In" Type="DateTime" />
+      <Parameter Name="to" Mode="In" Type="DateTime" />
+      <Parameter Name="type" Mode="In" Type="Int32" />
+      <Parameter Name="LeanApp" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Split" IsComposable="true" ReturnType="Collection(String)">
+      <Parameter Name="String" Mode="In" Type="String" />
+      <Parameter Name="Delimiter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="TEST_Line" ReturnType="Collection(LeanDataModel.TEST_Line_Result)">
+      <Parameter Name="LineID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_LHW_TABLES_FROM_HW" />
+    <FunctionImport Name="UPDATE_SPECIAL_BIDS">
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="uploadUser" Mode="In" Type="String" />
+      <Parameter Name="Comments" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="original_idSpecialBid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <EntitySet Name="DomainNames" EntityType="LeanDataModel.DomainName" />
+    <EntitySet Name="LeanApps" EntityType="LeanDataModel.LeanApp" />
+    <FunctionImport Name="Create_BulkAM_Catalog">
+      <Parameter Name="Bulk" Mode="In" Type="String" />
+      <Parameter Name="AM" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Delete_BulkAM_Catalog">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="original_Bulk" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Update_BulkAM_Catalog">
+      <Parameter Name="Bulk" Mode="In" Type="String" />
+      <Parameter Name="AM" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="original_Bulk" Mode="In" Type="String" />
+      <Parameter Name="original_AM" Mode="In" Type="String" />
+      <Parameter Name="original_idLocalization" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_BulkAM_Catalog" ReturnType="Collection(LeanDataModel.GET_BulkAM_Catalog_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="Filter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CREATE_Overproduce_Special_Permission">
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Localization_Name" Mode="In" Type="String" />
+      <Parameter Name="uploadUser" Mode="In" Type="String" />
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_Overproduce_Special_Permission">
+      <Parameter Name="original_idOverproduce" Mode="In" Type="Int32" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_Overproduce_Special_Permission" ReturnType="Collection(LeanDataModel.GET_Overproduce_Special_Permission_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="Filter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_Overproduce_Special_Permission">
+      <Parameter Name="Active" Mode="In" Type="Boolean" />
+      <Parameter Name="uploadUser" Mode="In" Type="String" />
+      <Parameter Name="original_idOverproduce" Mode="In" Type="Int32" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GETIDMATERIALVKBINPUT" ReturnType="Collection(String)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GETLOCALIZATIONVKBINPUT" ReturnType="Collection(String)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GETIDMATERIALVKBINPUT1" ReturnType="Collection(String)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_IDMATERIAL_VKBINPUT" ReturnType="Collection(LeanDataModel.GET_IDMATERIAL_VKBINPUT_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_LOCALIZATION_VKBINPUT" ReturnType="Collection(LeanDataModel.GET_LOCALIZATION_VKBINPUT_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="CREATE_LINE">
+      <Parameter Name="Line" Mode="In" Type="String" />
+      <Parameter Name="Capability" Mode="In" Type="Int32" />
+      <Parameter Name="Planner" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_LINE">
+      <Parameter Name="original_idLine" Mode="In" Type="Int32" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_LINE" ReturnType="Collection(LeanDataModel.GET_LINE_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_LINE">
+      <Parameter Name="Capability" Mode="In" Type="Int32" />
+      <Parameter Name="Planner" Mode="In" Type="String" />
+      <Parameter Name="original_idLine" Mode="In" Type="Int32" />
+      <Parameter Name="original_Line" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_VKB_Global_Line" ReturnType="Collection(LeanDataModel.GET_VKB_Global_Line_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="Update_VKB_Global_Line">
+      <Parameter Name="Final_Version" Mode="In" Type="Boolean" />
+      <Parameter Name="uploadUser" Mode="In" Type="String" />
+      <Parameter Name="original_idLine" Mode="In" Type="Int32" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_INVENTORY_DISTRIBUTION_CENTERS">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_INVENTORY_DISTRIBUTION_CENTERS">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_REPORT_DETAILS" ReturnType="Collection(LeanDataModel.GET_REPORT_DETAILS_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="Geo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_VKB_CHECKLIST" ReturnType="Collection(LeanDataModel.GET_VKB_CHECKLIST_Result)">
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_DEMAND_BACKORDER">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_DEMAND_CUSTOMER_BACKORDER">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_DEMAND_SWE">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_INVENTORY_INTRANSIT">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_PRODUCTION_PRIORITIZE" ReturnType="Collection(LeanDataModel.GET_PRODUCTION_PRIORITIZE_Result)">
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="idLine" Mode="In" Type="Int32" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_DEMAND_BACKORDER">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="sales_Doc" Mode="In" Type="String" />
+      <Parameter Name="item" Mode="In" Type="String" />
+      <Parameter Name="SLNo" Mode="In" Type="String" />
+      <Parameter Name="Mat_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Doc_Ca" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_DEMAND_CUSTOMER_BACKORDER">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="sales_Doc" Mode="In" Type="String" />
+      <Parameter Name="item" Mode="In" Type="String" />
+      <Parameter Name="SLNo" Mode="In" Type="String" />
+      <Parameter Name="Mat_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Doc_Ca" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_DEMAND_SWE">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="sales_Doc" Mode="In" Type="String" />
+      <Parameter Name="item" Mode="In" Type="String" />
+      <Parameter Name="SLNo" Mode="In" Type="String" />
+      <Parameter Name="Mat_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Doc_Ca" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_INVENTORY_INTRANSIT">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="Localization_Name" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Material_Name" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY" ReturnType="Collection(LeanDataModel.GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY_Result)">
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_Production_Prioritize">
+      <Parameter Name="idLine_ddlLine" Mode="In" Type="Int32" />
+      <Parameter Name="idLine_gv_ddlLine" Mode="In" Type="Int32" />
+      <Parameter Name="FilterDate" Mode="In" Type="DateTime" />
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="LeanApp" Mode="In" Type="String" />
+      <Parameter Name="Pallets_ddlLine" Mode="In" Type="Int32" />
+      <Parameter Name="Pallets_gv_ddlLine" Mode="In" Type="Int32" />
+      <Parameter Name="Production_Order" Mode="In" Type="Int32" />
+      <Parameter Name="SAP_Order" Mode="In" Type="String" />
+      <Parameter Name="Minutes_Lost" Mode="In" Type="Int32" />
+      <Parameter Name="Pieces_Lost" Mode="In" Type="Int32" />
+      <Parameter Name="Comments" Mode="In" Type="String" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_MATERIAL_VKB_Detail_PartNumber_PROD_PRIORITY" ReturnType="Collection(LeanDataModel.GET_MATERIAL_VKB_Detail_PartNumber_PROD_PRIORITY_Result)">
+      <Parameter Name="Material" Mode="In" Type="String" />
+      <Parameter Name="LeanApp" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_DAILY_UPLOADS_CHECKLIST">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_DAILY_UPLOADS_CHECKLIST" ReturnType="Collection(LeanDataModel.GET_DAILY_UPLOADS_CHECKLIST_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="GET_DEMAND_FOR_BACKORDER" ReturnType="Collection(LeanDataModel.GET_DEMAND_FOR_BACKORDER_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="idLocalization_Dest" Mode="In" Type="String" />
+      <Parameter Name="LeadTime" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GET_SPLIT_LINE" ReturnType="Collection(LeanDataModel.GET_SPLIT_LINE_Result)">
+      <Parameter Name="idLine" Mode="In" Type="Int32" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_SPLIT_MATERIAL" ReturnType="Collection(LeanDataModel.GET_SPLIT_MATERIAL_Result)">
+      <Parameter Name="idLine" Mode="In" Type="Int32" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_VKB_DETAILS" ReturnType="Collection(LeanDataModel.GET_VKB_DETAILS_Result)">
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+      <Parameter Name="Line" Mode="In" Type="String" />
+      <Parameter Name="IS_CHECKED" Mode="In" Type="Boolean" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Filter" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_COUNT_SPLIT" ReturnType="Collection(LeanDataModel.GET_COUNT_SPLIT_Result)">
+      <Parameter Name="idLine" Mode="In" Type="Int32" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_SPLITS" ReturnType="Collection(LeanDataModel.GET_SPLITS_Result)">
+      <Parameter Name="idLine" Mode="In" Type="Int32" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_SPLITS_TO_PROD_PRIORITY">
+      <Parameter Name="idLine_ddlLine" Mode="In" Type="Int32" />
+      <Parameter Name="idLine_Destiny" Mode="In" Type="Int32" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="Pallets" Mode="In" Type="Int32" />
+      <Parameter Name="split_Pallets" Mode="In" Type="Int32" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_VIRTUALKANBAN_LINE" ReturnType="Collection(LeanDataModel.GET_VIRTUALKANBAN_LINE_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_IS_CHECKED" ReturnType="Collection(Decimal)">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_IS_CHECKED">
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_IS_CHECKED">
+      <Parameter Name="User_Name" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+      <Parameter Name="Checked" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_DISTRIBUTION_EXCEP">
+      <Parameter Name="Lean_app" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_DISTRIBUTION_NETWORK">
+      <Parameter Name="Lean_app" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_INVENTORY_DOCKAREA">
+      <Parameter Name="Lean_app" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_INVENTORY_INTRANSIT_JABIL">
+      <Parameter Name="Lean_app" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_INVENTORY_REBALANCING">
+      <Parameter Name="Lean_app" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_PARTNUMBER_WEEKDEMAND">
+      <Parameter Name="intWeek" Mode="In" Type="Int32" />
+      <Parameter Name="intYear" Mode="In" Type="Int32" />
+      <Parameter Name="Lean_app" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_VKBINPUT">
+      <Parameter Name="Lean_app" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_INVENTDOCKAREA_BULKAMCAT" ReturnType="Collection(LeanDataModel.GET_INVENTDOCKAREA_BULKAMCAT_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_DISTRIBUTION_EXCEP">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLocalizationMaterial_Excep" Mode="In" Type="String" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_DISTRIBUTION_NETWORK">
+      <Parameter Name="GEO" Mode="In" Type="String" />
+      <Parameter Name="idLocalization_Source" Mode="In" Type="String" />
+      <Parameter Name="idLocalization_Dest" Mode="In" Type="String" />
+      <Parameter Name="LeadTime" Mode="In" Type="Int32" />
+      <Parameter Name="LocalizationDesc" Mode="In" Type="String" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_Inventory_DockArea">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="Localization_Name" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Pallet_ID" Mode="In" Type="String" />
+      <Parameter Name="Pallet_No" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="Status" Mode="In" Type="String" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_INVENTORY_INTRANSIT_JABIL">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Bulk" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_INVENTORY_REBALANCING">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idSource" Mode="In" Type="String" />
+      <Parameter Name="idLocalization" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="Type" Mode="In" Type="String" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_PARTNUMBER_WEEKDEMAND">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="weekNumber" Mode="In" Type="Int32" />
+      <Parameter Name="Year" Mode="In" Type="Int32" />
+      <Parameter Name="DemandQty" Mode="In" Type="Int32" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_VKBINPUT">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLine" Mode="In" Type="Int32" />
+      <Parameter Name="AverageDemand" Mode="In" Type="Double" />
+      <Parameter Name="SD" Mode="In" Type="Double" />
+      <Parameter Name="CV" Mode="In" Type="Double" />
+      <Parameter Name="Max_Pallet" Mode="In" Type="Int32" />
+      <Parameter Name="Target_Pallet" Mode="In" Type="Int32" />
+      <Parameter Name="Min_Pallet" Mode="In" Type="Int32" />
+      <Parameter Name="Pallet_Qty" Mode="In" Type="Int32" />
+      <Parameter Name="PPVT" Mode="In" Type="String" />
+      <Parameter Name="Yield" Mode="In" Type="String" />
+      <Parameter Name="UDC" Mode="In" Type="String" />
+      <Parameter Name="Localization_Name" Mode="In" Type="String" />
+      <Parameter Name="Platform" Mode="In" Type="String" />
+      <Parameter Name="Family" Mode="In" Type="String" />
+      <Parameter Name="Type_SWE_AM" Mode="In" Type="String" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Brand" Mode="In" Type="String" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW">
+      <Parameter Name="LEAN_APP" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_VKBINPUT_INSERTLINE" ReturnType="Collection(Int32)">
+      <Parameter Name="Line" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_VKBINPUT_LINE" ReturnType="Collection(LeanDataModel.GET_VKBINPUT_LINE_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_VKBINPUT_LINE">
+      <Parameter Name="Line" Mode="In" Type="String" />
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP" ReturnType="Collection(LeanDataModel.PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK" ReturnType="Collection(LeanDataModel.PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP" ReturnType="Collection(LeanDataModel.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK" ReturnType="Collection(LeanDataModel.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK_Result)">
+      <Parameter Name="Lean_App" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_VIRTUALKANBAN_PROD_PRIORITIZE">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="txtFechaCaptura" Mode="In" Type="DateTime" />
+      <Parameter Name="LeanApp" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_VIRTUALKANBAN_VKBDETAILPARTNO">
+      <Parameter Name="idVKB" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_VIRTUALKANBAN_PROD_PRIORITIZE">
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="idLine" Mode="In" Type="Int32" />
+      <Parameter Name="Date" Mode="In" Type="DateTime" />
+      <Parameter Name="Production_Order" Mode="In" Type="Int32" />
+      <Parameter Name="Pallets" Mode="In" Type="Int32" />
+      <Parameter Name="PrimaryPriority" Mode="In" Type="Double" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Minutes_Lost" Mode="In" Type="Int32" />
+      <Parameter Name="Pieces_Lost" Mode="In" Type="Int32" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_VIRTUALKANBAN_VKBDETAILPARTNO">
+      <Parameter Name="idVKB" Mode="In" Type="Int32" />
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="UDC" Mode="In" Type="String" />
+      <Parameter Name="CV" Mode="In" Type="Double" />
+      <Parameter Name="PrimaryPriority" Mode="In" Type="Double" />
+      <Parameter Name="idMaterial" Mode="In" Type="String" />
+      <Parameter Name="Localization_Name" Mode="In" Type="String" />
+      <Parameter Name="PercentRed" Mode="In" Type="Double" />
+      <Parameter Name="Customer_Backorder_Units" Mode="In" Type="Double" />
+      <Parameter Name="BTO_Units" Mode="In" Type="Double" />
+      <Parameter Name="Special_Bids_Units" Mode="In" Type="Double" />
+      <Parameter Name="Projected_Backorder_Units" Mode="In" Type="Double" />
+      <Parameter Name="InvOnDisCenter_Units" Mode="In" Type="Double" />
+      <Parameter Name="InvInTransit_Units" Mode="In" Type="Double" />
+      <Parameter Name="SAPKanbanTotal_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="HeijunkaKanban_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="TotalKanban_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="TotalInvpercent" Mode="In" Type="Double" />
+      <Parameter Name="RedPorc" Mode="In" Type="Double" />
+      <Parameter Name="YellowPorc" Mode="In" Type="Double" />
+      <Parameter Name="GreenPorc" Mode="In" Type="Double" />
+      <Parameter Name="KanbanNeededForCustomerBO_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="KanbanNeededForBTO_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="KanbanNeededForSpecialBid_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="KanbanNeededForProjectedBO_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="KanbanNeededForOrange_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="KanbanNeededForRed_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="KanbanNeededForYellow_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="KanbanNeededForGreen_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="MinKanban_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="TargetKanban_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="MaxKanban_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="ExcessKanban_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="HeijunkaBoard_Pallets" Mode="In" Type="Double" />
+      <Parameter Name="Platform" Mode="In" Type="String" />
+      <Parameter Name="Family" Mode="In" Type="String" />
+      <Parameter Name="AverageDemand" Mode="In" Type="Double" />
+      <Parameter Name="Pallet_Qty" Mode="In" Type="Int32" />
+      <Parameter Name="Type" Mode="In" Type="String" />
+      <Parameter Name="High_Priority_Units" Mode="In" Type="Double" />
+      <Parameter Name="Remd_Pallet" Mode="In" Type="Int32" />
+      <Parameter Name="Lean_Application" Mode="In" Type="String" />
+      <Parameter Name="PPVT" Mode="In" Type="String" />
+      <Parameter Name="Yield" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_VIRTUALKANBAN_VKBGLOBALLINE">
+      <Parameter Name="txtFechaCaptura" Mode="In" Type="DateTime" />
+      <Parameter Name="idLine" Mode="In" Type="Int32" />
+      <Parameter Name="chkFinalVersion" Mode="In" Type="Boolean" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="LeanApp" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_VIRTUALKANBAN_ISCHECKED">
+      <Parameter Name="Is_Checked" Mode="In" Type="Decimal" />
+      <Parameter Name="UserName" Mode="In" Type="String" />
+      <Parameter Name="LeanApp" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_VIRTUALKANBAN_LINE">
+      <Parameter Name="OldTotalCapacity" Mode="In" Type="Int32" />
+      <Parameter Name="ddlLineTxt" Mode="In" Type="String" />
+      <Parameter Name="LeanApp" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_VIRTUALKANBAN_VKBGLOBALLINE">
+      <Parameter Name="chkFinalVersion" Mode="In" Type="Boolean" />
+      <Parameter Name="Upload_User" Mode="In" Type="String" />
+      <Parameter Name="Upload_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="idVKB" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DELETE_VIRTUALKANBAN_SIGNALDELAY">
+      <Parameter Name="idVKB" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="INSERT_VIRTUALKANBAN_SIGNALDELAY">
+      <Parameter Name="idVKB" Mode="In" Type="Int32" />
+      <Parameter Name="idLocalizationMaterial" Mode="In" Type="String" />
+      <Parameter Name="Material_Type_Request" Mode="In" Type="String" />
+      <Parameter Name="User_Upload" Mode="In" Type="String" />
+      <Parameter Name="Creation_Date" Mode="In" Type="DateTime" />
+      <Parameter Name="LeanApp" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="GET_SPECIAL_BIDS_Result">
+    <Property Type="Int32" Name="idSpecialBid" Nullable="false" />
+    <Property Type="String" Name="idLocalization" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="idMaterial" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+    <Property Type="Boolean" Name="Active" Nullable="false" />
+    <Property Type="String" Name="Upload_User" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="Upload_Date" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Comments" Nullable="true" MaxLength="90" />
+    <Property Type="String" Name="Lean_Application" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="TEST_Line_Result">
+    <Property Type="Int32" Name="idLine" Nullable="false" />
+    <Property Type="String" Name="Line" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="Capability" Nullable="false" />
+    <Property Type="String" Name="Planner" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Lean_Application" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <EntityType Name="DomainName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Domain" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LeanApp">
+    <Key>
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Type="String" Name="Lean_Application" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Creator" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="CreationDate" Precision="3" />
+    <Property Type="Int32" Name="id_site" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Description" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Acronym" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <ComplexType Name="GET_BulkAM_Catalog_Result">
+    <Property Type="String" Name="idLocalization" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="Bulk" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="AM" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Lean_Application" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="GET_Overproduce_Special_Permission_Result">
+    <Property Type="Int32" Name="idOverproduce" Nullable="false" />
+    <Property Type="String" Name="Date" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="idMaterial" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Localization_Name" Nullable="false" MaxLength="50" />
+    <Property Type="Boolean" Name="Active" Nullable="false" />
+    <Property Type="String" Name="Upload_User" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="Upload_Date" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Lean_Application" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="GET_IDMATERIAL_VKBINPUT_Result">
+    <Property Type="String" Name="idMaterial" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="GET_LOCALIZATION_VKBINPUT_Result">
+    <Property Type="String" Name="Localization_Name" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="GET_LINE_Result">
+    <Property Type="Int32" Name="idLine" Nullable="false" />
+    <Property Type="String" Name="Line" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="Capability" Nullable="false" />
+    <Property Type="String" Name="Planner" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Lean_Application" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="GET_VKB_Global_Line_Result">
+    <Property Type="Int32" Name="idLine" Nullable="false" />
+    <Property Type="String" Name="Line" Nullable="false" MaxLength="20" />
+    <Property Type="Boolean" Name="Final_Version" Nullable="false" />
+    <Property Type="DateTime" Name="Date" Nullable="false" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GET_REPORT_DETAILS_Result">
+    <Property Type="String" Name="ReportName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ReportServer" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="ReportPath" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="ReportDescription" Nullable="true" MaxLength="500" />
+  </ComplexType>
+  <ComplexType Name="GET_VKB_CHECKLIST_Result">
+    <Property Type="String" Name="Line" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Processed" Nullable="true" MaxLength="2" />
+    <Property Type="String" Name="FinalVersion" Nullable="true" MaxLength="2" />
+  </ComplexType>
+  <ComplexType Name="GET_PRODUCTION_PRIORITIZE_Result">
+    <Property Type="String" Name="idLocalizationMaterial" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="idLine" Nullable="false" />
+    <Property Type="DateTime" Name="Date" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Production_Order" Nullable="false" />
+    <Property Type="String" Name="Family" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="idMaterial" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="PPVT" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="Yield" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="Pieces" Nullable="true" />
+    <Property Type="Int32" Name="Pallets" Nullable="false" />
+    <Property Type="String" Name="SAP_Order" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="Minutes_Lost" Nullable="false" />
+    <Property Type="Int32" Name="Pieces_Lost" Nullable="false" />
+    <Property Type="String" Name="Localization_Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Comments" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="idToner" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="type" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="Pages" Nullable="true" />
+    <Property Type="Double" Name="PrimaryPriority" Nullable="true" />
+    <Property Type="String" Name="Line" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY_Result">
+    <Property Type="Int32" Name="idLine" Nullable="false" />
+    <Property Type="String" Name="Line" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="GET_MATERIAL_VKB_Detail_PartNumber_PROD_PRIORITY_Result">
+    <Property Type="String" Name="idMaterial" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="GET_DAILY_UPLOADS_CHECKLIST_Result">
+    <Property Type="String" Name="Type" Nullable="false" MaxLength="27" />
+    <Property Type="String" Name="Uploaded" Nullable="false" MaxLength="2" />
+    <Property Type="DateTime" Name="Upload_Date" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="GET_DEMAND_FOR_BACKORDER_Result">
+    <Property Type="String" Name="idLocalization" Nullable="false" MaxLength="10" />
+    <Property Type="Int32" Name="LeadTime" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GET_SPLIT_LINE_Result">
+    <Property Type="Int32" Name="idLine" Nullable="false" />
+    <Property Type="String" Name="Line" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="GET_SPLIT_MATERIAL_Result">
+    <Property Type="String" Name="idLocalizationMaterial" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="idMaterial" Nullable="true" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="GET_VKB_DETAILS_Result">
+    <Property Type="Int32" Name="idVKB" Nullable="false" />
+    <Property Type="String" Name="idLocalizationMaterial" Nullable="false" MaxLength="30" />
+    <Property Type="Double" Name="C__of_RED" Nullable="false" />
+    <Property Type="String" Name="PN" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="PPVT" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Yield" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="LOC" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="KANBAN_QTY" Nullable="false" />
+    <Property Type="Double" Name="Customer_Orders__w_in_LT_window_" Nullable="false" />
+    <Property Type="Double" Name="Current_BackOrder__Units_" Nullable="false" />
+    <Property Type="Double" Name="BTO__Units_" Nullable="false" />
+    <Property Type="Double" Name="Special_Bids__Units_" Nullable="false" />
+    <Property Type="Double" Name="SAP_INV__Units_" Nullable="false" />
+    <Property Type="Double" Name="SAP_INV_IN_Transit__Units_" Nullable="false" />
+    <Property Type="Double" Name="SAP_KANBAN_total__Pallets_" Nullable="false" />
+    <Property Type="Double" Name="HEIJUNKA_KANBAN__Pallets_" Nullable="false" />
+    <Property Type="Double" Name="Total_KANBAN__Pallets_" Nullable="false" />
+    <Property Type="Double" Name="KANBAN_NEEDED_FOR_ORANGE" Nullable="false" />
+    <Property Type="Double" Name="KANBAN_NEEDED_FOR_RED" Nullable="false" />
+    <Property Type="Double" Name="KANBAN_NEEDED_FOR_YELLOW" Nullable="false" />
+    <Property Type="Double" Name="KANBAN_NEEDED_FOR_GREEN" Nullable="false" />
+    <Property Type="Double" Name="Red_Kanban__Pallets_" Nullable="false" />
+    <Property Type="Double" Name="Yellow_Kanban__Pallets_" Nullable="false" />
+    <Property Type="Double" Name="Green_Kanban__Pallets_" Nullable="false" />
+    <Property Type="Double" Name="Excess_Inventory__Units_" Nullable="false" />
+    <Property Type="Int32" Name="Recommended_Production" Nullable="true" />
+    <Property Type="Double" Name="Planned_HEIJUNKA_Board" Nullable="false" />
+    <Property Type="Double" Name="TotalInv_" Nullable="false" />
+    <Property Type="Double" Name="KanbanNeededForCustomerBO_Pallets" Nullable="false" />
+    <Property Type="Double" Name="KanbanNeededForBTO_Pallets" Nullable="false" />
+    <Property Type="Double" Name="KanbanNeededForSpecialBid_Pallets" Nullable="false" />
+    <Property Type="Double" Name="KanbanNeededForProjectedBO_Pallets" Nullable="false" />
+    <Property Type="Double" Name="PrimaryPriority" Nullable="false" />
+    <Property Type="String" Name="UDC" Nullable="false" MaxLength="10" />
+    <Property Type="Double" Name="CV" Nullable="false" />
+    <Property Type="String" Name="Platform" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Family" Nullable="true" MaxLength="20" />
+    <Property Type="Double" Name="AverageDemand" Nullable="false" />
+    <Property Type="String" Name="Type" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="High_Priority_Units" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GET_COUNT_SPLIT_Result">
+    <Property Type="String" Name="idLocalizationMaterial" Nullable="false" MaxLength="30" />
+    <Property Type="Int32" Name="idLine" Nullable="false" />
+    <Property Type="DateTime" Name="Date" Nullable="false" Precision="23" />
+    <Property Type="Int32" Name="Production_Order" Nullable="false" />
+    <Property Type="Int32" Name="Pallets" Nullable="false" />
+    <Property Type="String" Name="SAP_Order" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="Minutes_Lost" Nullable="false" />
+    <Property Type="Int32" Name="Pieces_Lost" Nullable="false" />
+    <Property Type="String" Name="Comments" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="PrimaryPriority" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GET_SPLITS_Result">
+    <Property Type="String" Name="Localization_Name" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="Pallets" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="GET_VIRTUALKANBAN_LINE_Result">
+    <Property Type="String" Name="Planner" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Line" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="GET_INVENTDOCKAREA_BULKAMCAT_Result">
+    <Property Type="String" Name="idLocalization" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="Bulk" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="AM" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="GET_VKBINPUT_LINE_Result">
+    <Property Type="Int32" Name="idLine" Nullable="false" />
+    <Property Type="String" Name="Line" Nullable="false" MaxLength="20" />
+  </ComplexType>
+  <ComplexType Name="PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP_Result">
+    <Property Type="String" Name="idLocalizationMaterial" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="idLocalizationMaterial_Excep" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK_Result">
+    <Property Type="String" Name="idLocalization_Source" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="idLocalization_Dest" Nullable="false" MaxLength="10" />
+  </ComplexType>
+  <ComplexType Name="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP_Result">
+    <Property Type="String" Name="idLocalizationMaterial" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="idLocalizationMaterial_Excep" Nullable="false" MaxLength="30" />
+  </ComplexType>
+  <ComplexType Name="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK_Result">
+    <Property Type="String" Name="idLocalization_Source" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="idLocalization_Dest" Nullable="false" MaxLength="10" />
+  </ComplexType>
+</Schema>

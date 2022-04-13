@@ -1,0 +1,211 @@
+.container .box {
+    float: left;
+    margin: 2px;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 3px 3px 15px #666;
+    vertical-align: top;
+}
+
+.container .small {
+    height: 230px;
+    width: 359px;
+}
+
+.container .medium {
+    height: 230px;
+    width: 557px;
+}
+
+.container .large {
+    height: 420px;
+    width: 1150px;
+}
+
+.container .box .header {
+    padding: 5px;
+    text-align: center;
+    background: #E6E6E6;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-shadow: none;
+    font-family: 'Arial', Sans-Serif;
+    height: 22px;
+    line-height: 20px;
+    /*border: 1px solid #aaa;*/
+    font-size: 12.2px;
+    color: #5f5f5f;
+}
+
+.container .box .height-fix {
+    padding-top: 8px;
+    overflow-y: auto;
+    height: 160px;
+}
+
+.container .box .height-fix-80 {
+    padding-top: 8px;
+    overflow-y: auto;
+    height: 300px;
+}
+
+.container .box .height-fix-calendar {
+    padding-top: 8px;
+    overflow-y: auto;
+}
+
+.container .box .bottom-link {
+    float: right;
+}
+
+.container .box .bottom-link-left {
+    float: left;
+    padding-left: 5px;
+}
+
+.container .box .bottom-link-right {
+    float: right;
+    padding-right: 5px;
+}
+/*Fade all the DIV when user hovers on any div*/
+.container:hover .box {
+    zoom: 1;
+    filter: alpha(opacity=10);
+    opacity: 0.10;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -ms-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+/*Fade out the particular DIV when user hover on that DIV*/
+.container .box:hover {
+    box-shadow: 3px 3px 15px black;
+    border-color: #666; /*#FAFAFA;*/
+    background: white;
+    border-width: 1px;
+    /*color: #848484;*/
+    /*cursor: pointer;*/
+    /*Opacity*/
+    zoom: 1.00;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+/*------------------------------------------------------------------------------*/
+table {
+    *border-collapse: collapse; /* IE7 and lower */
+    border-spacing: 0;
+    /*width: 100%;  */
+    font-family: 'ProximaNovaRegular', Sans-Serif;
+    /*font-size:13.2px;*/
+    font-size: 12.2px;
+}
+
+.inner {
+}
+
+    .inner td, .inner th {
+        padding: 5px;
+        text-align: left;
+    }
+
+.bordered {
+    border: solid #E6E6E6 1px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0 1px 1px #ccc;
+    -moz-box-shadow: 0 1px 1px #ccc;
+    box-shadow: 0 1px 1px #ccc;
+}
+
+.min-width {
+    min-width: 820px;
+}
+
+.bordered tr:hover {
+    background: #F2F2F2;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.bordered td, .bordered th {
+    /*border-left: 1px solid #ccc; /*1px earlier*/
+    /*border-top: 1px solid #E6E6E6;
+    padding: 5px;
+    text-align: left;*/
+    border: 1px solid #ccc; /*1px earlier*/
+    padding: 8px;
+    text-align: center;
+}
+
+.bordered th {
+    background-color: #D8D8D8;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#D8D8D8), to(#848484));
+    background-image: -webkit-linear-gradient(top, #D8D8D8, #848484);
+    background-image: -moz-linear-gradient(top, #D8D8D8, #848484);
+    background-image: -ms-linear-gradient(top, #D8D8D8, #848484);
+    background-image: -o-linear-gradient(top, #D8D8D8, #848484);
+    background-image: linear-gradient(top, #D8D8D8, #848484);
+    -webkit-box-shadow: 0 0px 0 rgba(255,255,255,.8) inset;
+    -moz-box-shadow: 0 0px 0 rgba(255,255,255,.8) inset;
+    box-shadow: 0 0px 0 rgba(255,255,255,.8) inset;
+    /*border-top: none;*/
+    text-shadow: 0 0px 0 rgba(255,255,255,.5);
+    color: 5F5F5F;
+}
+
+/*.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 0px 0 0 0;
+    -webkit-border-radius: 0px 0 0 0;
+    border-radius: 0px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 0px 0 0;
+    -webkit-border-radius: 0 0px 0 0;
+    border-radius: 0 0px 0 0;
+	 border-left: 1px solid #ccc;
+}
+
+.bordered th:only-child{
+    -moz-border-radius: 0px 0px 0 0;
+    -webkit-border-radius: 0px 0px 0 0;
+    border-radius: 0px 0px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 0px;
+    -webkit-border-radius: 0 0 0 0px;
+    border-radius: 0 0 0 0px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 0px 0;
+    -webkit-border-radius: 0 0 0px 0;
+    border-radius: 0 0 0px 0;	
+}*/
+/*.bordered tr:nth-child(even) {
+    background: #F2F2F2;
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset; 
+    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;  
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+}/*
+
+
+

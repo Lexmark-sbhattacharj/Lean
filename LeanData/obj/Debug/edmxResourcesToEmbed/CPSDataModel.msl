@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CPSDataModelStoreContainer" CdmEntityContainer="CPSEntities">
+    <FunctionImportMapping FunctionImportName="ADD_LHW_TABLES_FROM_HW" FunctionName="CPSDataModel.Store.ADD_LHW_TABLES_FROM_HW" />
+    <FunctionImportMapping FunctionImportName="Create_BulkAM_Catalog" FunctionName="CPSDataModel.Store.Create_BulkAM_Catalog" />
+    <FunctionImportMapping FunctionImportName="CREATE_Overproduce_Special_Permission" FunctionName="CPSDataModel.Store.CREATE_Overproduce_Special_Permission" />
+    <FunctionImportMapping FunctionImportName="CREATE_SPECIAL_BIDS" FunctionName="CPSDataModel.Store.CREATE_SPECIAL_BIDS" />
+    <FunctionImportMapping FunctionImportName="Delete_BulkAM_Catalog" FunctionName="CPSDataModel.Store.Delete_BulkAM_Catalog" />
+    <FunctionImportMapping FunctionImportName="DELETE_DAILY_UPLOADS_CHECKLIST" FunctionName="CPSDataModel.Store.DELETE_DAILY_UPLOADS_CHECKLIST" />
+    <FunctionImportMapping FunctionImportName="DELETE_DEMAND_BACKORDER" FunctionName="CPSDataModel.Store.DELETE_DEMAND_BACKORDER" />
+    <FunctionImportMapping FunctionImportName="DELETE_DEMAND_CUSTOMER_BACKORDER" FunctionName="CPSDataModel.Store.DELETE_DEMAND_CUSTOMER_BACKORDER" />
+    <FunctionImportMapping FunctionImportName="DELETE_DEMAND_SWE" FunctionName="CPSDataModel.Store.DELETE_DEMAND_SWE" />
+    <FunctionImportMapping FunctionImportName="DELETE_DISTRIBUTION_EXCEP" FunctionName="CPSDataModel.Store.DELETE_DISTRIBUTION_EXCEP" />
+    <FunctionImportMapping FunctionImportName="DELETE_DISTRIBUTION_NETWORK" FunctionName="CPSDataModel.Store.DELETE_DISTRIBUTION_NETWORK" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_DISTRIBUTION_CENTERS" FunctionName="CPSDataModel.Store.DELETE_INVENTORY_DISTRIBUTION_CENTERS" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_DOCKAREA" FunctionName="CPSDataModel.Store.DELETE_INVENTORY_DOCKAREA" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_INTRANSIT" FunctionName="CPSDataModel.Store.DELETE_INVENTORY_INTRANSIT" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_INTRANSIT_JABIL" FunctionName="CPSDataModel.Store.DELETE_INVENTORY_INTRANSIT_JABIL" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_REBALANCING" FunctionName="CPSDataModel.Store.DELETE_INVENTORY_REBALANCING" />
+    <FunctionImportMapping FunctionImportName="DELETE_LINE" FunctionName="CPSDataModel.Store.DELETE_LINE" />
+    <FunctionImportMapping FunctionImportName="DELETE_Overproduce_Special_Permission" FunctionName="CPSDataModel.Store.DELETE_Overproduce_Special_Permission" />
+    <FunctionImportMapping FunctionImportName="DELETE_PARTNUMBER_WEEKDEMAND" FunctionName="CPSDataModel.Store.DELETE_PARTNUMBER_WEEKDEMAND" />
+    <FunctionImportMapping FunctionImportName="DELETE_SPECIAL_BIDS" FunctionName="CPSDataModel.Store.DELETE_SPECIAL_BIDS" />
+    <FunctionImportMapping FunctionImportName="DELETE_VIRTUALKANBAN_PROD_PRIORITIZE" FunctionName="CPSDataModel.Store.DELETE_VIRTUALKANBAN_PROD_PRIORITIZE" />
+    <FunctionImportMapping FunctionImportName="DELETE_VIRTUALKANBAN_VKBDETAILPARTNO" FunctionName="CPSDataModel.Store.DELETE_VIRTUALKANBAN_VKBDETAILPARTNO" />
+    <FunctionImportMapping FunctionImportName="DELETE_VKBINPUT" FunctionName="CPSDataModel.Store.DELETE_VKBINPUT" />
+    <FunctionImportMapping FunctionImportName="GET_ALL_MISMATCH_LHW_TABLES_FROM_HW" FunctionName="CPSDataModel.Store.GET_ALL_MISMATCH_LHW_TABLES_FROM_HW" />
+    <FunctionImportMapping FunctionImportName="GET_BulkAM_Catalog" FunctionName="CPSDataModel.Store.GET_BulkAM_Catalog">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_BulkAM_Catalog_Result">
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="Bulk" ColumnName="Bulk" />
+          <ScalarProperty Name="AM" ColumnName="AM" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_COUNT_SPLIT" FunctionName="CPSDataModel.Store.GET_COUNT_SPLIT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_COUNT_SPLIT_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Production_Order" ColumnName="Production_Order" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="SAP_Order" ColumnName="SAP_Order" />
+          <ScalarProperty Name="Minutes_Lost" ColumnName="Minutes_Lost" />
+          <ScalarProperty Name="Pieces_Lost" ColumnName="Pieces_Lost" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_DAILY_UPLOADS_CHECKLIST" FunctionName="CPSDataModel.Store.GET_DAILY_UPLOADS_CHECKLIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_DAILY_UPLOADS_CHECKLIST_Result">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Uploaded" ColumnName="Uploaded" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_DEMAND_FOR_BACKORDER" FunctionName="CPSDataModel.Store.GET_DEMAND_FOR_BACKORDER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_DEMAND_FOR_BACKORDER_Result">
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_IDMATERIAL_VKBINPUT" FunctionName="CPSDataModel.Store.GET_IDMATERIAL_VKBINPUT" />
+    <FunctionImportMapping FunctionImportName="GET_INVENTDOCKAREA_BULKAMCAT" FunctionName="CPSDataModel.Store.GET_INVENTDOCKAREA_BULKAMCAT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_INVENTDOCKAREA_BULKAMCAT_Result">
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="Bulk" ColumnName="Bulk" />
+          <ScalarProperty Name="AM" ColumnName="AM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_LINE" FunctionName="CPSDataModel.Store.GET_LINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_LINE_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+          <ScalarProperty Name="Planner" ColumnName="Planner" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_LOCALIZATION_VKBINPUT" FunctionName="CPSDataModel.Store.GET_LOCALIZATION_VKBINPUT" />
+    <FunctionImportMapping FunctionImportName="GET_MATERIAL_VKB_Detail_PartNumber_PROD_PRIORITY" FunctionName="CPSDataModel.Store.GET_MATERIAL_VKB_Detail_PartNumber_PROD_PRIORITY" />
+    <FunctionImportMapping FunctionImportName="GET_Overproduce_Special_Permission" FunctionName="CPSDataModel.Store.GET_Overproduce_Special_Permission">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_Overproduce_Special_Permission_Result">
+          <ScalarProperty Name="idOverproduce" ColumnName="idOverproduce" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP" FunctionName="CPSDataModel.Store.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalizationMaterial_Excep" ColumnName="idLocalizationMaterial_Excep" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK" FunctionName="CPSDataModel.Store.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK_Result">
+          <ScalarProperty Name="idLocalization_Source" ColumnName="idLocalization_Source" />
+          <ScalarProperty Name="idLocalization_Dest" ColumnName="idLocalization_Dest" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_PRODUCTION_PRIORITIZE" FunctionName="CPSDataModel.Store.GET_PRODUCTION_PRIORITIZE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_PRODUCTION_PRIORITIZE_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Production_Order" ColumnName="Production_Order" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="Pieces" ColumnName="Pieces" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="SAP_Order" ColumnName="SAP_Order" />
+          <ScalarProperty Name="Minutes_Lost" ColumnName="Minutes_Lost" />
+          <ScalarProperty Name="Pieces_Lost" ColumnName="Pieces_Lost" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="idToner" ColumnName="idToner" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Pages" ColumnName="Pages" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_REPORT_DETAILS" FunctionName="CPSDataModel.Store.GET_REPORT_DETAILS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_REPORT_DETAILS_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+          <ScalarProperty Name="ReportServer" ColumnName="ReportServer" />
+          <ScalarProperty Name="ReportPath" ColumnName="ReportPath" />
+          <ScalarProperty Name="ReportDescription" ColumnName="ReportDescription" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_SPLIT_LINE" FunctionName="CPSDataModel.Store.GET_SPLIT_LINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_SPLIT_LINE_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_SPLIT_MATERIAL" FunctionName="CPSDataModel.Store.GET_SPLIT_MATERIAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_SPLIT_MATERIAL_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_SPLITS" FunctionName="CPSDataModel.Store.GET_SPLITS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_SPLITS_Result">
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_CAPABILITYFROMLINE" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_CAPABILITYFROMLINE" />
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_CHECK_UPLOAD_DATA" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_CHECK_UPLOAD_DATA" />
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_DIST_EXCEP" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_DIST_EXCEP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_DIST_EXCEP_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalizationMaterial_Excep" ColumnName="idLocalizationMaterial_Excep" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_DIST_NETWORK" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_DIST_NETWORK">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_DIST_NETWORK_Result">
+          <ScalarProperty Name="idLocalization_Source" ColumnName="idLocalization_Source" />
+          <ScalarProperty Name="idLocalization_Dest" ColumnName="idLocalization_Dest" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_IDLINE" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_IDLINE" />
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_IFNOT_FINALVERSION" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_IFNOT_FINALVERSION">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_IFNOT_FINALVERSION_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="Inventory_DistributionCenters" ColumnName="Inventory_DistributionCenters" />
+          <ScalarProperty Name="Inventory_InTransitTotal" ColumnName="Inventory_InTransitTotal" />
+          <ScalarProperty Name="Demand_Customer_BackOrder" ColumnName="Demand_Customer_BackOrder" />
+          <ScalarProperty Name="Real_For_Demand_Customer_BackOrder" ColumnName="Real_For_Demand_Customer_BackOrder" />
+          <ScalarProperty Name="Demand_BackOrder" ColumnName="Demand_BackOrder" />
+          <ScalarProperty Name="Real_For_Demand_BackOrder" ColumnName="Real_For_Demand_BackOrder" />
+          <ScalarProperty Name="Demand_Special_Bid" ColumnName="Demand_Special_Bid" />
+          <ScalarProperty Name="Real_For_Demand_Special_Bid" ColumnName="Real_For_Demand_Special_Bid" />
+          <ScalarProperty Name="Demand_BTO" ColumnName="Demand_BTO" />
+          <ScalarProperty Name="Real_For_Demand_BTO" ColumnName="Real_For_Demand_BTO" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_ISCHECKED" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_ISCHECKED" />
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_PALLETSIZES" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_PALLETSIZES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_PALLETSIZES_Result">
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Pallet_Qty" ColumnName="Pallet_Qty" />
+          <ScalarProperty Name="KanbanNeededForCustomerBO_Pallets" ColumnName="KanbanNeededForCustomerBO_Pallets" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_PROD_PRIORITIES" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_PROD_PRIORITIES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_PROD_PRIORITIES_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_SPECIALPERMISSION" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_SPECIALPERMISSION">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_SPECIALPERMISSION_Result">
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_VKBDETAIL_PN_CHK_FALSE" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_VKBDETAIL_PN_CHK_FALSE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_VKBDETAIL_PN_CHK_FALSE_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="HeijunkaBoard_Pallets" ColumnName="HeijunkaBoard_Pallets" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_VKBDETAIL_PN_CHK_TRUE" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_VKBDETAIL_PN_CHK_TRUE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_VKBDETAIL_PN_CHK_TRUE_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="HeijunkaBoard_Pallets" ColumnName="HeijunkaBoard_Pallets" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_VKBGLOBAL" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_VKBGLOBAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_VKBGLOBAL_Result">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="Final_Version" ColumnName="Final_Version" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_VKBGLOBALLINE" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_VKBGLOBALLINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_VKBGLOBALLINE_Result">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VKB_CHECKLIST" FunctionName="CPSDataModel.Store.GET_VKB_CHECKLIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VKB_CHECKLIST_Result">
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Processed" ColumnName="Processed" />
+          <ScalarProperty Name="FinalVersion" ColumnName="FinalVersion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VKB_Global_Line" FunctionName="CPSDataModel.Store.GET_VKB_Global_Line">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VKB_Global_Line_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Final_Version" ColumnName="Final_Version" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VKBINPUT_INSERTLINE" FunctionName="CPSDataModel.Store.GET_VKBINPUT_INSERTLINE" />
+    <FunctionImportMapping FunctionImportName="GET_VKBINPUT_LINE" FunctionName="CPSDataModel.Store.GET_VKBINPUT_LINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VKBINPUT_LINE_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="IDLINE" FunctionName="CPSDataModel.Store.IDLINE" />
+    <FunctionImportMapping FunctionImportName="INSERT_DEMAND_BACKORDER" FunctionName="CPSDataModel.Store.INSERT_DEMAND_BACKORDER" />
+    <FunctionImportMapping FunctionImportName="INSERT_DEMAND_CUSTOMER_BACKORDER" FunctionName="CPSDataModel.Store.INSERT_DEMAND_CUSTOMER_BACKORDER" />
+    <FunctionImportMapping FunctionImportName="INSERT_DEMAND_SWE" FunctionName="CPSDataModel.Store.INSERT_DEMAND_SWE" />
+    <FunctionImportMapping FunctionImportName="INSERT_DISTRIBUTION_EXCEP" FunctionName="CPSDataModel.Store.INSERT_DISTRIBUTION_EXCEP" />
+    <FunctionImportMapping FunctionImportName="INSERT_DISTRIBUTION_NETWORK" FunctionName="CPSDataModel.Store.INSERT_DISTRIBUTION_NETWORK" />
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTORY_DISTRIBUTION_CENTERS" FunctionName="CPSDataModel.Store.INSERT_INVENTORY_DISTRIBUTION_CENTERS" />
+    <FunctionImportMapping FunctionImportName="INSERT_Inventory_DockArea" FunctionName="CPSDataModel.Store.INSERT_Inventory_DockArea" />
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTORY_INTRANSIT" FunctionName="CPSDataModel.Store.INSERT_INVENTORY_INTRANSIT" />
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTORY_INTRANSIT_JABIL" FunctionName="CPSDataModel.Store.INSERT_INVENTORY_INTRANSIT_JABIL" />
+    <FunctionImportMapping FunctionImportName="INSERT_IS_CHECKED" FunctionName="CPSDataModel.Store.INSERT_IS_CHECKED" />
+    <FunctionImportMapping FunctionImportName="INSERT_PARTNUMBER_WEEKDEMAND" FunctionName="CPSDataModel.Store.INSERT_PARTNUMBER_WEEKDEMAND" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_PROD_PRIORITIZE" FunctionName="CPSDataModel.Store.INSERT_VIRTUALKANBAN_PROD_PRIORITIZE" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_VKBGLOBALLINE" FunctionName="CPSDataModel.Store.INSERT_VIRTUALKANBAN_VKBGLOBALLINE" />
+    <FunctionImportMapping FunctionImportName="INSERT_VKBINPUT_LINE" FunctionName="CPSDataModel.Store.INSERT_VKBINPUT_LINE" />
+    <FunctionImportMapping FunctionImportName="TEST_Line" FunctionName="CPSDataModel.Store.TEST_Line" />
+    <FunctionImportMapping FunctionImportName="Update_BulkAM_Catalog" FunctionName="CPSDataModel.Store.Update_BulkAM_Catalog" />
+    <FunctionImportMapping FunctionImportName="UPDATE_IS_CHECKED" FunctionName="CPSDataModel.Store.UPDATE_IS_CHECKED" />
+    <FunctionImportMapping FunctionImportName="UPDATE_Overproduce_Special_Permission" FunctionName="CPSDataModel.Store.UPDATE_Overproduce_Special_Permission" />
+    <FunctionImportMapping FunctionImportName="UPDATE_Production_Prioritize" FunctionName="CPSDataModel.Store.UPDATE_Production_Prioritize" />
+    <FunctionImportMapping FunctionImportName="UPDATE_SPECIAL_BIDS" FunctionName="CPSDataModel.Store.UPDATE_SPECIAL_BIDS" />
+    <FunctionImportMapping FunctionImportName="UPDATE_SPLITS_TO_PROD_PRIORITY" FunctionName="CPSDataModel.Store.UPDATE_SPLITS_TO_PROD_PRIORITY" />
+    <FunctionImportMapping FunctionImportName="UPDATE_VIRTUALKANBAN_ISCHECKED" FunctionName="CPSDataModel.Store.UPDATE_VIRTUALKANBAN_ISCHECKED" />
+    <FunctionImportMapping FunctionImportName="UPDATE_VIRTUALKANBAN_LINE" FunctionName="CPSDataModel.Store.UPDATE_VIRTUALKANBAN_LINE" />
+    <FunctionImportMapping FunctionImportName="UPDATE_VIRTUALKANBAN_VKBGLOBALLINE" FunctionName="CPSDataModel.Store.UPDATE_VIRTUALKANBAN_VKBGLOBALLINE" />
+    <FunctionImportMapping FunctionImportName="Update_VKB_Global_Line" FunctionName="CPSDataModel.Store.Update_VKB_Global_Line" />
+    <EntitySetMapping Name="DomainNames">
+      <EntityTypeMapping TypeName="CPSDataModel.DomainName">
+        <MappingFragment StoreEntitySet="DomainName">
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeanApps">
+      <EntityTypeMapping TypeName="CPSDataModel.LeanApp">
+        <MappingFragment StoreEntitySet="LeanApp">
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="id_site" ColumnName="id_site" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW" FunctionName="CPSDataModel.Store.ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW" />
+    <FunctionImportMapping FunctionImportName="GET_SPECIAL_BIDS" FunctionName="CPSDataModel.Store.GET_SPECIAL_BIDS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_SPECIAL_BIDS_Result">
+          <ScalarProperty Name="idSpecialBid" ColumnName="idSpecialBid" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_CAPABILITIES" FunctionName="CPSDataModel.Store.GET_CAPABILITIES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_CAPABILITIES_Result">
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UPDATE_CAPABILITIES" FunctionName="CPSDataModel.Store.UPDATE_CAPABILITIES" />
+    <FunctionImportMapping FunctionImportName="GET_LEAN_APP" FunctionName="CPSDataModel.Store.GET_LEAN_APP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_LEAN_APP_Result">
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+          <ScalarProperty Name="id_site" ColumnName="id_site" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_USER_SITES1" FunctionName="CPSDataModel.Store.GET_USER_SITES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_USER_SITES1_Result">
+          <ScalarProperty Name="id_user" ColumnName="id_user" />
+          <ScalarProperty Name="id_site" ColumnName="id_site" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Split" FunctionName="CPSDataModel.Store.Split" />
+    <FunctionImportMapping FunctionImportName="GRANT_USER_ACCESS_TO_USERSITE1" FunctionName="CPSDataModel.Store.GRANT_USER_ACCESS_TO_USERSITE" />
+    <FunctionImportMapping FunctionImportName="CREATE_LINE1" FunctionName="CPSDataModel.Store.CREATE_LINE" />
+    <FunctionImportMapping FunctionImportName="DELETE_VIRTUALKANBAN_SIGNALDELAY1" FunctionName="CPSDataModel.Store.DELETE_VIRTUALKANBAN_SIGNALDELAY" />
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_FILLDATASET1" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_FILLDATASET">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_FILLDATASET1_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Max_Pallet" ColumnName="Max_Pallet" />
+          <ScalarProperty Name="Min_Pallet" ColumnName="Min_Pallet" />
+          <ScalarProperty Name="Target_Pallet" ColumnName="Target_Pallet" />
+          <ScalarProperty Name="Pallet_Qty" ColumnName="Pallet_Qty" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="UDC" ColumnName="UDC" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="AverageDemand" ColumnName="AverageDemand" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_LINE1" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_LINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_LINE1_Result">
+          <ScalarProperty Name="Planner" ColumnName="Planner" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_VKB_DETAIL_PARTNO1" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_VKB_DETAIL_PARTNO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_VKB_DETAIL_PARTNO1_Result">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="C_Red" ColumnName="%Red" />
+          <ScalarProperty Name="Customer_Backorder_Units" ColumnName="Customer_Backorder_Units" />
+          <ScalarProperty Name="BTO_Units" ColumnName="BTO_Units" />
+          <ScalarProperty Name="Special_Bids_Units" ColumnName="Special_Bids_Units" />
+          <ScalarProperty Name="Projected_Backorder_Units" ColumnName="Projected_Backorder_Units" />
+          <ScalarProperty Name="InvOnDisCenter_Units" ColumnName="InvOnDisCenter_Units" />
+          <ScalarProperty Name="InvInTransit_Units" ColumnName="InvInTransit_Units" />
+          <ScalarProperty Name="SAPKanbanTotal_Pallets" ColumnName="SAPKanbanTotal_Pallets" />
+          <ScalarProperty Name="HeijunkaKanban_Pallets" ColumnName="HeijunkaKanban_Pallets" />
+          <ScalarProperty Name="TotalKanban_Pallets" ColumnName="TotalKanban_Pallets" />
+          <ScalarProperty Name="TotalInv_" ColumnName="TotalInv%" />
+          <ScalarProperty Name="KanbanNeededForCustomerBO_Pallets" ColumnName="KanbanNeededForCustomerBO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForBTO_Pallets" ColumnName="KanbanNeededForBTO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForSpecialBid_Pallets" ColumnName="KanbanNeededForSpecialBid_Pallets" />
+          <ScalarProperty Name="KanbanNeededForProjectedBO_Pallets" ColumnName="KanbanNeededForProjectedBO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForOrange_Pallets" ColumnName="KanbanNeededForOrange_Pallets" />
+          <ScalarProperty Name="KanbanNeededForRed_Pallets" ColumnName="KanbanNeededForRed_Pallets" />
+          <ScalarProperty Name="KanbanNeededForYellow_Pallets" ColumnName="KanbanNeededForYellow_Pallets" />
+          <ScalarProperty Name="KanbanNeededForGreen_Pallets" ColumnName="KanbanNeededForGreen_Pallets" />
+          <ScalarProperty Name="MinKanban_Pallets" ColumnName="MinKanban_Pallets" />
+          <ScalarProperty Name="TargetKanban_Pallets" ColumnName="TargetKanban_Pallets" />
+          <ScalarProperty Name="MaxKanban_Pallets" ColumnName="MaxKanban_Pallets" />
+          <ScalarProperty Name="ExcessKanban_Pallets" ColumnName="ExcessKanban_Pallets" />
+          <ScalarProperty Name="HeijunkaBoard_Pallets" ColumnName="HeijunkaBoard_Pallets" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+          <ScalarProperty Name="UDC" ColumnName="UDC" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="AverageDemand" ColumnName="AverageDemand" />
+          <ScalarProperty Name="Pallet_Qty" ColumnName="Pallet_Qty" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="High_Priority_Units" ColumnName="High_Priority_Units" />
+          <ScalarProperty Name="Remd_Pallet" ColumnName="Remd_Pallet" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VKB_DETAILS1" FunctionName="CPSDataModel.Store.GET_VKB_DETAILS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VKB_DETAILS1_Result">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="C_Red" ColumnName="%Red" />
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="LOC" ColumnName="LOC" />
+          <ScalarProperty Name="KANBAN_QTY" ColumnName="KANBAN_QTY" />
+          <ScalarProperty Name="Projected_Backorder_Units" ColumnName="Projected_Backorder_Units" />
+          <ScalarProperty Name="Customer_Backorder_Units" ColumnName="Customer_Backorder_Units" />
+          <ScalarProperty Name="BTO_Units" ColumnName="BTO_Units" />
+          <ScalarProperty Name="Special_Bids_Units" ColumnName="Special_Bids_Units" />
+          <ScalarProperty Name="InvOnDisCenter_Units" ColumnName="InvOnDisCenter_Units" />
+          <ScalarProperty Name="InvInTransit_Units" ColumnName="InvInTransit_Units" />
+          <ScalarProperty Name="SAPKanbanTotal_Pallets" ColumnName="SAPKanbanTotal_Pallets" />
+          <ScalarProperty Name="HeijunkaKanban_Pallets" ColumnName="HeijunkaKanban_Pallets" />
+          <ScalarProperty Name="TotalKanban_Pallets" ColumnName="TotalKanban_Pallets" />
+          <ScalarProperty Name="KanbanNeededForOrange_Pallets" ColumnName="KanbanNeededForOrange_Pallets" />
+          <ScalarProperty Name="KanbanNeededForRed_Pallets" ColumnName="KanbanNeededForRed_Pallets" />
+          <ScalarProperty Name="KanbanNeededForYellow_Pallets" ColumnName="KanbanNeededForYellow_Pallets" />
+          <ScalarProperty Name="KanbanNeededForGreen_Pallets" ColumnName="KanbanNeededForGreen_Pallets" />
+          <ScalarProperty Name="MinKanban_Pallets" ColumnName="MinKanban_Pallets" />
+          <ScalarProperty Name="TargetKanban_Pallets" ColumnName="TargetKanban_Pallets" />
+          <ScalarProperty Name="MaxKanban_Pallets" ColumnName="MaxKanban_Pallets" />
+          <ScalarProperty Name="ExcessKanban_Pallets" ColumnName="ExcessKanban_Pallets" />
+          <ScalarProperty Name="Remd_Pallet" ColumnName="Remd_Pallet" />
+          <ScalarProperty Name="HeijunkaBoard_Pallets" ColumnName="HeijunkaBoard_Pallets" />
+          <ScalarProperty Name="TotalInv_" ColumnName="TotalInv%" />
+          <ScalarProperty Name="KanbanNeededForCustomerBO_Pallets" ColumnName="KanbanNeededForCustomerBO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForBTO_Pallets" ColumnName="KanbanNeededForBTO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForSpecialBid_Pallets" ColumnName="KanbanNeededForSpecialBid_Pallets" />
+          <ScalarProperty Name="KanbanNeededForProjectedBO_Pallets" ColumnName="KanbanNeededForProjectedBO_Pallets" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+          <ScalarProperty Name="UDC" ColumnName="UDC" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="AverageDemand" ColumnName="AverageDemand" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="High_Priority_Units" ColumnName="High_Priority_Units" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY1" FunctionName="CPSDataModel.Store.GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY1_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTORY_REBALANCING1" FunctionName="CPSDataModel.Store.INSERT_INVENTORY_REBALANCING" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_SIGNALDELAY1" FunctionName="CPSDataModel.Store.INSERT_VIRTUALKANBAN_SIGNALDELAY" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_VKBDETAILPARTNO1" FunctionName="CPSDataModel.Store.INSERT_VIRTUALKANBAN_VKBDETAILPARTNO" />
+    <FunctionImportMapping FunctionImportName="INSERT_VKBINPUT1" FunctionName="CPSDataModel.Store.INSERT_VKBINPUT" />
+    <FunctionImportMapping FunctionImportName="REVOKE_USER_ACCESS_FROM_USERSITE1" FunctionName="CPSDataModel.Store.REVOKE_USER_ACCESS_FROM_USERSITE" />
+    <FunctionImportMapping FunctionImportName="UPDATE_LHW_TABLES_FROM_HW1" FunctionName="CPSDataModel.Store.UPDATE_LHW_TABLES_FROM_HW" />
+    <FunctionImportMapping FunctionImportName="UPDATE_LINE" FunctionName="CPSDataModel.Store.UPDATE_LINE" />
+    <FunctionImportMapping FunctionImportName="REVOKE_USER_ACCESS_FROM_USERSITE" FunctionName="CPSDataModel.Store.REVOKE_USER_ACCESS_FROM_USERSITE" />
+    <FunctionImportMapping FunctionImportName="INSERT_VKBINPUT" FunctionName="CPSDataModel.Store.INSERT_VKBINPUT" />
+    <FunctionImportMapping FunctionImportName="CREATE_LINE" FunctionName="CPSDataModel.Store.CREATE_LINE" />
+    <FunctionImportMapping FunctionImportName="DELETE_VIRTUALKANBAN_SIGNALDELAY" FunctionName="CPSDataModel.Store.DELETE_VIRTUALKANBAN_SIGNALDELAY" />
+    <FunctionImportMapping FunctionImportName="GET_USER_SITES" FunctionName="CPSDataModel.Store.GET_USER_SITES" />
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_FILLDATASET" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_FILLDATASET">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_FILLDATASET_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Max_Pallet" ColumnName="Max_Pallet" />
+          <ScalarProperty Name="Min_Pallet" ColumnName="Min_Pallet" />
+          <ScalarProperty Name="Target_Pallet" ColumnName="Target_Pallet" />
+          <ScalarProperty Name="Pallet_Qty" ColumnName="Pallet_Qty" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="UDC" ColumnName="UDC" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="AverageDemand" ColumnName="AverageDemand" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_LINE" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_LINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_LINE_Result">
+          <ScalarProperty Name="Planner" ColumnName="Planner" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_VKB_DETAIL_PARTNO" FunctionName="CPSDataModel.Store.GET_VIRTUALKANBAN_VKB_DETAIL_PARTNO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VIRTUALKANBAN_VKB_DETAIL_PARTNO_Result">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="C_Red" ColumnName="C_Red" />
+          <ScalarProperty Name="Customer_Backorder_Units" ColumnName="Customer_Backorder_Units" />
+          <ScalarProperty Name="BTO_Units" ColumnName="BTO_Units" />
+          <ScalarProperty Name="Special_Bids_Units" ColumnName="Special_Bids_Units" />
+          <ScalarProperty Name="Projected_Backorder_Units" ColumnName="Projected_Backorder_Units" />
+          <ScalarProperty Name="InvOnDisCenter_Units" ColumnName="InvOnDisCenter_Units" />
+          <ScalarProperty Name="InvInTransit_Units" ColumnName="InvInTransit_Units" />
+          <ScalarProperty Name="SAPKanbanTotal_Pallets" ColumnName="SAPKanbanTotal_Pallets" />
+          <ScalarProperty Name="HeijunkaKanban_Pallets" ColumnName="HeijunkaKanban_Pallets" />
+          <ScalarProperty Name="TotalKanban_Pallets" ColumnName="TotalKanban_Pallets" />
+          <ScalarProperty Name="TotalInv_" ColumnName="TotalInv_" />
+          <ScalarProperty Name="KanbanNeededForCustomerBO_Pallets" ColumnName="KanbanNeededForCustomerBO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForBTO_Pallets" ColumnName="KanbanNeededForBTO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForSpecialBid_Pallets" ColumnName="KanbanNeededForSpecialBid_Pallets" />
+          <ScalarProperty Name="KanbanNeededForProjectedBO_Pallets" ColumnName="KanbanNeededForProjectedBO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForOrange_Pallets" ColumnName="KanbanNeededForOrange_Pallets" />
+          <ScalarProperty Name="KanbanNeededForRed_Pallets" ColumnName="KanbanNeededForRed_Pallets" />
+          <ScalarProperty Name="KanbanNeededForYellow_Pallets" ColumnName="KanbanNeededForYellow_Pallets" />
+          <ScalarProperty Name="KanbanNeededForGreen_Pallets" ColumnName="KanbanNeededForGreen_Pallets" />
+          <ScalarProperty Name="MinKanban_Pallets" ColumnName="MinKanban_Pallets" />
+          <ScalarProperty Name="TargetKanban_Pallets" ColumnName="TargetKanban_Pallets" />
+          <ScalarProperty Name="MaxKanban_Pallets" ColumnName="MaxKanban_Pallets" />
+          <ScalarProperty Name="ExcessKanban_Pallets" ColumnName="ExcessKanban_Pallets" />
+          <ScalarProperty Name="HeijunkaBoard_Pallets" ColumnName="HeijunkaBoard_Pallets" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+          <ScalarProperty Name="UDC" ColumnName="UDC" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="AverageDemand" ColumnName="AverageDemand" />
+          <ScalarProperty Name="Pallet_Qty" ColumnName="Pallet_Qty" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="High_Priority_Units" ColumnName="High_Priority_Units" />
+          <ScalarProperty Name="Remd_Pallet" ColumnName="Remd_Pallet" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VKB_DETAILS" FunctionName="CPSDataModel.Store.GET_VKB_DETAILS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VKB_DETAILS_Result">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="C_Red" ColumnName="C_Red" />
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="LOC" ColumnName="LOC" />
+          <ScalarProperty Name="KANBAN_QTY" ColumnName="KANBAN_QTY" />
+          <ScalarProperty Name="Projected_Backorder_Units" ColumnName="Projected_Backorder_Units" />
+          <ScalarProperty Name="Customer_Backorder_Units" ColumnName="Customer_Backorder_Units" />
+          <ScalarProperty Name="BTO_Units" ColumnName="BTO_Units" />
+          <ScalarProperty Name="Special_Bids_Units" ColumnName="Special_Bids_Units" />
+          <ScalarProperty Name="InvOnDisCenter_Units" ColumnName="InvOnDisCenter_Units" />
+          <ScalarProperty Name="InvInTransit_Units" ColumnName="InvInTransit_Units" />
+          <ScalarProperty Name="SAPKanbanTotal_Pallets" ColumnName="SAPKanbanTotal_Pallets" />
+          <ScalarProperty Name="HeijunkaKanban_Pallets" ColumnName="HeijunkaKanban_Pallets" />
+          <ScalarProperty Name="TotalKanban_Pallets" ColumnName="TotalKanban_Pallets" />
+          <ScalarProperty Name="KanbanNeededForOrange_Pallets" ColumnName="KanbanNeededForOrange_Pallets" />
+          <ScalarProperty Name="KanbanNeededForRed_Pallets" ColumnName="KanbanNeededForRed_Pallets" />
+          <ScalarProperty Name="KanbanNeededForYellow_Pallets" ColumnName="KanbanNeededForYellow_Pallets" />
+          <ScalarProperty Name="KanbanNeededForGreen_Pallets" ColumnName="KanbanNeededForGreen_Pallets" />
+          <ScalarProperty Name="MinKanban_Pallets" ColumnName="MinKanban_Pallets" />
+          <ScalarProperty Name="TargetKanban_Pallets" ColumnName="TargetKanban_Pallets" />
+          <ScalarProperty Name="MaxKanban_Pallets" ColumnName="MaxKanban_Pallets" />
+          <ScalarProperty Name="ExcessKanban_Pallets" ColumnName="ExcessKanban_Pallets" />
+          <ScalarProperty Name="Remd_Pallet" ColumnName="Remd_Pallet" />
+          <ScalarProperty Name="HeijunkaBoard_Pallets" ColumnName="HeijunkaBoard_Pallets" />
+          <ScalarProperty Name="TotalInv_" ColumnName="TotalInv_" />
+          <ScalarProperty Name="KanbanNeededForCustomerBO_Pallets" ColumnName="KanbanNeededForCustomerBO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForBTO_Pallets" ColumnName="KanbanNeededForBTO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForSpecialBid_Pallets" ColumnName="KanbanNeededForSpecialBid_Pallets" />
+          <ScalarProperty Name="KanbanNeededForProjectedBO_Pallets" ColumnName="KanbanNeededForProjectedBO_Pallets" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+          <ScalarProperty Name="UDC" ColumnName="UDC" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="AverageDemand" ColumnName="AverageDemand" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="High_Priority_Units" ColumnName="High_Priority_Units" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY" FunctionName="CPSDataModel.Store.GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="CPSDataModel.GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GRANT_USER_ACCESS_TO_USERSITE" FunctionName="CPSDataModel.Store.GRANT_USER_ACCESS_TO_USERSITE" />
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTORY_REBALANCING" FunctionName="CPSDataModel.Store.INSERT_INVENTORY_REBALANCING" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_SIGNALDELAY" FunctionName="CPSDataModel.Store.INSERT_VIRTUALKANBAN_SIGNALDELAY" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_VKBDETAILPARTNO" FunctionName="CPSDataModel.Store.INSERT_VIRTUALKANBAN_VKBDETAILPARTNO" />
+    <FunctionImportMapping FunctionImportName="UPDATE_LHW_TABLES_FROM_HW" FunctionName="CPSDataModel.Store.UPDATE_LHW_TABLES_FROM_HW" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_REBALANCING1" FunctionName="CPSDataModel.Store.DELETE_INVENTORY_REBALANCING" />
+    <FunctionImportMapping FunctionImportName="UPDATE_LINE1" FunctionName="CPSDataModel.Store.UPDATE_LINE" />
+  </EntityContainerMapping>
+</Mapping>

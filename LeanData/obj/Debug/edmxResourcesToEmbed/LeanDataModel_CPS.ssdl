@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LeanDataModel_CPS.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LeanDataModel_CPSStoreContainer" />
+  <Function Name="CREATE_SPECIAL_BIDS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalization" Type="varchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="varchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="uploadUser" Type="varchar" Mode="In" />
+    <Parameter Name="Comments" Type="varchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_SPECIAL_BIDS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="original_idSpecialBid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GET_SPECIAL_BIDS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="varchar" Mode="In" />
+    <Parameter Name="Filter" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_SPECIAL_BIDS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalization" Type="varchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="varchar" Mode="In" />
+    <Parameter Name="Active" Type="bit" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="uploadUser" Type="varchar" Mode="In" />
+    <Parameter Name="Comments" Type="varchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="varchar" Mode="In" />
+    <Parameter Name="original_idSpecialBid" Type="varchar" Mode="In" />
+  </Function>
+</Schema>

@@ -1,0 +1,11 @@
+F:\Lean Application\LeanApplication\LeanBusiness\bin\Release\LeanBusiness.dll
+F:\Lean Application\LeanApplication\LeanBusiness\bin\Release\LeanBusiness.pdb
+F:\Lean Application\LeanApplication\LeanBusiness\bin\Release\LeanData.dll
+F:\Lean Application\LeanApplication\LeanBusiness\bin\Release\EntityFramework.dll
+F:\Lean Application\LeanApplication\LeanBusiness\bin\Release\LeanData.pdb
+F:\Lean Application\LeanApplication\LeanBusiness\bin\Release\EntityFramework.xml
+F:\Lean Application\LeanApplication\LeanBusiness\obj\Release\LeanBusiness.csprojResolveAssemblyReference.cache
+F:\Lean Application\LeanApplication\LeanBusiness\obj\Release\LeanBusiness.dll
+F:\Lean Application\LeanApplication\LeanBusiness\obj\Release\LeanBusiness.pdb
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanBusiness\obj\Release\LeanBusiness.csprojResolveAssemblyReference.cache
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanBusiness\obj\Release\LeanBusiness.dll

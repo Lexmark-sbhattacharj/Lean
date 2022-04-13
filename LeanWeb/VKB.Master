@@ -1,0 +1,433 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="VKB.master.cs" Inherits="LeanWeb.VKB" %>
+
+<%@ Import Namespace="Lean.Utilities" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/footer.css" />
+    <%--<link rel="stylesheet" type="text/css" href="App_Themes/common/css/srd2013/style.css" />--%>
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/globalReset.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/lex-1280-grid-fixed.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/twelveCol-layout.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../App_Themes/common/css/srd2013/family-select.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../App_Themes/common/css/srd2013/lexmark-wip.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../App_Themes/common/css/srd2013/be-lexmark-top.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="../App_Themes/common/css/srd2013/be-lexmark-table.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/menu-styles.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/lxk-framework.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/header-footer.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/utilities.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/visibility.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/slide-in-panel.css" />
+    <link rel="stylesheet" type="text/css" href="../App_Themes/common/css/srd2013/modal.css" />
+    <%--<link rel="stylesheet" href="App_Themes/common/css/srd2013/style123.css" />--%>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script src="../App_Themes/common/js/srd2013/jquery.js"></script>
+    <script src="../App_Themes/common/js/srd2013/jquery-ui.js"></script>
+    <script src="../App_Themes/common/js/srd2013/modernizr.js"></script>
+    <script type="text/javascript" src="../App_Themes/common/js/srd2013/jquery.ba-throttle-debounce.js"></script>
+    <script type="text/javascript" src="../App_Themes/common/js/srd2013/modernizr-2.6.3.js"></script>
+    <script src="../App_Themes/common/js/srd2013/be-lexmark.js"></script>
+    <script type="text/javascript" src="../App_Themes/common/js/srd2013/require.js"></script>
+    <script type="text/javascript" src="../App_Themes/common/js/srd2013/main.js"></script>
+    <%--<script type="text/javascript" src="App_Themes/common/js/srd2013/calendar.js"></script>--%>
+
+    <link rel="shortcut icon" href="../App_Themes/common/images/srd2013/lexmark-symbol-desktop-32x32.png" />
+
+    <title>Lean Application</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+</head>
+<script type="text/javascript">
+    (function ($) {
+        $.fn.dropdown = function (options) {
+            var settings = $.extend({}, options);
+            $.extend(this, settings);
+
+            function getPosition(element) {
+                var position = element.offset();
+                return position;
+            }
+
+            function vertPositioning(element) {
+                var position = getPosition(element);
+                if ((position.top) < (element.find(".dropdown__menu").height() + element.height())) {
+                    return "bottom";
+                } else if (($(document).height() - position.top) < (element.find(".dropdown__menu").height() + element.height() + 50)) {
+                    return "top";
+                } else {
+                    return "default";
+                }
+            }
+
+            function horzPositioning(element) {
+                var position = getPosition(element);
+                if ((position.left) < (element.find(".dropdown__menu").width())) {
+                    return "left";
+                } else if (($(document).width() - position.left) < (element.find(".dropdown__menu").width())) {
+                    return "right";
+                } else {
+                    return "default";
+                }
+            }
+
+            function positionMenu(element) {
+                switch (vertPositioning(element)) {
+                    case "bottom":
+                        if (element.hasClass("dropdown--align-top")) {
+                            element.removeClass("dropdown--align-top");
+                        }
+                        break;
+                    case "top":
+                        element.addClass("dropdown--align-top");
+                        break;
+                    default:
+                }
+                switch (horzPositioning(element)) {
+                    case "left":
+                        if (element.hasClass("dropdown--align-right")) {
+                            element.removeClass("dropdown--align-right");
+                        }
+                        element.addClass("dropdown--align-left");
+                        break;
+                    case "right":
+                        if (element.hasClass("dropdown--align-left")) {
+                            element.removeClass("dropdown--align-left");
+                        }
+                        element.addClass("dropdown--align-right");
+                        break;
+                    default:
+                        if (!element.hasClass("dropdown--align-left") && !element.hasClass("dropdown--align-right")) {
+                            if (element.closest("[dir=rtl]").size()) {
+                                element.addClass("dropdown--align-right");
+                            } else {
+                                element.addClass("dropdown--align-left");
+                            }
+                        }
+                }
+                return element;
+            }
+
+            function openMenu(element) {
+                if (!element.closest(".navigation").length) {
+                    $("body").addClass("dropdown--is-open");
+                }
+                element.addClass("dropdown--is-open");
+
+                //IE7 needs to clone the dropdown as the last element in the DOM to fix it's z-indexing bug
+                if (Modernizr.generatedcontent === false && /MSIE (\d+\.\d+);/.test(navigator.userAgent) && new Number(RegExp.$1) < 8) {
+                    var menuCopy = $(element).find(".dropdown__menu").clone(),
+                        menuPosition = getPosition($(element).find(".dropdown__menu"));
+
+                    if (element.hasClass("dropdown--align-top")) {
+                        menuCopy.addClass("dropdown--align-top");
+                    }
+                    $("body").append(menuCopy);
+                    menuCopy.css("top", menuPosition.top).css("left", menuPosition.left).addClass("dropdown--is-open");
+                }
+            }
+
+            function closeMenu(element) {
+                //IE7 needs to remove the cloned dropdown
+                if (Modernizr.generatedcontent === false && /MSIE (\d+\.\d+);/.test(navigator.userAgent) && new Number(RegExp.$1) < 8) {
+                    $("body > .dropdown__menu").remove();
+                }
+                $(".dropdown--is-open").removeClass("dropdown--is-open");
+            }
+
+            function isMenuOpen(element) {
+                if (element.hasClass("dropdown--is-open")) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            function triggerDropdown(element) {
+                element.find(".dropdown__trigger").click(function (e) {
+                    e.stopPropagation();
+                    if (isMenuOpen(element)) {
+                        closeMenu(element);
+                    } else {
+                        closeMenu(element);
+                        openMenu(element);
+                    }
+                });
+                $(document).click(function () {
+                    closeMenu(element);
+                });
+                return element;
+            }
+
+            function positionArrow(element) {
+                var caret = element.find(".dropdown__caret"),
+                    caretWidth = parseFloat(caret.css("border-left-width")),
+                    arrow = element.find(".dropdown__arrow"),
+                    arrowWidth = parseFloat(arrow.css("border-left-width"));
+                if (caret.size()) {
+                    var caretPosition = caret.position();
+                    if (element.hasClass("dropdown--align-right")) {
+                        arrow.css("right", (element.width() - (caretPosition.left + arrowWidth + (.5) * caretWidth)));
+                        arrow.css("left", "auto");
+                    } else {
+                        arrow.css("left", ((caretPosition.left) + arrowWidth - (.5) * caretWidth));
+                        arrow.css("right", "auto");
+                    }
+                }
+            }
+
+            function addArrow(element) {
+                if (!element.find(".dropdown__arrow").length) {
+                    element.find(".dropdown__menu").prepend('<span class="dropdown__arrow"><span class="dropdown__arrow-inner"></span></span>');
+                }
+            }
+
+            function addClose(element) {
+                if (!element.find(".dropdown__close").length) {
+                    element.find(".dropdown__menu").prepend('<span class="dropdown__close">&times;</span>').click(function () {
+                        closeMenu(element);
+                    });
+                }
+            }
+
+            function repositionDropdown(element) {
+                $(window).resize($.debounce(250, function () {
+                    positionMenu(element);
+                    positionArrow(element);
+                }));
+            }
+
+            return this.each(function (options) {
+                var element = $(this);
+                addArrow(element);
+                addClose(element);
+                positionMenu(element);
+                positionArrow(element);
+                triggerDropdown(element);
+                repositionDropdown(element);
+            });
+        };
+        $(document).ready(function () {
+            $('[data-js=dropdown]').dropdown();
+        });
+    })(jQuery);
+</script>
+<body>
+    <form id="Form1" runat="server">
+        <header id="siteHeader">
+            <div class="row header">
+                <div class="row container">
+                    <div class="row firstrow">
+                        <div id="logo" class="f-col-1-8"><a href="../LeanHome.aspx"><i class="icon icon--ui icon--lxk-logo"></i></a></div>
+                        <div class="f-col-7-8">
+                        </div>
+                    </div>
+                    <div class="row l-hidden--lt-laptop">
+                        <div class="col-1">
+                            <nav id="mainNav">
+                                <ul class="horizontal-nav">
+                                    <li class="dropdown dropdown--align-left" data-js="dropdown">
+                                        <a href="#" class="dropdown__trigger">Virtual Kanban Board</a>
+                                        <div class="dropdown__menu menu--1-col">
+                                            <span class="dropdown__close">×</span><span class="dropdown__arrow"><span class="dropdown__arrow-inner"></span></span>
+                                            <div class="dropdown__menu-inner">
+                                                <div class="row">
+                                                    <div class="col-1 l-pad-horizontal">
+                                                        <h2>Virtual Kanban Board</h2>
+                                                        <ul>
+                                                            <li><a title="Update Heijumka Kanban Board" href="../role_ModifyVKB/VirtualKanban.aspx">Heijumka VKB</a></li>
+                                                            <li><a title="Verify Processed Virtual Kanban Board" href="../role_ModifyVKB/VirtualKanbanChecklist.aspx">VKB Checklist</a></li>
+                                                            <li><a title="Define Production Order" href="../role_ProductionPlanners/PrioritizeProduction.aspx">Production Plan</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="dropdown dropdown--align-left" data-js="dropdown">
+                                        <a href="#" class="dropdown__trigger">Daily Upload</a>
+                                        <div class="dropdown__menu menu--2-col">
+                                            <span class="dropdown__close">×</span><span class="dropdown__arrow"><span class="dropdown__arrow-inner"></span></span>
+                                            <div class="dropdown__menu-inner">
+                                                <div class="row">
+                                                    <div class="col-1-2 l-pad-horizontal">
+                                                        <h2>Checklist</h2>
+                                                        <ul>
+                                                            <li><a title="Upload Checklist" href="../role_DailyUploads/DailyUploadsChecklist.aspx">Upload CheckList</a></li>
+                                                        </ul>
+                                                        <h2>Inventory</h2>
+                                                        <ul>
+                                                            <li><a title="Upload Inventory From All Distribution Centers" href="../role_DailyUploads/InventoryDistrCenters.aspx">DC Inventory</a></li>
+                                                            <li><a title="Upload Inventory In Transit" href="../role_DailyUploads/InventoryInTransit.aspx">In Transit Inventory</a></li>
+                                                            <li><a title="Upload Inventory Jabil In Transit" href="../role_DailyUploads/InventoryInTransitJabil.aspx">Jabil In Transit Inventory</a></li>
+                                                            <li><a title="Upload Inventory In Shipping Area" href="../role_DailyUploads/InventoryDockArea.aspx">Shipping Area Inventory</a></li>
+                                                            <li><a title="Rebalancing Inventory for Node 2 Transits" href="../role_DailyUploads/InventoryRebalancing.aspx">Rebalancing Inventory</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="col-1-2 l-pad-horizontal">
+                                                        <h2>Demand</h2>
+                                                        <ul>
+                                                            <li><a title="Upload Current Demand To Calculate Projected Backorder" href="../role_DailyUploads/DemandForBackOrder.aspx">Projected Backorder</a></li>
+                                                            <li><a title="Upload Customer Detected Backorder" href="../role_DailyUploads/DemandCustomerBackOrder.aspx">Customer Backorder</a></li>
+                                                            <li><a title="Upload SWE Production Orders" href="../role_DailyUploads/DemandSWE.aspx">SWE Orders</a></li>
+                                                            <li><a title="Printer Mfg SWE Demand" href="../role_DailyUploads/PrinterSWELoad.aspx">Printer Mfg SWE Demand</a></li>
+                                                            <li><a title="Trigger LHW Updates" href="../role_DailyUploads/TriggerLHWUpdates.aspx">Trigger LHW Updates</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown dropdown--align-left" data-js="dropdown">
+                                        <a href="#" class="dropdown__trigger">Periodic Upload</a>
+                                        <div class="dropdown__menu menu--1-col">
+                                            <span class="dropdown__close">×</span><span class="dropdown__arrow"><span class="dropdown__arrow-inner"></span></span>
+                                            <div class="dropdown__menu-inner">
+                                                <div class="row">
+                                                    <div class="col-1 l-pad-horizontal">
+                                                        <h2>VKB Input</h2>
+                                                        <ul>
+                                                            <li><a title="Upload Current Demand To Calculate Projected Backorder" href="../role_PeriodicUploads/VKBInput.aspx">VKB Input</a></li>
+                                                        </ul>
+                                                        <h2>Network</h2>
+                                                        <ul>
+                                                            <li><a title="Distribution Network" href="../role_PeriodicUploads/DistributionNetwork.aspx">Network</a></li>
+                                                            <li><a title="Relation Between SKU and SKU On Exception" href="../role_PeriodicUploads/DistributionExcep.aspx">Key Net</a></li>
+                                                        </ul>
+                                                        <h2>Weekly Report</h2>
+                                                        <ul>
+                                                            <li><a title="Part Number Demand By Week" href="../role_PeriodicUploads/PartNumberWeeksDemand.aspx">Weekly Demand</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown dropdown--align-left" data-js="dropdown">
+                                        <a href="#" class="dropdown__trigger">Global Parameters</a>
+                                        <div class="dropdown__menu menu--1-col">
+                                            <span class="dropdown__close">×</span><span class="dropdown__arrow"><span class="dropdown__arrow-inner"></span></span>
+                                            <div class="dropdown__menu-inner">
+                                                <div class="row">
+                                                    <div class="col-1-1 l-pad-horizontal">
+                                                        <h2>Global Parameters</h2>
+                                                        <ul>
+                                                            <li><a title="Administrate Special Bids For VKB" href="../role_DefineParameters/SpecialBid.aspx">Special Bids</a></li>
+                                                            <li><a title="Administrate Special Permission To Produce" href="../role_DefineParameters/OverProduceSpecialPermission.aspx">Special Permissions To Produce</a></li>
+                                                            <li><a title="Define Bulk- After Market Cross Reference" href="../role_DefineParameters/BulkAMCrossReference.aspx">Bulk- AM Cross Reference</a></li>
+                                                            <li><a title="Controls Lines Capacity Information" href="../role_DefineParameters/Lines.aspx">Capacity Per Line</a></li>
+                                                            <li><a title="Block/Unblock VKB For Corrections Or Adjustments" href="../role_DefineParameters/unblockFinalVkb.aspx">Block/Unblock Final VKB</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown dropdown--align-left" data-js="dropdown">
+                                        <a href="#" class="dropdown__trigger">User Control</a>
+                                        <div class="dropdown__menu menu--1-col">
+                                            <span class="dropdown__close">×</span><span class="dropdown__arrow"><span class="dropdown__arrow-inner"></span></span>
+                                            <div class="dropdown__menu-inner">
+                                                <div class="row">
+                                                    <div class="col-1-1 l-pad-horizontal">
+                                                        <h2>User Control</h2>
+                                                        <ul>
+                                                            <li><a title="User/Roles Administration" href="../roles_UserControl/User_Role_Assignment.aspx" class="dropdown__trigger">User Control</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown dropdown--align-left" data-js="dropdown">
+                                        <a href="#" class="dropdown__trigger">Reports</a>
+                                        <div class="dropdown__menu menu--1-col">
+                                            <span class="dropdown__close">×</span><span class="dropdown__arrow"><span class="dropdown__arrow-inner"></span></span>
+                                            <div class="dropdown__menu-inner">
+                                                <div class="row">
+                                                    <div class="col-1-1 l-pad-horizontal">
+                                                        <h2>Reports</h2>
+                                                        <ul>
+                                                            <li><a title="Pull System Reports" href="../roles_ConsultReports/Reports.aspx" class="dropdown__trigger">Reports</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <nav id="secondaryUtilityNav">
+                                <ul class="horizontal-nav">
+                                    <span style="font-size: 12.2px; font-weight: normal; font-style: normal;">Welcome,</span>
+                                    <li class="lxk-hdr-sign-in dropdown dropdown--align-left" data-js="dropdown"><a class="dropdown__trigger" data-name="atg-sign-in">
+                                        <div class="menu-item">
+                                            <asp:Label ID="lblUserName" runat="server"></asp:Label>
+                                        </div>
+                                    </a>
+                                        <div class="dropdown__menu">
+                                            <span class="dropdown__close">×</span><span class="dropdown__arrow"><span class="dropdown__arrow-inner"></span></span>
+                                            <div class="dropdown__menu-inner">
+                                                <ul>
+                                                    <li><a title="Document" href="#" target="new">Download User Guide</a></li>
+                                                    <li><a class="_self " href="../LeanLogout.aspx" target="_self" title="SIGN OUT">Sign out</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="wrapper">
+            <asp:ContentPlaceHolder ID="ContentMain" runat="server">
+                    </asp:ContentPlaceHolder>
+        </div>
+        <footer id="siteFooter" class="row">
+            <section id="subFooter" class="row l-pad-thick">
+                <div class="row container">
+                    <div class="row row--alley-thick">
+                        <ul class="col-1-3 col-sm-1 col-md-1-3" id="subFooterCol1">
+                            <li><a href="www.lexmark.com">Lexmark Home</a></li>
+
+                        </ul>
+                        <ul class="col-1-3 col-sm-1 col-md-1-3" id="subFooterCol2">
+                            <li><a href="../About.aspx">About Us</a></li>
+                        </ul>
+                        <ul class="col-1-3 col-sm-1 col-md-1-3" id="subFooterCol3">
+                            <li><a href="../Contact.aspx">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="footer" class="row l-pad-thick">
+                <div class="row container" style="padding-left: 24px">
+                    <div class="col-1-2 col-md-1-2 col-sm-1">
+                        <ul id="footerLogo" class="horizontal-nav">
+                            <li><i class="icon icon--logo icon--lxk-symbol"></i></li>
+                            <li>
+                                <div id="copyright" class="l-pad-vertical">
+                                    <p class="company-name">Lexmark International, Inc.</p>
+                                    <p>©2017 All rights reserved.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-1-2 col-md-1-2 col-sm-1" style="padding-right: 10px;">
+                        <ul id="footerNav" class="horizontal-nav">
+                            <li><a href="../PrivacyPolicy.aspx">Privacy Policy</a></li>
+                            <li><a href="../TermsCondition.aspx">Terms & Conditions</a></li>
+                            <li><a href="../TermsofUse.aspx">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </form>
+</body>
+</html>

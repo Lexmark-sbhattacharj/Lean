@@ -1,0 +1,83 @@
+/* Filter Area at the top of the Family Select Page */
+#seriesList {
+	position: relative;
+}
+
+.filters {
+	padding:8px 0;
+	margin-bottom:5px;
+	line-height: 30px;
+	color: #c5c5c5;
+	font-size:1em;	/* SUD changed from 1.3em */
+	background:#5f5f5f; /* For the oldies */
+	background-image: linear-gradient(bottom, rgb(69,69,69) 30%, rgb(95,95,95) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(69,69,69) 30%, rgb(95,95,95) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(69,69,69) 30%, rgb(95,95,95) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(69,69,69) 30%, rgb(95,95,95) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(69,69,69) 30%, rgb(95,95,95) 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.3, rgb(69,69,69)),
+		color-stop(1, rgb(95,95,95))
+	);
+}
+
+.roundedCorners {
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+.filters a {
+	color:#c5c5c5;
+}
+
+.family-meta {
+	width:268px;
+	padding-left:22px;
+	border-left: 1px solid #ccc;
+}
+	
+
+/* Unordered List of Families on the page */
+.familyList {
+	list-style-type: none;
+}
+	.familyList li {
+		border:1px solid #ccc;
+		background:#fff url('/common/images/misc/familyFilterGradient.png') top left repeat-x;
+		width: 924px; /* Custom width because of 2px of borders */
+		padding:22px 0 0;
+		min-height:156px;
+		margin-bottom:5px;
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.familyList li img {
+		position: absolute;
+		left: 36px;
+	}
+	.familyList li h2 {
+		display: inline-block;
+		*display: inline;		
+		
+	}
+	.familyList li span {
+		position: relative;
+		display: inline-block;
+		color: #fff;
+		font-weight: 700;
+		background: #4e4e4e;
+		padding: 5px 8px 5px 9px;
+		*padding: 5px 8px 4px 9px;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		margin: 0 0 0 7px;
+		letter-spacing: .1em;
+		top: -5px;
+		*top:0px;
+	}
+

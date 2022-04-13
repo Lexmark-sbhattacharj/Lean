@@ -1,0 +1,102 @@
+#cssmenu {	
+    border: solid;
+	clear:both;
+    border: 0px;
+    margin: 0px;
+    font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+    width: 100%;
+    min-height: 10%;
+    height: 49%;
+    padding-bottom: 2.9%;
+	padding-top:1%;
+}
+
+#cssmenu ul {
+    height: 30pt;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#cssmenu li {
+    float: left;
+    padding: 0px;
+	padding-left: 17.0%;
+}
+
+#cssmenu li:first-child {
+    margin-left:0px;
+}
+
+#cssmenu li a {
+    background: url('../../../common/images/srd2013/seperator.png') bottom right no-repeat;
+    display: block;
+    font-weight: normal;
+    line-height: 35px;
+    margin: 0px;
+    padding: 0px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#cssmenu > ul > li > a {
+    color: #cccccc;
+}
+
+#cssmenu ul ul a {
+    color: #cccccc;
+		font-weight: BOLD;
+
+}
+
+#cssmenu li ul {
+    display: none;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: absolute;
+    width: 16%;
+    z-index: 200;
+    /*top:1em;
+     /*left:0;*/
+}
+
+#cssmenu li:hover ul {
+    display: block;
+}
+
+#cssmenu li li {
+    display: block;
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#cssmenu li:hover li a {
+    background: none;
+}
+
+#cssmenu li ul a {
+    display: block;
+    height: 35px;
+    font-size: 12px;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px 10px 0px 15px;
+    text-align: left;
+}
+#cssmenu p {
+    clear: left;
+}

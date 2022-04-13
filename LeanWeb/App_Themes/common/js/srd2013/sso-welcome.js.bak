@@ -1,0 +1,13 @@
+/* Injects welcome message into the SSO login page */
+$(function () {
+	$("#article").empty().append(
+	'<h1></br>Welcome to Lexmark</h1>' +
+	'<h2>AP CREDIT ORDER WORKFLOW APPLICATION</h2>' +
+	'<p><br/><br/></p>' +
+	'<ul>' +
+	'  <li>For further information, please contact:</li>' +
+	'  <li>&nbsp;</li>' +
+	'  <li>Erwin Van Ian Lopez</li>' +
+	'  <li><a href="mailto:erlopez@lexmark.com" target="_top">erlopez@lexmark.com</a></li>' +
+	'</ul>');
+});

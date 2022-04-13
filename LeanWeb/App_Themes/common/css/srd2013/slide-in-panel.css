@@ -1,0 +1,97 @@
+.slide-in-panel {
+  background-color #000000;
+  bottom 0;
+  box-sizing border-box;
+  -moz-box-sizing border-box;
+  -webkit-box-sizing border-box;
+  color #ffffff;
+  left -80%;
+  padding 22px 0;
+  position fixed;
+  right 0;
+  top 0;
+  width 80%;
+}
+[dir=rtl] .slide-in-panel {
+  left 100%;
+  right -80%;
+}
+.slide-in-panel--after {
+  left 100%;
+  right -80%;
+}
+[dir=rtl] .slide-in-panel--after {
+  left -80%;
+  right 100%;
+}
+.slide-in-panel.slide-in-panel--is-open {
+  left 0;
+  overflow-x hidden;
+  overflow-y auto;
+  right 20%;
+}
+.slide-in-panel.slide-in-panel--is-open.slide-in-panel--after {
+  left 20%;
+  right 0;
+}
+[dir=rtl] .slide-in-panel.slide-in-panel--is-open.slide-in-panel--after {
+  left 0;
+  right 20%;
+}
+[dir=rtl] .slide-in-panel.slide-in-panel--is-open {
+  left 20%;
+  right 0;
+}
+.slide-in-panel__close {
+  color #ffffff;
+  font-size large;
+  position absolute;
+  right 0;
+  top 0;
+  cursor pointer;
+  z-index 999999;
+}
+[dir=rtl] .slide-in-panel__close {
+  left 0;
+  right auto;
+}
+.slide-in-panel__page-container {
+  bottom 0;
+  left 0;
+  position relative;
+  right 0;
+  top 0;
+  width 100%;
+}
+.slide-in-panel__page-container.slide-in-panel--is-open {
+  left 80%;
+  overflow-x hidden;
+  overflow-y auto;
+  position fixed;
+  right -80%;
+}
+.slide-in-panel__page-container.slide-in-panel--is-open.slide-in-panel--after {
+  left -80%;
+  right 80%;
+}
+[dir=rtl] .slide-in-panel__page-container.slide-in-panel--is-open.slide-in-panel--after {
+  left 80%;
+  right -80%;
+}
+[dir=rtl] .slide-in-panel__page-container.slide-in-panel--is-open {
+  left -80%;
+  right 80%;
+}
+.slide-in-panel__page-container.slide-in-panel--is-open [role=main],
+.slide-in-panel__page-container.slide-in-panel--is-open .container {
+  margin 0;
+}
+ Animations 
+.slide-in-panel,
+.slide-in-panel.slide-in-panel--is-open,
+.slide-in-panel__page-container,
+.slide-in-panel__page-container.slide-in-panel--is-open {
+  transition 1s;
+  -moz-transition 1s;
+  -webkit-transition 1s;
+}

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LeanModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LeanModelStoreContainer">
+    <EntitySet Name="Line" EntityType="LeanModel.Store.Line" store:Type="Tables" store:Schema="LA" store:Name="Line">
+      <DefiningQuery>SELECT 
+      [Line].[idLine] AS [idLine], 
+      [Line].[Line] AS [Line], 
+      [Line].[Capability] AS [Capability], 
+      [Line].[Planner] AS [Planner], 
+      [Line].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Line] AS [Line]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Line' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Line">
+    <Key>
+      <PropertyRef Name="idLine" />
+      <PropertyRef Name="Line" />
+      <PropertyRef Name="Capability" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLine" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Line" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Capability" Type="int" Nullable="false" />
+    <Property Name="Planner" Type="nvarchar" MaxLength="30" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,5 @@
+F:\Lean Application\Feb 08\LeanApplication\Lean.ModelClass\bin\Debug\Lean.ModelClass.dll
+F:\Lean Application\Feb 08\LeanApplication\Lean.ModelClass\bin\Debug\Lean.ModelClass.pdb
+F:\Lean Application\Feb 08\LeanApplication\Lean.ModelClass\obj\Debug\Lean.ModelClass.csprojResolveAssemblyReference.cache
+F:\Lean Application\Feb 08\LeanApplication\Lean.ModelClass\obj\Debug\Lean.ModelClass.dll
+F:\Lean Application\Feb 08\LeanApplication\Lean.ModelClass\obj\Debug\Lean.ModelClass.pdb

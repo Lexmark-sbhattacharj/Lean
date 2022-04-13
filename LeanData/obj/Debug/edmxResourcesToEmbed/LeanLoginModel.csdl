@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LeanModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="LeanLoginModel" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="DomainNames" EntityType="LeanModel.DomainName" />
+    <EntitySet Name="sysdiagrams" EntityType="LeanModel.sysdiagram" />
+    <EntitySet Name="BulkAM_Catalog" EntityType="LeanModel.BulkAM_Catalog" />
+    <EntitySet Name="BulkAM_Catalog_1" EntityType="LeanModel.BulkAM_Catalog_1" />
+    <EntitySet Name="CustomerServiceLevel_Catalog" EntityType="LeanModel.CustomerServiceLevel_Catalog" />
+    <EntitySet Name="Demand_BackOrder" EntityType="LeanModel.Demand_BackOrder" />
+    <EntitySet Name="Demand_Customer_BackOrder" EntityType="LeanModel.Demand_Customer_BackOrder" />
+    <EntitySet Name="Demand_Special_Bid" EntityType="LeanModel.Demand_Special_Bid" />
+    <EntitySet Name="Distibution_Excep" EntityType="LeanModel.Distibution_Excep" />
+    <EntitySet Name="Distribution_Network" EntityType="LeanModel.Distribution_Network" />
+    <EntitySet Name="DomainName1" EntityType="LeanModel.DomainName1" />
+    <EntitySet Name="Families" EntityType="LeanModel.Family" />
+    <EntitySet Name="GeneralConf_VKB" EntityType="LeanModel.GeneralConf_VKB" />
+    <EntitySet Name="HW_Demand_BackOrder" EntityType="LeanModel.HW_Demand_BackOrder" />
+    <EntitySet Name="HW_Demand_Customer_BackOrder" EntityType="LeanModel.HW_Demand_Customer_BackOrder" />
+    <EntitySet Name="HW_Inventory_DistributionCenters" EntityType="LeanModel.HW_Inventory_DistributionCenters" />
+    <EntitySet Name="HW_Inventory_InTransit" EntityType="LeanModel.HW_Inventory_InTransit" />
+    <EntitySet Name="Inventory_DistributionCenters" EntityType="LeanModel.Inventory_DistributionCenters" />
+    <EntitySet Name="Inventory_DockArea" EntityType="LeanModel.Inventory_DockArea" />
+    <EntitySet Name="Inventory_InTransit" EntityType="LeanModel.Inventory_InTransit" />
+    <EntitySet Name="Inventory_JabilInTransit" EntityType="LeanModel.Inventory_JabilInTransit" />
+    <EntitySet Name="Inventory_Rebalancing" EntityType="LeanModel.Inventory_Rebalancing" />
+    <EntitySet Name="Is_Checked" EntityType="LeanModel.Is_Checked" />
+    <EntitySet Name="LeanApps" EntityType="LeanModel.LeanApp" />
+    <EntitySet Name="Lines" EntityType="LeanModel.Line" />
+    <EntitySet Name="Overproduce_Special_Permission" EntityType="LeanModel.Overproduce_Special_Permission" />
+    <EntitySet Name="PartNumber_TonerYield" EntityType="LeanModel.PartNumber_TonerYield" />
+    <EntitySet Name="PartNumber_WeekDemand" EntityType="LeanModel.PartNumber_WeekDemand" />
+    <EntitySet Name="Platforms" EntityType="LeanModel.Platform" />
+    <EntitySet Name="Production_DailyPlatformGoal" EntityType="LeanModel.Production_DailyPlatformGoal" />
+    <EntitySet Name="Production_PalletsProduced" EntityType="LeanModel.Production_PalletsProduced" />
+    <EntitySet Name="Production_Prioritize" EntityType="LeanModel.Production_Prioritize" />
+    <EntitySet Name="Reports_Catalog" EntityType="LeanModel.Reports_Catalog" />
+    <EntitySet Name="Signal_Delay" EntityType="LeanModel.Signal_Delay" />
+    <EntitySet Name="VKB_Detail_PartNumber" EntityType="LeanModel.VKB_Detail_PartNumber" />
+    <EntitySet Name="VKB_Global_Line" EntityType="LeanModel.VKB_Global_Line" />
+    <EntitySet Name="VKB_Input" EntityType="LeanModel.VKB_Input" />
+    <FunctionImport Name="Split" ReturnType="Collection(LeanModel.Split_Result)" IsComposable="true">
+      <Parameter Name="String" Type="String" />
+      <Parameter Name="Delimiter" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(LeanModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(LeanModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="ADD_LHW_TABLES_FROM_HW">
+      <Parameter Name="LEAN_APP" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="GET_ALL_MISMATCH_LHW_TABLES_FROM_HW">
+      <Parameter Name="LEAN_APP" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW" ReturnType="Collection(Int32)">
+      <Parameter Name="LEAN_APP" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_GenReportPullbyDate">
+      <Parameter Name="platform" Mode="In" Type="String" />
+      <Parameter Name="from" Mode="In" Type="DateTime" />
+      <Parameter Name="to" Mode="In" Type="DateTime" />
+      <Parameter Name="type" Mode="In" Type="Int32" />
+      <Parameter Name="LeanApp" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="TEST_Line" ReturnType="Collection(LeanModel.TEST_Line_Result)">
+      <Parameter Name="LineID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="UPDATE_LHW_TABLES_FROM_HW" />
+  </EntityContainer>
+  <ComplexType Name="Split_Result">
+    <Property Name="items" Type="String" MaxLength="8000" Unicode="false" FixedLength="false" />
+  </ComplexType>
+  <EntityType Name="DomainName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Domain" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="BulkAM_Catalog">
+    <Key>
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Bulk" />
+      <PropertyRef Name="AM" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Bulk" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="AM" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="BulkAM_Catalog_1">
+    <Key>
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Bulk" />
+      <PropertyRef Name="AM" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Bulk" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="AM" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CustomerServiceLevel_Catalog">
+    <Key>
+      <PropertyRef Name="CSL_Percentage" />
+      <PropertyRef Name="ZFactor" />
+    </Key>
+    <Property Name="CSL_Percentage" Type="Double" Nullable="false" />
+    <Property Name="ZFactor" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Demand_BackOrder">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="sales_Doc" />
+      <PropertyRef Name="item" />
+      <PropertyRef Name="SLNo" />
+      <PropertyRef Name="Mat_Date" />
+      <PropertyRef Name="Doc_Ca" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="bolSWE" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="sales_Doc" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="item" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="SLNo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Mat_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Doc_Ca" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="bolSWE" Type="Boolean" Nullable="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Demand_Customer_BackOrder">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="sales_Doc" />
+      <PropertyRef Name="item" />
+      <PropertyRef Name="SLNo" />
+      <PropertyRef Name="Mat_Date" />
+      <PropertyRef Name="Doc_Ca" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="sales_Doc" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="item" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="SLNo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Mat_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Doc_Ca" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Demand_Special_Bid">
+    <Key>
+      <PropertyRef Name="idSpecialBid" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idSpecialBid" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Active" Type="Boolean" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Comments" Type="String" MaxLength="90" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Distibution_Excep">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalizationMaterial_Excep" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalizationMaterial_Excep" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Distribution_Network">
+    <Key>
+      <PropertyRef Name="idLocalization_Source" />
+      <PropertyRef Name="idLocalization_Dest" />
+      <PropertyRef Name="LeadTime" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="GEO" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization_Source" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization_Dest" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="LeadTime" Type="Int32" Nullable="false" />
+    <Property Name="LocalizationDesc" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="DomainName1">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Domain" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Family">
+    <Key>
+      <PropertyRef Name="Family1" />
+      <PropertyRef Name="Platform" />
+      <PropertyRef Name="AverageCost" />
+      <PropertyRef Name="InitialInventory" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Family1" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Platform" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="AverageCost" Type="Double" Nullable="false" />
+    <Property Name="InitialInventory" Type="Double" Nullable="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GeneralConf_VKB">
+    <Key>
+      <PropertyRef Name="idConfig" />
+      <PropertyRef Name="CSL_Percentage" />
+      <PropertyRef Name="ShutDownDays" />
+      <PropertyRef Name="WeekOnDemand" />
+    </Key>
+    <Property Name="idConfig" Type="Int32" Nullable="false" />
+    <Property Name="CSL_Percentage" Type="Double" Nullable="false" />
+    <Property Name="ShutDownDays" Type="Int32" Nullable="false" />
+    <Property Name="WeekOnDemand" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HW_Demand_BackOrder">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="sales_Doc" />
+      <PropertyRef Name="item" />
+      <PropertyRef Name="SLNo" />
+      <PropertyRef Name="Mat_Date" />
+      <PropertyRef Name="Doc_Ca" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="bolSWE" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="sales_Doc" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="item" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="SLNo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Mat_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Doc_Ca" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="bolSWE" Type="Boolean" Nullable="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Proctype" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="SpecProcType" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="TranslationMaterial" Type="String" MaxLength="18" Unicode="true" FixedLength="false" />
+    <Property Name="TranslationQuantity" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HW_Demand_Customer_BackOrder">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="sales_Doc" />
+      <PropertyRef Name="item" />
+      <PropertyRef Name="SLNo" />
+      <PropertyRef Name="Mat_Date" />
+      <PropertyRef Name="Doc_Ca" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="sales_Doc" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="item" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="SLNo" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Mat_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Doc_Ca" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="ProcType" Type="String" MaxLength="1" Unicode="true" FixedLength="false" />
+    <Property Name="SpecProcType" Type="String" MaxLength="2" Unicode="true" FixedLength="false" />
+    <Property Name="TranslationMaterial" Type="String" MaxLength="18" Unicode="true" FixedLength="false" />
+    <Property Name="TranslationQuantity" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HW_Inventory_DistributionCenters">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="TranslationMaterial" Type="String" MaxLength="18" Unicode="true" FixedLength="false" />
+    <Property Name="TranslationQuantity" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HW_Inventory_InTransit">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Material_Name" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Localization_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Material_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="TranslationMaterial" Type="String" MaxLength="18" Unicode="true" FixedLength="false" />
+    <Property Name="TranslationMaterialName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="TranslationQuantity" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Inventory_DistributionCenters">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Inventory_DockArea">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Pallet_ID" />
+      <PropertyRef Name="Pallet_No" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Localization_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Pallet_ID" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Pallet_No" Type="String" Nullable="false" MaxLength="5" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Inventory_InTransit">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Material_Name" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Localization_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Material_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Inventory_JabilInTransit">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Bulk" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Inventory_Rebalancing">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idSource" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idLocalization" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Is_Checked">
+    <Key>
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" Unicode="true" FixedLength="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Is_Checked1" Type="Decimal" Precision="1" Scale="0" />
+  </EntityType>
+  <EntityType Name="LeanApp">
+    <Key>
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Creator" Type="String" MaxLength="15" Unicode="true" FixedLength="false" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="id_site" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Acronym" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Line">
+    <Key>
+      <PropertyRef Name="idLine" />
+      <PropertyRef Name="Line1" />
+      <PropertyRef Name="Capability" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLine" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Line1" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Capability" Type="Int32" Nullable="false" />
+    <Property Name="Planner" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Overproduce_Special_Permission">
+    <Key>
+      <PropertyRef Name="idOverproduce" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idOverproduce" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Localization_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Active" Type="Boolean" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="PartNumber_TonerYield">
+    <Key>
+      <PropertyRef Name="idMaterial" />
+    </Key>
+    <Property Name="idLocalization" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="idToner" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Double" />
+    <Property Name="UOM" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="Pages" Type="Int32" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="PartNumber_WeekDemand">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="weekNumber" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="DemandQty" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="weekNumber" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="DemandQty" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Platform">
+    <Key>
+      <PropertyRef Name="Platform1" />
+      <PropertyRef Name="ExtraCapacity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Platform1" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="ExtraCapacity" Type="Int32" Nullable="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Production_DailyPlatformGoal">
+    <Key>
+      <PropertyRef Name="Platform" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="ProductionGoal" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Platform" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ProductionGoal" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Production_PalletsProduced">
+    <Key>
+      <PropertyRef Name="Family" />
+      <PropertyRef Name="Platform" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="PalletsProduced" />
+      <PropertyRef Name="ProductionFailure" />
+      <PropertyRef Name="Changeovers" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Family" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Platform" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="PalletsProduced" Type="Int32" Nullable="false" />
+    <Property Name="ProductionFailure" Type="Int32" Nullable="false" />
+    <Property Name="Changeovers" Type="Int32" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Production_Prioritize">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLine" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="Production_Order" />
+      <PropertyRef Name="Pallets" />
+      <PropertyRef Name="Minutes_Lost" />
+      <PropertyRef Name="Pieces_Lost" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idLine" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Production_Order" Type="Int32" Nullable="false" />
+    <Property Name="Pallets" Type="Int32" Nullable="false" />
+    <Property Name="SAP_Order" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Minutes_Lost" Type="Int32" Nullable="false" />
+    <Property Name="Pieces_Lost" Type="Int32" Nullable="false" />
+    <Property Name="Comments" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="PrimaryPriority" Type="Double" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Reports_Catalog">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="ReportName" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ReportServer" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="ReportPath" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="ReportDescription" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ReportGEO" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Signal_Delay">
+    <Key>
+      <PropertyRef Name="idVKB" />
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="Material_Request" />
+      <PropertyRef Name="Material_Type_Request" />
+      <PropertyRef Name="User_Upload" />
+      <PropertyRef Name="Creation_Date" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idVKB" Type="Int32" Nullable="false" />
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Material_Request" Type="Int32" Nullable="false" />
+    <Property Name="Material_Type_Request" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="User_Upload" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Creation_Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="VKB_Detail_PartNumber">
+    <Key>
+      <PropertyRef Name="idVKB" />
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="PPVT" />
+      <PropertyRef Name="Yield" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="UDC" />
+      <PropertyRef Name="CV" />
+      <PropertyRef Name="PrimaryPriority" />
+      <PropertyRef Name="C_Red" />
+      <PropertyRef Name="Customer_Backorder_Units" />
+      <PropertyRef Name="BTO_Units" />
+      <PropertyRef Name="Special_Bids_Units" />
+      <PropertyRef Name="Projected_Backorder_Units" />
+      <PropertyRef Name="InvOnDisCenter_Units" />
+      <PropertyRef Name="InvInTransit_Units" />
+      <PropertyRef Name="SAPKanbanTotal_Pallets" />
+      <PropertyRef Name="HeijunkaKanban_Pallets" />
+      <PropertyRef Name="TotalKanban_Pallets" />
+      <PropertyRef Name="TotalInv_" />
+      <PropertyRef Name="GreenPorc" />
+      <PropertyRef Name="YellowPorc" />
+      <PropertyRef Name="RedPorc" />
+      <PropertyRef Name="KanbanNeededForCustomerBO_Pallets" />
+      <PropertyRef Name="KanbanNeededForBTO_Pallets" />
+      <PropertyRef Name="KanbanNeededForSpecialBid_Pallets" />
+      <PropertyRef Name="KanbanNeededForProjectedBO_Pallets" />
+      <PropertyRef Name="KanbanNeededForOrange_Pallets" />
+      <PropertyRef Name="KanbanNeededForRed_Pallets" />
+      <PropertyRef Name="KanbanNeededForYellow_Pallets" />
+      <PropertyRef Name="KanbanNeededForGreen_Pallets" />
+      <PropertyRef Name="MinKanban_Pallets" />
+      <PropertyRef Name="TargetKanban_Pallets" />
+      <PropertyRef Name="MaxKanban_Pallets" />
+      <PropertyRef Name="ExcessKanban_Pallets" />
+      <PropertyRef Name="HeijunkaBoard_Pallets" />
+      <PropertyRef Name="AverageDemand" />
+      <PropertyRef Name="Pallet_Qty" />
+      <PropertyRef Name="High_Priority_Units" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idVKB" Type="Int32" Nullable="false" />
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="PPVT" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Yield" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Localization_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="UDC" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+    <Property Name="CV" Type="Double" Nullable="false" />
+    <Property Name="PrimaryPriority" Type="Double" Nullable="false" />
+    <Property Name="C_Red" Type="Double" Nullable="false" />
+    <Property Name="Customer_Backorder_Units" Type="Double" Nullable="false" />
+    <Property Name="BTO_Units" Type="Double" Nullable="false" />
+    <Property Name="Special_Bids_Units" Type="Double" Nullable="false" />
+    <Property Name="Projected_Backorder_Units" Type="Double" Nullable="false" />
+    <Property Name="InvOnDisCenter_Units" Type="Double" Nullable="false" />
+    <Property Name="InvInTransit_Units" Type="Double" Nullable="false" />
+    <Property Name="SAPKanbanTotal_Pallets" Type="Double" Nullable="false" />
+    <Property Name="HeijunkaKanban_Pallets" Type="Double" Nullable="false" />
+    <Property Name="TotalKanban_Pallets" Type="Double" Nullable="false" />
+    <Property Name="TotalInv_" Type="Double" Nullable="false" />
+    <Property Name="GreenPorc" Type="Double" Nullable="false" />
+    <Property Name="YellowPorc" Type="Double" Nullable="false" />
+    <Property Name="RedPorc" Type="Double" Nullable="false" />
+    <Property Name="KanbanNeededForCustomerBO_Pallets" Type="Double" Nullable="false" />
+    <Property Name="KanbanNeededForBTO_Pallets" Type="Double" Nullable="false" />
+    <Property Name="KanbanNeededForSpecialBid_Pallets" Type="Double" Nullable="false" />
+    <Property Name="KanbanNeededForProjectedBO_Pallets" Type="Double" Nullable="false" />
+    <Property Name="KanbanNeededForOrange_Pallets" Type="Double" Nullable="false" />
+    <Property Name="KanbanNeededForRed_Pallets" Type="Double" Nullable="false" />
+    <Property Name="KanbanNeededForYellow_Pallets" Type="Double" Nullable="false" />
+    <Property Name="KanbanNeededForGreen_Pallets" Type="Double" Nullable="false" />
+    <Property Name="MinKanban_Pallets" Type="Double" Nullable="false" />
+    <Property Name="TargetKanban_Pallets" Type="Double" Nullable="false" />
+    <Property Name="MaxKanban_Pallets" Type="Double" Nullable="false" />
+    <Property Name="ExcessKanban_Pallets" Type="Double" Nullable="false" />
+    <Property Name="HeijunkaBoard_Pallets" Type="Double" Nullable="false" />
+    <Property Name="Platform" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Family" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="AverageDemand" Type="Double" Nullable="false" />
+    <Property Name="Pallet_Qty" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="High_Priority_Units" Type="Double" Nullable="false" />
+    <Property Name="Remd_Pallet" Type="Int32" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="VKB_Global_Line">
+    <Key>
+      <PropertyRef Name="idVKB" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="idLine" />
+      <PropertyRef Name="Final_Version" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idVKB" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="idLine" Type="Int32" Nullable="false" />
+    <Property Name="Final_Version" Type="Boolean" Nullable="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="VKB_Input">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="Platform" />
+      <PropertyRef Name="Family" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="idMaterial" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="idLine" Type="Int32" />
+    <Property Name="PPVT" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Type_SWE_AM" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Yield" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Brand" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="AverageDemand" Type="Double" />
+    <Property Name="SD" Type="Double" />
+    <Property Name="CV" Type="Double" />
+    <Property Name="Max_Pallet" Type="Int32" />
+    <Property Name="Target_Pallet" Type="Int32" />
+    <Property Name="Min_Pallet" Type="Int32" />
+    <Property Name="Pallet_Qty" Type="Int32" />
+    <Property Name="UDC" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Localization_Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Platform" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Family" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_User" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Upload_Date" Type="DateTime" Precision="3" />
+    <Property Name="Lean_Application" Type="String" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="TEST_Line_Result">
+    <Property Type="Int32" Name="idLine" Nullable="false" />
+    <Property Type="String" Name="Line" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="Capability" Nullable="false" />
+    <Property Type="String" Name="Planner" Nullable="true" MaxLength="30" />
+    <Property Type="String" Name="Lean_Application" Nullable="false" MaxLength="10" />
+  </ComplexType>
+</Schema>

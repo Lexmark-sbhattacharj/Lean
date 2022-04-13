@@ -1,0 +1,1298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LeanModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="LeanModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="LeanModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BulkAM_Catalog" EntityType="LeanModel.Store.BulkAM_Catalog" store:Type="Tables" store:Schema="LA" store:Name="BulkAM_Catalog">
+      <DefiningQuery>SELECT 
+      [BulkAM_Catalog].[idLocalization] AS [idLocalization], 
+      [BulkAM_Catalog].[Bulk] AS [Bulk], 
+      [BulkAM_Catalog].[AM] AS [AM], 
+      [BulkAM_Catalog].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[BulkAM_Catalog] AS [BulkAM_Catalog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="BulkAM_Catalog_1" EntityType="LeanModel.Store.BulkAM_Catalog_1" store:Type="Tables" store:Schema="LA" store:Name="BulkAM_Catalog_1">
+      <DefiningQuery>SELECT 
+      [BulkAM_Catalog_1].[idLocalization] AS [idLocalization], 
+      [BulkAM_Catalog_1].[Bulk] AS [Bulk], 
+      [BulkAM_Catalog_1].[AM] AS [AM], 
+      [BulkAM_Catalog_1].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[BulkAM_Catalog_1] AS [BulkAM_Catalog_1]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CustomerServiceLevel_Catalog" EntityType="LeanModel.Store.CustomerServiceLevel_Catalog" store:Type="Tables" store:Schema="LA" store:Name="CustomerServiceLevel_Catalog">
+      <DefiningQuery>SELECT 
+      [CustomerServiceLevel_Catalog].[CSL_Percentage] AS [CSL_Percentage], 
+      [CustomerServiceLevel_Catalog].[ZFactor] AS [ZFactor]
+      FROM [LA].[CustomerServiceLevel_Catalog] AS [CustomerServiceLevel_Catalog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Demand_BackOrder" EntityType="LeanModel.Store.Demand_BackOrder" store:Type="Tables" store:Schema="LA" store:Name="Demand_BackOrder">
+      <DefiningQuery>SELECT 
+      [Demand_BackOrder].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Demand_BackOrder].[idLocalization] AS [idLocalization], 
+      [Demand_BackOrder].[idMaterial] AS [idMaterial], 
+      [Demand_BackOrder].[sales_Doc] AS [sales_Doc], 
+      [Demand_BackOrder].[item] AS [item], 
+      [Demand_BackOrder].[SLNo] AS [SLNo], 
+      [Demand_BackOrder].[Mat_Date] AS [Mat_Date], 
+      [Demand_BackOrder].[Doc_Ca] AS [Doc_Ca], 
+      [Demand_BackOrder].[Quantity] AS [Quantity], 
+      [Demand_BackOrder].[Upload_User] AS [Upload_User], 
+      [Demand_BackOrder].[Upload_Date] AS [Upload_Date], 
+      [Demand_BackOrder].[bolSWE] AS [bolSWE], 
+      [Demand_BackOrder].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Demand_BackOrder] AS [Demand_BackOrder]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Demand_Customer_BackOrder" EntityType="LeanModel.Store.Demand_Customer_BackOrder" store:Type="Tables" store:Schema="LA" store:Name="Demand_Customer_BackOrder">
+      <DefiningQuery>SELECT 
+      [Demand_Customer_BackOrder].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Demand_Customer_BackOrder].[idLocalization] AS [idLocalization], 
+      [Demand_Customer_BackOrder].[idMaterial] AS [idMaterial], 
+      [Demand_Customer_BackOrder].[sales_Doc] AS [sales_Doc], 
+      [Demand_Customer_BackOrder].[item] AS [item], 
+      [Demand_Customer_BackOrder].[SLNo] AS [SLNo], 
+      [Demand_Customer_BackOrder].[Mat_Date] AS [Mat_Date], 
+      [Demand_Customer_BackOrder].[Doc_Ca] AS [Doc_Ca], 
+      [Demand_Customer_BackOrder].[Quantity] AS [Quantity], 
+      [Demand_Customer_BackOrder].[Upload_User] AS [Upload_User], 
+      [Demand_Customer_BackOrder].[Upload_Date] AS [Upload_Date], 
+      [Demand_Customer_BackOrder].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Demand_Customer_BackOrder] AS [Demand_Customer_BackOrder]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Demand_Special_Bid" EntityType="LeanModel.Store.Demand_Special_Bid" store:Type="Tables" store:Schema="LA" store:Name="Demand_Special_Bid">
+      <DefiningQuery>SELECT 
+      [Demand_Special_Bid].[idSpecialBid] AS [idSpecialBid], 
+      [Demand_Special_Bid].[idLocalization] AS [idLocalization], 
+      [Demand_Special_Bid].[idMaterial] AS [idMaterial], 
+      [Demand_Special_Bid].[Quantity] AS [Quantity], 
+      [Demand_Special_Bid].[Active] AS [Active], 
+      [Demand_Special_Bid].[Upload_User] AS [Upload_User], 
+      [Demand_Special_Bid].[Upload_Date] AS [Upload_Date], 
+      [Demand_Special_Bid].[Lean_Application] AS [Lean_Application], 
+      [Demand_Special_Bid].[Comments] AS [Comments]
+      FROM [LA].[Demand_Special_Bid] AS [Demand_Special_Bid]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Distibution_Excep" EntityType="LeanModel.Store.Distibution_Excep" store:Type="Tables" store:Schema="LA" store:Name="Distibution_Excep">
+      <DefiningQuery>SELECT 
+      [Distibution_Excep].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Distibution_Excep].[idLocalizationMaterial_Excep] AS [idLocalizationMaterial_Excep], 
+      [Distibution_Excep].[Upload_User] AS [Upload_User], 
+      [Distibution_Excep].[Upload_Date] AS [Upload_Date], 
+      [Distibution_Excep].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Distibution_Excep] AS [Distibution_Excep]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Distribution_Network" EntityType="LeanModel.Store.Distribution_Network" store:Type="Tables" store:Schema="LA" store:Name="Distribution_Network">
+      <DefiningQuery>SELECT 
+      [Distribution_Network].[GEO] AS [GEO], 
+      [Distribution_Network].[idLocalization_Source] AS [idLocalization_Source], 
+      [Distribution_Network].[idLocalization_Dest] AS [idLocalization_Dest], 
+      [Distribution_Network].[LeadTime] AS [LeadTime], 
+      [Distribution_Network].[LocalizationDesc] AS [LocalizationDesc], 
+      [Distribution_Network].[Upload_User] AS [Upload_User], 
+      [Distribution_Network].[Upload_Date] AS [Upload_Date], 
+      [Distribution_Network].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Distribution_Network] AS [Distribution_Network]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Family" EntityType="LeanModel.Store.Family" store:Type="Tables" store:Schema="LA" store:Name="Family">
+      <DefiningQuery>SELECT 
+      [Family].[Family] AS [Family], 
+      [Family].[Platform] AS [Platform], 
+      [Family].[AverageCost] AS [AverageCost], 
+      [Family].[InitialInventory] AS [InitialInventory], 
+      [Family].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Family] AS [Family]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GeneralConf_VKB" EntityType="LeanModel.Store.GeneralConf_VKB" store:Type="Tables" store:Schema="LA" store:Name="GeneralConf_VKB">
+      <DefiningQuery>SELECT 
+      [GeneralConf_VKB].[idConfig] AS [idConfig], 
+      [GeneralConf_VKB].[CSL_Percentage] AS [CSL_Percentage], 
+      [GeneralConf_VKB].[ShutDownDays] AS [ShutDownDays], 
+      [GeneralConf_VKB].[WeekOnDemand] AS [WeekOnDemand]
+      FROM [LA].[GeneralConf_VKB] AS [GeneralConf_VKB]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HW_Demand_BackOrder" EntityType="LeanModel.Store.HW_Demand_BackOrder" store:Type="Tables" store:Schema="LA" store:Name="HW_Demand_BackOrder">
+      <DefiningQuery>SELECT 
+      [HW_Demand_BackOrder].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [HW_Demand_BackOrder].[idLocalization] AS [idLocalization], 
+      [HW_Demand_BackOrder].[idMaterial] AS [idMaterial], 
+      [HW_Demand_BackOrder].[sales_Doc] AS [sales_Doc], 
+      [HW_Demand_BackOrder].[item] AS [item], 
+      [HW_Demand_BackOrder].[SLNo] AS [SLNo], 
+      [HW_Demand_BackOrder].[Mat_Date] AS [Mat_Date], 
+      [HW_Demand_BackOrder].[Doc_Ca] AS [Doc_Ca], 
+      [HW_Demand_BackOrder].[Quantity] AS [Quantity], 
+      [HW_Demand_BackOrder].[Upload_User] AS [Upload_User], 
+      [HW_Demand_BackOrder].[Upload_Date] AS [Upload_Date], 
+      [HW_Demand_BackOrder].[bolSWE] AS [bolSWE], 
+      [HW_Demand_BackOrder].[Lean_Application] AS [Lean_Application], 
+      [HW_Demand_BackOrder].[Proctype] AS [Proctype], 
+      [HW_Demand_BackOrder].[SpecProcType] AS [SpecProcType], 
+      [HW_Demand_BackOrder].[TranslationMaterial] AS [TranslationMaterial], 
+      [HW_Demand_BackOrder].[TranslationQuantity] AS [TranslationQuantity]
+      FROM [LA].[HW_Demand_BackOrder] AS [HW_Demand_BackOrder]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HW_Demand_Customer_BackOrder" EntityType="LeanModel.Store.HW_Demand_Customer_BackOrder" store:Type="Tables" store:Schema="LA" store:Name="HW_Demand_Customer_BackOrder">
+      <DefiningQuery>SELECT 
+      [HW_Demand_Customer_BackOrder].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [HW_Demand_Customer_BackOrder].[idLocalization] AS [idLocalization], 
+      [HW_Demand_Customer_BackOrder].[idMaterial] AS [idMaterial], 
+      [HW_Demand_Customer_BackOrder].[sales_Doc] AS [sales_Doc], 
+      [HW_Demand_Customer_BackOrder].[item] AS [item], 
+      [HW_Demand_Customer_BackOrder].[SLNo] AS [SLNo], 
+      [HW_Demand_Customer_BackOrder].[Mat_Date] AS [Mat_Date], 
+      [HW_Demand_Customer_BackOrder].[Doc_Ca] AS [Doc_Ca], 
+      [HW_Demand_Customer_BackOrder].[Quantity] AS [Quantity], 
+      [HW_Demand_Customer_BackOrder].[Upload_User] AS [Upload_User], 
+      [HW_Demand_Customer_BackOrder].[Upload_Date] AS [Upload_Date], 
+      [HW_Demand_Customer_BackOrder].[Lean_Application] AS [Lean_Application], 
+      [HW_Demand_Customer_BackOrder].[ProcType] AS [ProcType], 
+      [HW_Demand_Customer_BackOrder].[SpecProcType] AS [SpecProcType], 
+      [HW_Demand_Customer_BackOrder].[TranslationMaterial] AS [TranslationMaterial], 
+      [HW_Demand_Customer_BackOrder].[TranslationQuantity] AS [TranslationQuantity]
+      FROM [LA].[HW_Demand_Customer_BackOrder] AS [HW_Demand_Customer_BackOrder]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HW_Inventory_DistributionCenters" EntityType="LeanModel.Store.HW_Inventory_DistributionCenters" store:Type="Tables" store:Schema="LA" store:Name="HW_Inventory_DistributionCenters">
+      <DefiningQuery>SELECT 
+      [HW_Inventory_DistributionCenters].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [HW_Inventory_DistributionCenters].[idLocalization] AS [idLocalization], 
+      [HW_Inventory_DistributionCenters].[idMaterial] AS [idMaterial], 
+      [HW_Inventory_DistributionCenters].[Quantity] AS [Quantity], 
+      [HW_Inventory_DistributionCenters].[Upload_User] AS [Upload_User], 
+      [HW_Inventory_DistributionCenters].[Upload_Date] AS [Upload_Date], 
+      [HW_Inventory_DistributionCenters].[Lean_Application] AS [Lean_Application], 
+      [HW_Inventory_DistributionCenters].[TranslationMaterial] AS [TranslationMaterial], 
+      [HW_Inventory_DistributionCenters].[TranslationQuantity] AS [TranslationQuantity]
+      FROM [LA].[HW_Inventory_DistributionCenters] AS [HW_Inventory_DistributionCenters]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HW_Inventory_InTransit" EntityType="LeanModel.Store.HW_Inventory_InTransit" store:Type="Tables" store:Schema="LA" store:Name="HW_Inventory_InTransit">
+      <DefiningQuery>SELECT 
+      [HW_Inventory_InTransit].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [HW_Inventory_InTransit].[idLocalization] AS [idLocalization], 
+      [HW_Inventory_InTransit].[Localization_Name] AS [Localization_Name], 
+      [HW_Inventory_InTransit].[idMaterial] AS [idMaterial], 
+      [HW_Inventory_InTransit].[Material_Name] AS [Material_Name], 
+      [HW_Inventory_InTransit].[Quantity] AS [Quantity], 
+      [HW_Inventory_InTransit].[Upload_User] AS [Upload_User], 
+      [HW_Inventory_InTransit].[Upload_Date] AS [Upload_Date], 
+      [HW_Inventory_InTransit].[Lean_Application] AS [Lean_Application], 
+      [HW_Inventory_InTransit].[TranslationMaterial] AS [TranslationMaterial], 
+      [HW_Inventory_InTransit].[TranslationMaterialName] AS [TranslationMaterialName], 
+      [HW_Inventory_InTransit].[TranslationQuantity] AS [TranslationQuantity]
+      FROM [LA].[HW_Inventory_InTransit] AS [HW_Inventory_InTransit]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Inventory_DistributionCenters" EntityType="LeanModel.Store.Inventory_DistributionCenters" store:Type="Tables" store:Schema="LA" store:Name="Inventory_DistributionCenters">
+      <DefiningQuery>SELECT 
+      [Inventory_DistributionCenters].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Inventory_DistributionCenters].[idLocalization] AS [idLocalization], 
+      [Inventory_DistributionCenters].[idMaterial] AS [idMaterial], 
+      [Inventory_DistributionCenters].[Quantity] AS [Quantity], 
+      [Inventory_DistributionCenters].[Upload_User] AS [Upload_User], 
+      [Inventory_DistributionCenters].[Upload_Date] AS [Upload_Date], 
+      [Inventory_DistributionCenters].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Inventory_DistributionCenters] AS [Inventory_DistributionCenters]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Inventory_DockArea" EntityType="LeanModel.Store.Inventory_DockArea" store:Type="Tables" store:Schema="LA" store:Name="Inventory_DockArea">
+      <DefiningQuery>SELECT 
+      [Inventory_DockArea].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Inventory_DockArea].[idLocalization] AS [idLocalization], 
+      [Inventory_DockArea].[Localization_Name] AS [Localization_Name], 
+      [Inventory_DockArea].[idMaterial] AS [idMaterial], 
+      [Inventory_DockArea].[Pallet_ID] AS [Pallet_ID], 
+      [Inventory_DockArea].[Pallet_No] AS [Pallet_No], 
+      [Inventory_DockArea].[Quantity] AS [Quantity], 
+      [Inventory_DockArea].[Status] AS [Status], 
+      [Inventory_DockArea].[Upload_User] AS [Upload_User], 
+      [Inventory_DockArea].[Upload_Date] AS [Upload_Date], 
+      [Inventory_DockArea].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Inventory_DockArea] AS [Inventory_DockArea]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Inventory_InTransit" EntityType="LeanModel.Store.Inventory_InTransit" store:Type="Tables" store:Schema="LA" store:Name="Inventory_InTransit">
+      <DefiningQuery>SELECT 
+      [Inventory_InTransit].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Inventory_InTransit].[idLocalization] AS [idLocalization], 
+      [Inventory_InTransit].[Localization_Name] AS [Localization_Name], 
+      [Inventory_InTransit].[idMaterial] AS [idMaterial], 
+      [Inventory_InTransit].[Material_Name] AS [Material_Name], 
+      [Inventory_InTransit].[Quantity] AS [Quantity], 
+      [Inventory_InTransit].[Upload_User] AS [Upload_User], 
+      [Inventory_InTransit].[Upload_Date] AS [Upload_Date], 
+      [Inventory_InTransit].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Inventory_InTransit] AS [Inventory_InTransit]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Inventory_JabilInTransit" EntityType="LeanModel.Store.Inventory_JabilInTransit" store:Type="Tables" store:Schema="LA" store:Name="Inventory_JabilInTransit">
+      <DefiningQuery>SELECT 
+      [Inventory_JabilInTransit].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Inventory_JabilInTransit].[idLocalization] AS [idLocalization], 
+      [Inventory_JabilInTransit].[idMaterial] AS [idMaterial], 
+      [Inventory_JabilInTransit].[Bulk] AS [Bulk], 
+      [Inventory_JabilInTransit].[Quantity] AS [Quantity], 
+      [Inventory_JabilInTransit].[Upload_User] AS [Upload_User], 
+      [Inventory_JabilInTransit].[Upload_Date] AS [Upload_Date], 
+      [Inventory_JabilInTransit].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Inventory_JabilInTransit] AS [Inventory_JabilInTransit]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Inventory_Rebalancing" EntityType="LeanModel.Store.Inventory_Rebalancing" store:Type="Tables" store:Schema="LA" store:Name="Inventory_Rebalancing">
+      <DefiningQuery>SELECT 
+      [Inventory_Rebalancing].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Inventory_Rebalancing].[idSource] AS [idSource], 
+      [Inventory_Rebalancing].[idLocalization] AS [idLocalization], 
+      [Inventory_Rebalancing].[idMaterial] AS [idMaterial], 
+      [Inventory_Rebalancing].[Quantity] AS [Quantity], 
+      [Inventory_Rebalancing].[Type] AS [Type], 
+      [Inventory_Rebalancing].[Upload_User] AS [Upload_User], 
+      [Inventory_Rebalancing].[Upload_Date] AS [Upload_Date], 
+      [Inventory_Rebalancing].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Inventory_Rebalancing] AS [Inventory_Rebalancing]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Is_Checked" EntityType="LeanModel.Store.Is_Checked" store:Type="Tables" Schema="LA" />
+    <EntitySet Name="LeanApp" EntityType="LeanModel.Store.LeanApp" store:Type="Tables" Schema="LA" />
+    <EntitySet Name="Line" EntityType="LeanModel.Store.Line" store:Type="Tables" store:Schema="LA" store:Name="Line">
+      <DefiningQuery>SELECT 
+      [Line].[idLine] AS [idLine], 
+      [Line].[Line] AS [Line], 
+      [Line].[Capability] AS [Capability], 
+      [Line].[Planner] AS [Planner], 
+      [Line].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Line] AS [Line]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Overproduce_Special_Permission" EntityType="LeanModel.Store.Overproduce_Special_Permission" store:Type="Tables" store:Schema="LA" store:Name="Overproduce_Special_Permission">
+      <DefiningQuery>SELECT 
+      [Overproduce_Special_Permission].[idOverproduce] AS [idOverproduce], 
+      [Overproduce_Special_Permission].[Date] AS [Date], 
+      [Overproduce_Special_Permission].[idMaterial] AS [idMaterial], 
+      [Overproduce_Special_Permission].[Localization_Name] AS [Localization_Name], 
+      [Overproduce_Special_Permission].[Active] AS [Active], 
+      [Overproduce_Special_Permission].[Upload_User] AS [Upload_User], 
+      [Overproduce_Special_Permission].[Upload_Date] AS [Upload_Date], 
+      [Overproduce_Special_Permission].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Overproduce_Special_Permission] AS [Overproduce_Special_Permission]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PartNumber_TonerYield" EntityType="LeanModel.Store.PartNumber_TonerYield" store:Type="Tables" store:Schema="LA" store:Name="PartNumber_TonerYield">
+      <DefiningQuery>SELECT 
+      [PartNumber_TonerYield].[idLocalization] AS [idLocalization], 
+      [PartNumber_TonerYield].[idMaterial] AS [idMaterial], 
+      [PartNumber_TonerYield].[idToner] AS [idToner], 
+      [PartNumber_TonerYield].[Quantity] AS [Quantity], 
+      [PartNumber_TonerYield].[UOM] AS [UOM], 
+      [PartNumber_TonerYield].[Pages] AS [Pages], 
+      [PartNumber_TonerYield].[Upload_User] AS [Upload_User], 
+      [PartNumber_TonerYield].[Upload_Date] AS [Upload_Date]
+      FROM [LA].[PartNumber_TonerYield] AS [PartNumber_TonerYield]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PartNumber_WeekDemand" EntityType="LeanModel.Store.PartNumber_WeekDemand" store:Type="Tables" store:Schema="LA" store:Name="PartNumber_WeekDemand">
+      <DefiningQuery>SELECT 
+      [PartNumber_WeekDemand].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [PartNumber_WeekDemand].[weekNumber] AS [weekNumber], 
+      [PartNumber_WeekDemand].[Year] AS [Year], 
+      [PartNumber_WeekDemand].[DemandQty] AS [DemandQty], 
+      [PartNumber_WeekDemand].[Upload_User] AS [Upload_User], 
+      [PartNumber_WeekDemand].[Upload_Date] AS [Upload_Date], 
+      [PartNumber_WeekDemand].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[PartNumber_WeekDemand] AS [PartNumber_WeekDemand]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Platform" EntityType="LeanModel.Store.Platform" store:Type="Tables" store:Schema="LA" store:Name="Platform">
+      <DefiningQuery>SELECT 
+      [Platform].[Platform] AS [Platform], 
+      [Platform].[ExtraCapacity] AS [ExtraCapacity], 
+      [Platform].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Platform] AS [Platform]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Production_DailyPlatformGoal" EntityType="LeanModel.Store.Production_DailyPlatformGoal" store:Type="Tables" store:Schema="LA" store:Name="Production_DailyPlatformGoal">
+      <DefiningQuery>SELECT 
+      [Production_DailyPlatformGoal].[Platform] AS [Platform], 
+      [Production_DailyPlatformGoal].[Date] AS [Date], 
+      [Production_DailyPlatformGoal].[ProductionGoal] AS [ProductionGoal], 
+      [Production_DailyPlatformGoal].[Upload_User] AS [Upload_User], 
+      [Production_DailyPlatformGoal].[Upload_Date] AS [Upload_Date], 
+      [Production_DailyPlatformGoal].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Production_DailyPlatformGoal] AS [Production_DailyPlatformGoal]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Production_PalletsProduced" EntityType="LeanModel.Store.Production_PalletsProduced" store:Type="Tables" store:Schema="LA" store:Name="Production_PalletsProduced">
+      <DefiningQuery>SELECT 
+      [Production_PalletsProduced].[Family] AS [Family], 
+      [Production_PalletsProduced].[Platform] AS [Platform], 
+      [Production_PalletsProduced].[Date] AS [Date], 
+      [Production_PalletsProduced].[PalletsProduced] AS [PalletsProduced], 
+      [Production_PalletsProduced].[ProductionFailure] AS [ProductionFailure], 
+      [Production_PalletsProduced].[Changeovers] AS [Changeovers], 
+      [Production_PalletsProduced].[Upload_User] AS [Upload_User], 
+      [Production_PalletsProduced].[Upload_Date] AS [Upload_Date], 
+      [Production_PalletsProduced].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Production_PalletsProduced] AS [Production_PalletsProduced]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Production_Prioritize" EntityType="LeanModel.Store.Production_Prioritize" store:Type="Tables" store:Schema="LA" store:Name="Production_Prioritize">
+      <DefiningQuery>SELECT 
+      [Production_Prioritize].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Production_Prioritize].[idLine] AS [idLine], 
+      [Production_Prioritize].[Date] AS [Date], 
+      [Production_Prioritize].[Production_Order] AS [Production_Order], 
+      [Production_Prioritize].[Pallets] AS [Pallets], 
+      [Production_Prioritize].[SAP_Order] AS [SAP_Order], 
+      [Production_Prioritize].[Minutes_Lost] AS [Minutes_Lost], 
+      [Production_Prioritize].[Pieces_Lost] AS [Pieces_Lost], 
+      [Production_Prioritize].[Comments] AS [Comments], 
+      [Production_Prioritize].[PrimaryPriority] AS [PrimaryPriority], 
+      [Production_Prioritize].[Upload_User] AS [Upload_User], 
+      [Production_Prioritize].[Upload_Date] AS [Upload_Date], 
+      [Production_Prioritize].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Production_Prioritize] AS [Production_Prioritize]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Reports_Catalog" EntityType="LeanModel.Store.Reports_Catalog" store:Type="Tables" store:Schema="LA" store:Name="Reports_Catalog">
+      <DefiningQuery>SELECT 
+      [Reports_Catalog].[id] AS [id], 
+      [Reports_Catalog].[ReportName] AS [ReportName], 
+      [Reports_Catalog].[ReportServer] AS [ReportServer], 
+      [Reports_Catalog].[ReportPath] AS [ReportPath], 
+      [Reports_Catalog].[ReportDescription] AS [ReportDescription], 
+      [Reports_Catalog].[ReportGEO] AS [ReportGEO], 
+      [Reports_Catalog].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Reports_Catalog] AS [Reports_Catalog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Signal_Delay" EntityType="LeanModel.Store.Signal_Delay" store:Type="Tables" store:Schema="LA" store:Name="Signal_Delay">
+      <DefiningQuery>SELECT 
+      [Signal_Delay].[idVKB] AS [idVKB], 
+      [Signal_Delay].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [Signal_Delay].[Material_Request] AS [Material_Request], 
+      [Signal_Delay].[Material_Type_Request] AS [Material_Type_Request], 
+      [Signal_Delay].[User_Upload] AS [User_Upload], 
+      [Signal_Delay].[Creation_Date] AS [Creation_Date], 
+      [Signal_Delay].[id] AS [id], 
+      [Signal_Delay].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[Signal_Delay] AS [Signal_Delay]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VKB_Detail_PartNumber" EntityType="LeanModel.Store.VKB_Detail_PartNumber" store:Type="Tables" store:Schema="LA" store:Name="VKB_Detail_PartNumber">
+      <DefiningQuery>SELECT 
+      [VKB_Detail_PartNumber].[idVKB] AS [idVKB], 
+      [VKB_Detail_PartNumber].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [VKB_Detail_PartNumber].[idMaterial] AS [idMaterial], 
+      [VKB_Detail_PartNumber].[PPVT] AS [PPVT], 
+      [VKB_Detail_PartNumber].[Yield] AS [Yield], 
+      [VKB_Detail_PartNumber].[Localization_Name] AS [Localization_Name], 
+      [VKB_Detail_PartNumber].[UDC] AS [UDC], 
+      [VKB_Detail_PartNumber].[CV] AS [CV], 
+      [VKB_Detail_PartNumber].[PrimaryPriority] AS [PrimaryPriority], 
+      [VKB_Detail_PartNumber].[%Red] AS [%Red], 
+      [VKB_Detail_PartNumber].[Customer_Backorder_Units] AS [Customer_Backorder_Units], 
+      [VKB_Detail_PartNumber].[BTO_Units] AS [BTO_Units], 
+      [VKB_Detail_PartNumber].[Special_Bids_Units] AS [Special_Bids_Units], 
+      [VKB_Detail_PartNumber].[Projected_Backorder_Units] AS [Projected_Backorder_Units], 
+      [VKB_Detail_PartNumber].[InvOnDisCenter_Units] AS [InvOnDisCenter_Units], 
+      [VKB_Detail_PartNumber].[InvInTransit_Units] AS [InvInTransit_Units], 
+      [VKB_Detail_PartNumber].[SAPKanbanTotal_Pallets] AS [SAPKanbanTotal_Pallets], 
+      [VKB_Detail_PartNumber].[HeijunkaKanban_Pallets] AS [HeijunkaKanban_Pallets], 
+      [VKB_Detail_PartNumber].[TotalKanban_Pallets] AS [TotalKanban_Pallets], 
+      [VKB_Detail_PartNumber].[TotalInv%] AS [TotalInv%], 
+      [VKB_Detail_PartNumber].[GreenPorc] AS [GreenPorc], 
+      [VKB_Detail_PartNumber].[YellowPorc] AS [YellowPorc], 
+      [VKB_Detail_PartNumber].[RedPorc] AS [RedPorc], 
+      [VKB_Detail_PartNumber].[KanbanNeededForCustomerBO_Pallets] AS [KanbanNeededForCustomerBO_Pallets], 
+      [VKB_Detail_PartNumber].[KanbanNeededForBTO_Pallets] AS [KanbanNeededForBTO_Pallets], 
+      [VKB_Detail_PartNumber].[KanbanNeededForSpecialBid_Pallets] AS [KanbanNeededForSpecialBid_Pallets], 
+      [VKB_Detail_PartNumber].[KanbanNeededForProjectedBO_Pallets] AS [KanbanNeededForProjectedBO_Pallets], 
+      [VKB_Detail_PartNumber].[KanbanNeededForOrange_Pallets] AS [KanbanNeededForOrange_Pallets], 
+      [VKB_Detail_PartNumber].[KanbanNeededForRed_Pallets] AS [KanbanNeededForRed_Pallets], 
+      [VKB_Detail_PartNumber].[KanbanNeededForYellow_Pallets] AS [KanbanNeededForYellow_Pallets], 
+      [VKB_Detail_PartNumber].[KanbanNeededForGreen_Pallets] AS [KanbanNeededForGreen_Pallets], 
+      [VKB_Detail_PartNumber].[MinKanban_Pallets] AS [MinKanban_Pallets], 
+      [VKB_Detail_PartNumber].[TargetKanban_Pallets] AS [TargetKanban_Pallets], 
+      [VKB_Detail_PartNumber].[MaxKanban_Pallets] AS [MaxKanban_Pallets], 
+      [VKB_Detail_PartNumber].[ExcessKanban_Pallets] AS [ExcessKanban_Pallets], 
+      [VKB_Detail_PartNumber].[HeijunkaBoard_Pallets] AS [HeijunkaBoard_Pallets], 
+      [VKB_Detail_PartNumber].[Platform] AS [Platform], 
+      [VKB_Detail_PartNumber].[Family] AS [Family], 
+      [VKB_Detail_PartNumber].[AverageDemand] AS [AverageDemand], 
+      [VKB_Detail_PartNumber].[Pallet_Qty] AS [Pallet_Qty], 
+      [VKB_Detail_PartNumber].[Type] AS [Type], 
+      [VKB_Detail_PartNumber].[High_Priority_Units] AS [High_Priority_Units], 
+      [VKB_Detail_PartNumber].[Remd_Pallet] AS [Remd_Pallet], 
+      [VKB_Detail_PartNumber].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[VKB_Detail_PartNumber] AS [VKB_Detail_PartNumber]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VKB_Global_Line" EntityType="LeanModel.Store.VKB_Global_Line" store:Type="Tables" store:Schema="LA" store:Name="VKB_Global_Line">
+      <DefiningQuery>SELECT 
+      [VKB_Global_Line].[idVKB] AS [idVKB], 
+      [VKB_Global_Line].[Date] AS [Date], 
+      [VKB_Global_Line].[idLine] AS [idLine], 
+      [VKB_Global_Line].[Final_Version] AS [Final_Version], 
+      [VKB_Global_Line].[Upload_User] AS [Upload_User], 
+      [VKB_Global_Line].[Upload_Date] AS [Upload_Date], 
+      [VKB_Global_Line].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[VKB_Global_Line] AS [VKB_Global_Line]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VKB_Input" EntityType="LeanModel.Store.VKB_Input" store:Type="Tables" store:Schema="LA" store:Name="VKB_Input">
+      <DefiningQuery>SELECT 
+      [VKB_Input].[idLocalizationMaterial] AS [idLocalizationMaterial], 
+      [VKB_Input].[idMaterial] AS [idMaterial], 
+      [VKB_Input].[idLine] AS [idLine], 
+      [VKB_Input].[PPVT] AS [PPVT], 
+      [VKB_Input].[Type_SWE_AM] AS [Type_SWE_AM], 
+      [VKB_Input].[Yield] AS [Yield], 
+      [VKB_Input].[Brand] AS [Brand], 
+      [VKB_Input].[AverageDemand] AS [AverageDemand], 
+      [VKB_Input].[SD] AS [SD], 
+      [VKB_Input].[CV] AS [CV], 
+      [VKB_Input].[Max_Pallet] AS [Max_Pallet], 
+      [VKB_Input].[Target_Pallet] AS [Target_Pallet], 
+      [VKB_Input].[Min_Pallet] AS [Min_Pallet], 
+      [VKB_Input].[Pallet_Qty] AS [Pallet_Qty], 
+      [VKB_Input].[UDC] AS [UDC], 
+      [VKB_Input].[Localization_Name] AS [Localization_Name], 
+      [VKB_Input].[Platform] AS [Platform], 
+      [VKB_Input].[Family] AS [Family], 
+      [VKB_Input].[Upload_User] AS [Upload_User], 
+      [VKB_Input].[Upload_Date] AS [Upload_Date], 
+      [VKB_Input].[Lean_Application] AS [Lean_Application]
+      FROM [LA].[VKB_Input] AS [VKB_Input]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.BulkAM_Catalog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="BulkAM_Catalog">
+    <Key>
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Bulk" />
+      <PropertyRef Name="AM" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Bulk" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="AM" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.BulkAM_Catalog_1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="BulkAM_Catalog_1">
+    <Key>
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Bulk" />
+      <PropertyRef Name="AM" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Bulk" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="AM" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.CustomerServiceLevel_Catalog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="CustomerServiceLevel_Catalog">
+    <Key>
+      <PropertyRef Name="CSL_Percentage" />
+      <PropertyRef Name="ZFactor" />
+    </Key>
+    <Property Name="CSL_Percentage" Type="float" Nullable="false" />
+    <Property Name="ZFactor" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Demand_BackOrder' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Demand_BackOrder">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="sales_Doc" />
+      <PropertyRef Name="item" />
+      <PropertyRef Name="SLNo" />
+      <PropertyRef Name="Mat_Date" />
+      <PropertyRef Name="Doc_Ca" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="bolSWE" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="sales_Doc" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="item" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="SLNo" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Mat_Date" Type="datetime" Nullable="false" />
+    <Property Name="Doc_Ca" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="bolSWE" Type="bit" Nullable="false" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Demand_Customer_BackOrder' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Demand_Customer_BackOrder">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="sales_Doc" />
+      <PropertyRef Name="item" />
+      <PropertyRef Name="SLNo" />
+      <PropertyRef Name="Mat_Date" />
+      <PropertyRef Name="Doc_Ca" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="sales_Doc" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="item" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="SLNo" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Mat_Date" Type="datetime" Nullable="false" />
+    <Property Name="Doc_Ca" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Demand_Special_Bid' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Demand_Special_Bid">
+    <Key>
+      <PropertyRef Name="idSpecialBid" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idSpecialBid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Comments" Type="varchar" MaxLength="90" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Distibution_Excep' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Distibution_Excep">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalizationMaterial_Excep" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalizationMaterial_Excep" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Distribution_Network' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Distribution_Network">
+    <Key>
+      <PropertyRef Name="idLocalization_Source" />
+      <PropertyRef Name="idLocalization_Dest" />
+      <PropertyRef Name="LeadTime" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="GEO" Type="nvarchar" MaxLength="10" />
+    <Property Name="idLocalization_Source" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idLocalization_Dest" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="LeadTime" Type="int" Nullable="false" />
+    <Property Name="LocalizationDesc" Type="nvarchar" MaxLength="50" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Family' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Family">
+    <Key>
+      <PropertyRef Name="Family" />
+      <PropertyRef Name="Platform" />
+      <PropertyRef Name="AverageCost" />
+      <PropertyRef Name="InitialInventory" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Family" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Platform" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="AverageCost" Type="float" Nullable="false" />
+    <Property Name="InitialInventory" Type="float" Nullable="false" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.GeneralConf_VKB' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="GeneralConf_VKB">
+    <Key>
+      <PropertyRef Name="idConfig" />
+      <PropertyRef Name="CSL_Percentage" />
+      <PropertyRef Name="ShutDownDays" />
+      <PropertyRef Name="WeekOnDemand" />
+    </Key>
+    <Property Name="idConfig" Type="int" Nullable="false" />
+    <Property Name="CSL_Percentage" Type="float" Nullable="false" />
+    <Property Name="ShutDownDays" Type="int" Nullable="false" />
+    <Property Name="WeekOnDemand" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.HW_Demand_BackOrder' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="HW_Demand_BackOrder">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="sales_Doc" />
+      <PropertyRef Name="item" />
+      <PropertyRef Name="SLNo" />
+      <PropertyRef Name="Mat_Date" />
+      <PropertyRef Name="Doc_Ca" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="bolSWE" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="sales_Doc" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="item" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="SLNo" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Mat_Date" Type="datetime" Nullable="false" />
+    <Property Name="Doc_Ca" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="bolSWE" Type="bit" Nullable="false" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Proctype" Type="nvarchar" MaxLength="1" />
+    <Property Name="SpecProcType" Type="nvarchar" MaxLength="2" />
+    <Property Name="TranslationMaterial" Type="nvarchar" MaxLength="18" />
+    <Property Name="TranslationQuantity" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.HW_Demand_Customer_BackOrder' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="HW_Demand_Customer_BackOrder">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="sales_Doc" />
+      <PropertyRef Name="item" />
+      <PropertyRef Name="SLNo" />
+      <PropertyRef Name="Mat_Date" />
+      <PropertyRef Name="Doc_Ca" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="sales_Doc" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="item" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="SLNo" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Mat_Date" Type="datetime" Nullable="false" />
+    <Property Name="Doc_Ca" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="ProcType" Type="nvarchar" MaxLength="1" />
+    <Property Name="SpecProcType" Type="nvarchar" MaxLength="2" />
+    <Property Name="TranslationMaterial" Type="nvarchar" MaxLength="18" />
+    <Property Name="TranslationQuantity" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.HW_Inventory_DistributionCenters' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="HW_Inventory_DistributionCenters">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="varchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="TranslationMaterial" Type="nvarchar" MaxLength="18" />
+    <Property Name="TranslationQuantity" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.HW_Inventory_InTransit' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="HW_Inventory_InTransit">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Material_Name" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Localization_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Material_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="varchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="TranslationMaterial" Type="nvarchar" MaxLength="18" />
+    <Property Name="TranslationMaterialName" Type="nvarchar" MaxLength="50" />
+    <Property Name="TranslationQuantity" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Inventory_DistributionCenters' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Inventory_DistributionCenters">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="varchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Inventory_DockArea' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Inventory_DockArea">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Pallet_ID" />
+      <PropertyRef Name="Pallet_No" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Localization_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Pallet_ID" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Pallet_No" Type="nvarchar" Nullable="false" MaxLength="5" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Upload_User" Type="varchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Inventory_InTransit' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Inventory_InTransit">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Material_Name" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="Localization_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Material_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="varchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Inventory_JabilInTransit' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Inventory_JabilInTransit">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" MaxLength="20" />
+    <Property Name="Bulk" Type="nvarchar" MaxLength="20" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="varchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Inventory_Rebalancing' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Inventory_Rebalancing">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLocalization" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Quantity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idSource" Type="nvarchar" MaxLength="10" />
+    <Property Name="idLocalization" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Quantity" Type="int" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="15" />
+    <Property Name="Upload_User" Type="varchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Is_Checked">
+    <Key>
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Is_Checked" Type="numeric" Precision="1" />
+  </EntityType>
+  <EntityType Name="LeanApp">
+    <Key>
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Creator" Type="nvarchar" MaxLength="15" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="id_site" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Line' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Line">
+    <Key>
+      <PropertyRef Name="idLine" />
+      <PropertyRef Name="Line" />
+      <PropertyRef Name="Capability" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLine" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Line" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Capability" Type="int" Nullable="false" />
+    <Property Name="Planner" Type="nvarchar" MaxLength="30" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Overproduce_Special_Permission' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Overproduce_Special_Permission">
+    <Key>
+      <PropertyRef Name="idOverproduce" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="Active" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idOverproduce" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Localization_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Active" Type="bit" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.PartNumber_TonerYield' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PartNumber_TonerYield">
+    <Key>
+      <PropertyRef Name="idMaterial" />
+    </Key>
+    <Property Name="idLocalization" Type="nvarchar" MaxLength="10" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="idToner" Type="nvarchar" MaxLength="20" />
+    <Property Name="Quantity" Type="float" />
+    <Property Name="UOM" Type="nvarchar" MaxLength="10" />
+    <Property Name="Pages" Type="int" />
+    <Property Name="Upload_User" Type="varchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.PartNumber_WeekDemand' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="PartNumber_WeekDemand">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="weekNumber" />
+      <PropertyRef Name="Year" />
+      <PropertyRef Name="DemandQty" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="weekNumber" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="DemandQty" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Platform' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Platform">
+    <Key>
+      <PropertyRef Name="Platform" />
+      <PropertyRef Name="ExtraCapacity" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Platform" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="ExtraCapacity" Type="int" Nullable="false" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Production_DailyPlatformGoal' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Production_DailyPlatformGoal">
+    <Key>
+      <PropertyRef Name="Platform" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="ProductionGoal" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Platform" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="ProductionGoal" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Production_PalletsProduced' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Production_PalletsProduced">
+    <Key>
+      <PropertyRef Name="Family" />
+      <PropertyRef Name="Platform" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="PalletsProduced" />
+      <PropertyRef Name="ProductionFailure" />
+      <PropertyRef Name="Changeovers" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Family" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Platform" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="PalletsProduced" Type="int" Nullable="false" />
+    <Property Name="ProductionFailure" Type="int" Nullable="false" />
+    <Property Name="Changeovers" Type="int" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Production_Prioritize' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Production_Prioritize">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idLine" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="Production_Order" />
+      <PropertyRef Name="Pallets" />
+      <PropertyRef Name="Minutes_Lost" />
+      <PropertyRef Name="Pieces_Lost" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idLine" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Production_Order" Type="int" Nullable="false" />
+    <Property Name="Pallets" Type="int" Nullable="false" />
+    <Property Name="SAP_Order" Type="nvarchar" MaxLength="20" />
+    <Property Name="Minutes_Lost" Type="int" Nullable="false" />
+    <Property Name="Pieces_Lost" Type="int" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="50" />
+    <Property Name="PrimaryPriority" Type="float" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Reports_Catalog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Reports_Catalog">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="ReportName" Type="varchar" MaxLength="50" />
+    <Property Name="ReportServer" Type="varchar" MaxLength="50" />
+    <Property Name="ReportPath" Type="varchar" MaxLength="200" />
+    <Property Name="ReportDescription" Type="varchar" MaxLength="500" />
+    <Property Name="ReportGEO" Type="nvarchar" MaxLength="50" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.Signal_Delay' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Signal_Delay">
+    <Key>
+      <PropertyRef Name="idVKB" />
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="Material_Request" />
+      <PropertyRef Name="Material_Type_Request" />
+      <PropertyRef Name="User_Upload" />
+      <PropertyRef Name="Creation_Date" />
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idVKB" Type="int" Nullable="false" />
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="Material_Request" Type="int" Nullable="false" />
+    <Property Name="Material_Type_Request" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="User_Upload" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Creation_Date" Type="datetime" Nullable="false" />
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.VKB_Detail_PartNumber' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VKB_Detail_PartNumber">
+    <Key>
+      <PropertyRef Name="idVKB" />
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="idMaterial" />
+      <PropertyRef Name="PPVT" />
+      <PropertyRef Name="Yield" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="UDC" />
+      <PropertyRef Name="CV" />
+      <PropertyRef Name="PrimaryPriority" />
+      <PropertyRef Name="%Red" />
+      <PropertyRef Name="Customer_Backorder_Units" />
+      <PropertyRef Name="BTO_Units" />
+      <PropertyRef Name="Special_Bids_Units" />
+      <PropertyRef Name="Projected_Backorder_Units" />
+      <PropertyRef Name="InvOnDisCenter_Units" />
+      <PropertyRef Name="InvInTransit_Units" />
+      <PropertyRef Name="SAPKanbanTotal_Pallets" />
+      <PropertyRef Name="HeijunkaKanban_Pallets" />
+      <PropertyRef Name="TotalKanban_Pallets" />
+      <PropertyRef Name="TotalInv%" />
+      <PropertyRef Name="GreenPorc" />
+      <PropertyRef Name="YellowPorc" />
+      <PropertyRef Name="RedPorc" />
+      <PropertyRef Name="KanbanNeededForCustomerBO_Pallets" />
+      <PropertyRef Name="KanbanNeededForBTO_Pallets" />
+      <PropertyRef Name="KanbanNeededForSpecialBid_Pallets" />
+      <PropertyRef Name="KanbanNeededForProjectedBO_Pallets" />
+      <PropertyRef Name="KanbanNeededForOrange_Pallets" />
+      <PropertyRef Name="KanbanNeededForRed_Pallets" />
+      <PropertyRef Name="KanbanNeededForYellow_Pallets" />
+      <PropertyRef Name="KanbanNeededForGreen_Pallets" />
+      <PropertyRef Name="MinKanban_Pallets" />
+      <PropertyRef Name="TargetKanban_Pallets" />
+      <PropertyRef Name="MaxKanban_Pallets" />
+      <PropertyRef Name="ExcessKanban_Pallets" />
+      <PropertyRef Name="HeijunkaBoard_Pallets" />
+      <PropertyRef Name="AverageDemand" />
+      <PropertyRef Name="Pallet_Qty" />
+      <PropertyRef Name="High_Priority_Units" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idVKB" Type="int" Nullable="false" />
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idMaterial" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="PPVT" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Yield" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Localization_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="UDC" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="CV" Type="float" Nullable="false" />
+    <Property Name="PrimaryPriority" Type="float" Nullable="false" />
+    <Property Name="%Red" Type="float" Nullable="false" />
+    <Property Name="Customer_Backorder_Units" Type="float" Nullable="false" />
+    <Property Name="BTO_Units" Type="float" Nullable="false" />
+    <Property Name="Special_Bids_Units" Type="float" Nullable="false" />
+    <Property Name="Projected_Backorder_Units" Type="float" Nullable="false" />
+    <Property Name="InvOnDisCenter_Units" Type="float" Nullable="false" />
+    <Property Name="InvInTransit_Units" Type="float" Nullable="false" />
+    <Property Name="SAPKanbanTotal_Pallets" Type="float" Nullable="false" />
+    <Property Name="HeijunkaKanban_Pallets" Type="float" Nullable="false" />
+    <Property Name="TotalKanban_Pallets" Type="float" Nullable="false" />
+    <Property Name="TotalInv%" Type="float" Nullable="false" />
+    <Property Name="GreenPorc" Type="float" Nullable="false" />
+    <Property Name="YellowPorc" Type="float" Nullable="false" />
+    <Property Name="RedPorc" Type="float" Nullable="false" />
+    <Property Name="KanbanNeededForCustomerBO_Pallets" Type="float" Nullable="false" />
+    <Property Name="KanbanNeededForBTO_Pallets" Type="float" Nullable="false" />
+    <Property Name="KanbanNeededForSpecialBid_Pallets" Type="float" Nullable="false" />
+    <Property Name="KanbanNeededForProjectedBO_Pallets" Type="float" Nullable="false" />
+    <Property Name="KanbanNeededForOrange_Pallets" Type="float" Nullable="false" />
+    <Property Name="KanbanNeededForRed_Pallets" Type="float" Nullable="false" />
+    <Property Name="KanbanNeededForYellow_Pallets" Type="float" Nullable="false" />
+    <Property Name="KanbanNeededForGreen_Pallets" Type="float" Nullable="false" />
+    <Property Name="MinKanban_Pallets" Type="float" Nullable="false" />
+    <Property Name="TargetKanban_Pallets" Type="float" Nullable="false" />
+    <Property Name="MaxKanban_Pallets" Type="float" Nullable="false" />
+    <Property Name="ExcessKanban_Pallets" Type="float" Nullable="false" />
+    <Property Name="HeijunkaBoard_Pallets" Type="float" Nullable="false" />
+    <Property Name="Platform" Type="nvarchar" MaxLength="50" />
+    <Property Name="Family" Type="nvarchar" MaxLength="20" />
+    <Property Name="AverageDemand" Type="float" Nullable="false" />
+    <Property Name="Pallet_Qty" Type="int" Nullable="false" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+    <Property Name="High_Priority_Units" Type="float" Nullable="false" />
+    <Property Name="Remd_Pallet" Type="int" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.VKB_Global_Line' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VKB_Global_Line">
+    <Key>
+      <PropertyRef Name="idVKB" />
+      <PropertyRef Name="Date" />
+      <PropertyRef Name="idLine" />
+      <PropertyRef Name="Final_Version" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idVKB" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="idLine" Type="int" Nullable="false" />
+    <Property Name="Final_Version" Type="bit" Nullable="false" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Lean.LA.VKB_Input' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="VKB_Input">
+    <Key>
+      <PropertyRef Name="idLocalizationMaterial" />
+      <PropertyRef Name="Localization_Name" />
+      <PropertyRef Name="Platform" />
+      <PropertyRef Name="Family" />
+    </Key>
+    <Property Name="idLocalizationMaterial" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="idMaterial" Type="nvarchar" MaxLength="20" />
+    <Property Name="idLine" Type="int" />
+    <Property Name="PPVT" Type="nvarchar" MaxLength="20" />
+    <Property Name="Type_SWE_AM" Type="nvarchar" MaxLength="20" />
+    <Property Name="Yield" Type="nvarchar" MaxLength="20" />
+    <Property Name="Brand" Type="nvarchar" MaxLength="20" />
+    <Property Name="AverageDemand" Type="float" />
+    <Property Name="SD" Type="float" />
+    <Property Name="CV" Type="float" />
+    <Property Name="Max_Pallet" Type="int" />
+    <Property Name="Target_Pallet" Type="int" />
+    <Property Name="Min_Pallet" Type="int" />
+    <Property Name="Pallet_Qty" Type="int" />
+    <Property Name="UDC" Type="nvarchar" MaxLength="20" />
+    <Property Name="Localization_Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Platform" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Family" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Upload_User" Type="nvarchar" MaxLength="20" />
+    <Property Name="Upload_Date" Type="datetime" />
+    <Property Name="Lean_Application" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <Function Name="fn_diagramobjects" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="ADD_LHW_TABLES_FROM_HW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="LA">
+    <Parameter Name="LEAN_APP" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="GET_ALL_MISMATCH_LHW_TABLES_FROM_HW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="LA">
+    <Parameter Name="LEAN_APP" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ISOweek" ReturnType="int" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="LA">
+    <Parameter Name="DATE" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="LA">
+    <Parameter Name="LEAN_APP" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_GenReportPullbyDate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="LA">
+    <Parameter Name="platform" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="from" Type="datetime" Mode="In" />
+    <Parameter Name="to" Type="datetime" Mode="In" />
+    <Parameter Name="type" Type="int" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar(max)" Mode="In" />
+  </Function>
+  <Function Name="Split" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="LA">
+    <Parameter Name="String" Type="varchar" Mode="In" />
+    <Parameter Name="Delimiter" Type="char" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="items" Type="varchar" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="UPDATE_LHW_TABLES_FROM_HW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="LA" />
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'Lean.LA.UserSites' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="UserSites">
+        <Property Name="id_user" Type="uniqueidentifier" />
+        <Property Name="id_site" Type="int" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'Lean.LA.VKB_Filters' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="VKB_Filters">
+        <Property Name="Material" Type="varchar" MaxLength="20" />
+      </EntityType>-->
+</Schema>

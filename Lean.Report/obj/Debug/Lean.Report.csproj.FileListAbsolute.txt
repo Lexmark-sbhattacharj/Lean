@@ -1,0 +1,64 @@
+F:\Lean Application\Feb 08\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+F:\Lean Application\Feb 08\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+F:\Lean Application\Feb 08\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csprojResolveAssemblyReference.cache
+F:\Lean Application\Feb 08\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+F:\Lean Application\Feb 08\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csprojResolveAssemblyReference.cache
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+E:\Lean\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+E:\Lean\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+E:\Lean\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csprojResolveAssemblyReference.cache
+E:\Lean\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+E:\Lean\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csprojResolveAssemblyReference.cache
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csprojResolveAssemblyReference.cache
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csprojResolveAssemblyReference.cache
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csprojAssemblyReference.cache
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csproj.CoreCompileInputs.cache
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll.config
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\bin\Debug\Newtonsoft.Json.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\bin\Debug\RestSharp.Portable.Core.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\bin\Debug\Newtonsoft.Json.xml
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\bin\Debug\RestSharp.Portable.Core.xml
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csprojAssemblyReference.cache
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csproj.CoreCompileInputs.cache
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csproj.CopyComplete
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll.config
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\bin\Debug\Lean.Report.dll
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\bin\Debug\Lean.Report.pdb
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\bin\Debug\Newtonsoft.Json.dll
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\bin\Debug\RestSharp.Portable.Core.dll
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\bin\Debug\Newtonsoft.Json.xml
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\bin\Debug\RestSharp.Portable.Core.xml
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csproj.CoreCompileInputs.cache
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csproj.CopyComplete
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\obj\Debug\Lean.Report.dll
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\obj\Debug\Lean.Report.pdb
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.Report\obj\Debug\Lean.Report.csprojAssemblyReference.cache

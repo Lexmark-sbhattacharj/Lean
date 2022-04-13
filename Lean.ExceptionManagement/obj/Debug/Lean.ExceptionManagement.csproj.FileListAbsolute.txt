@@ -1,0 +1,389 @@
+F:\Lean Application\Feb 08\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+F:\Lean Application\Feb 08\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+F:\Lean Application\Feb 08\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojResolveAssemblyReference.cache
+F:\Lean Application\Feb 08\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+F:\Lean Application\Feb 08\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojResolveAssemblyReference.cache
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+E:\Lean\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+E:\Lean\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+E:\Lean\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojResolveAssemblyReference.cache
+E:\Lean\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+E:\Lean\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll.config
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.xml
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.pdb
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojResolveAssemblyReference.cache
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+E:\Project\Visual Studio Projects\Lean\LeanApplication-20170304T124827Z-001\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll.config
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.xml
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.pdb
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojResolveAssemblyReference.cache
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+E:\Lean\Surbhi\30 Mar\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll.config
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.xml
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.pdb
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojResolveAssemblyReference.cache
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+E:\Project\Visual Studio Projects\Lean\New folder\LeanApplication\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll.config
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojResolveAssemblyReference.cache
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.xml
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+D:\Lean_Restructure_Code\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll.config
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.dll
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Cryptography.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.EnvironmentalOverrides.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.Database.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.AzMan.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cache.CachingStore.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.AspNet.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Validation.Integration.WinForms.xml
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\bin\Debug\Microsoft.Practices.Unity.Configuration.pdb
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojAssemblyReference.cache
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csproj.CoreCompileInputs.cache
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csproj.CopyComplete
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+C:\Users\syelamanchal\Desktop\LeanApplication 12-DEC-2018\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll.config
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\Newtonsoft.Json.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\RestSharp.Portable.Core.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\AjaxControlToolkit.pdb
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\Newtonsoft.Json.xml
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\RestSharp.Portable.Core.xml
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\ar\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\cs\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\de\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\es\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\fr\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\he\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\hi\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\it\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\ja\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\ko\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\nl\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\pt\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\ru\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\bin\Debug\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojAssemblyReference.cache
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csproj.CoreCompileInputs.cache
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csproj.CopyComplete
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+C:\Users\syelamanchal\Desktop\hari\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll.config
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.dll
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\bin\Debug\Lean.ExceptionManagement.pdb
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\bin\Debug\Newtonsoft.Json.dll
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\bin\Debug\RestSharp.Portable.Core.dll
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\bin\Debug\Newtonsoft.Json.xml
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\bin\Debug\RestSharp.Portable.Core.xml
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csproj.CoreCompileInputs.cache
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csproj.CopyComplete
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.dll
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.pdb
+C:\Users\syelamanchal\Documents\GitHub\Lean-Planning\QA\LeanApplication\Lean.ExceptionManagement\obj\Debug\Lean.ExceptionManagement.csprojAssemblyReference.cache

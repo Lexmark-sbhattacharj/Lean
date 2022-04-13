@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LeanModelStoreContainer" CdmEntityContainer="LeanEntities">
+    <EntitySetMapping Name="Lines">
+      <EntityTypeMapping TypeName="LeanModel.Line">
+        <MappingFragment StoreEntitySet="Line">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line1" ColumnName="Line" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+          <ScalarProperty Name="Planner" ColumnName="Planner" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

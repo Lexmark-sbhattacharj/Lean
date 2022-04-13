@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="LeanDataModel_CPS" />
+  <Alias Key="Target" Value="LeanDataModel_CPS.Store" />
+  <EntityContainerMapping CdmEntityContainer="LeanDataModel_CPSContainer1" StorageEntityContainer="LeanDataModel_CPSStoreContainer">
+    <FunctionImportMapping FunctionImportName="CREATE_SPECIAL_BIDS" FunctionName="LeanDataModel_CPS.Store.CREATE_SPECIAL_BIDS" />
+    <FunctionImportMapping FunctionImportName="DELETE_SPECIAL_BIDS" FunctionName="LeanDataModel_CPS.Store.DELETE_SPECIAL_BIDS" />
+    <FunctionImportMapping FunctionImportName="GET_SPECIAL_BIDS" FunctionName="LeanDataModel_CPS.Store.GET_SPECIAL_BIDS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel_CPS.GET_SPECIAL_BIDS_Result">
+          <ScalarProperty Name="idSpecialBid" ColumnName="idSpecialBid" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UPDATE_SPECIAL_BIDS" FunctionName="LeanDataModel_CPS.Store.UPDATE_SPECIAL_BIDS" />
+  </EntityContainerMapping>
+</Mapping>

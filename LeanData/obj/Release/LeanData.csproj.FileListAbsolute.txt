@@ -1,0 +1,16 @@
+F:\Lean Application\LeanApplication\LeanData\bin\Release\LeanData.dll.config
+F:\Lean Application\LeanApplication\LeanData\bin\Release\LeanData.dll
+F:\Lean Application\LeanApplication\LeanData\bin\Release\LeanData.pdb
+F:\Lean Application\LeanApplication\LeanData\bin\Release\EntityFramework.dll
+F:\Lean Application\LeanApplication\LeanData\bin\Release\EntityFramework.xml
+F:\Lean Application\LeanApplication\LeanData\obj\Release\LeanData.csprojResolveAssemblyReference.cache
+F:\Lean Application\LeanApplication\LeanData\obj\Release\LeanData.dll
+F:\Lean Application\LeanApplication\LeanData\obj\Release\LeanData.pdb
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanData\bin\Release\LeanData.dll.config
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanData\bin\Release\LeanData.dll
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanData\bin\Release\LeanData.pdb
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanData\bin\Release\EntityFramework.dll
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanData\bin\Release\EntityFramework.xml
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanData\obj\Release\LeanData.csprojResolveAssemblyReference.cache
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanData\obj\Release\LeanData.dll
+D:\Project\Lean Application\LeanApplication\LeanApplication\LeanData\obj\Release\LeanData.pdb

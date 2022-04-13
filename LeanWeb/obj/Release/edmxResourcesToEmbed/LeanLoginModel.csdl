@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LeanModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="LeanEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Lines" EntityType="LeanModel.Line" />
+  </EntityContainer>
+  <EntityType Name="Line">
+    <Key>
+      <PropertyRef Name="idLine" />
+      <PropertyRef Name="Line1" />
+      <PropertyRef Name="Capability" />
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="idLine" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Line1" Type="String" Nullable="false" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="Capability" Type="Int32" Nullable="false" />
+    <Property Name="Planner" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+    <Property Name="Lean_Application" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,443 @@
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 940px;
+  background-color:#E6E6E6;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 1200px;
+	z-index: 2;
+	padding: 36px 30px 36px 30px
+}
+
+.negativeBottomMargin {
+  margin-bottom: -70px;
+  border-bottom:3px solid #E5E0DD;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.oneCol,
+.twoCol,
+.threeCol,
+.fourCol,
+.fiveCol,
+.sixCol,
+.sevenCol,
+.eightCol,
+.nineCol,
+.tenCol,
+.elevenCol,
+.twelveCol
+ {
+	display:inline;
+  float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* for use in rare cases where using alpha/omega sequentially */ 
+.double-right { margin-right: 20px;} 
+.double-left { margin-left: 20px;}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12
+ {
+	position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha, .first {
+	margin-left: 0;
+}
+
+.omega, .last {
+	margin-right: 0;
+}
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12.oneCol, .oneCol {
+	width:60px;
+}
+
+.container_12.twoCol, .twoCol {
+	width:140px;
+}
+
+.container_12.threeCol, .threeCol {
+	width:220px;
+}
+
+.container_12.fourCol, .fourCol {
+	width:300px;
+}
+
+.container_12.fiveCol, .fiveCol {
+	width:380px;
+}
+
+.container_12.sixCol, .sixCol {
+	width:460px;
+}
+
+.container_12.sevenCol, .sevenCol {
+	width:540px;
+}
+
+.container_12.eightCol, .eightCol {
+	width:620px;
+}
+
+.container_12.nineCol, .nineCol {
+	width:700px;
+}
+
+.container_12.tenCol, .tenCol {
+	width:780px;
+}
+
+.container_12.elevenCol, .elevenCol {
+	width:860px;
+}
+
+.container_12.twelveCol, .twelveCol {
+	width:940px;
+}
+
+.container_12.thirteenCol, .thirteenCol {
+	width:1020px;
+}
+
+.container_12.fourteenCol, .fourteenCol {
+	width:1100px;
+}
+
+.container_12.fifteenCol, .fifteenCol {
+	width:1180px;
+}
+
+.container_12.sixteenCol, .sixteenCol {
+	width:1260px;
+}
+
+
+
+
+
+
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12.prefix_1, .prefix_1 {
+	padding-left:80px;
+}
+
+.container_12.prefix_2, .prefix_2 {
+	padding-left:160px;
+}
+
+.container_12.prefix_3, .prefix_3 {
+	padding-left:240px;
+}
+
+.container_12.prefix_4, .prefix_4 {
+	padding-left:320px;
+}
+
+.container_12.prefix_5, .prefix_5 {
+	padding-left:400px;
+}
+
+.container_12.prefix_6, .prefix_6 {
+	padding-left:480px;
+}
+
+.container_12.prefix_7, .prefix_7 {
+	padding-left:560px;
+}
+
+.container_12.prefix_8, .prefix_8 {
+	padding-left:640px;
+}
+
+.container_12.prefix_9, .prefix_9 {
+	padding-left:720px;
+}
+
+.container_12.prefix_10, .prefix_10 {
+	padding-left:800px;
+}
+
+.container_12.prefix_11, .prefix_11 {
+	padding-left:880px;
+}
+
+.container_12.prefix_12, .prefix_12 {
+	padding-left:960px;
+}
+
+
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12.suffix_1 {
+	padding-right:80px;
+}
+
+.container_12.suffix_2 {
+	padding-right:160px;
+}
+
+.container_12.suffix_3 {
+	padding-right:240px;
+}
+
+.container_12.suffix_4 {
+	padding-right:320px;
+}
+
+.container_12.suffix_5 {
+	padding-right:400px;
+}
+
+.container_12.suffix_6 {
+	padding-right:480px;
+}
+
+.container_12.suffix_7 {
+	padding-right:560px;
+}
+
+.container_12.suffix_8 {
+	padding-right:640px;
+}
+
+.container_12.suffix_9 {
+	padding-right:720px;
+}
+
+.container_12.suffix_10 {
+	padding-right:800px;
+}
+
+.container_12.suffix_11 {
+	padding-right:880px;
+}
+
+.container_12.suffix_12 {
+	padding-right:960px;
+}
+
+.container_12.suffix_13 {
+	padding-right:1040px;
+}
+
+.container_12.suffix_14 {
+	padding-right:1120px;
+}
+
+.container_12.suffix_15 {
+	padding-right:1200px;
+}
+
+
+
+/* Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12.push_1, .push_1 {
+	left:80px;
+}
+
+.container_12.push_2, .push_2 {
+	left:160px;
+}
+
+.container_12.push_3, .push_3 {
+	left:240px;
+}
+
+.container_12.push_4, .push_4 {
+	left:320px;
+}
+
+.container_12.push_5, .push_5 {
+	left:400px;
+}
+
+.container_12.push_6, .push_6 {
+	left:480px;
+}
+
+.container_12.push_7, .push_7 {
+	left:560px;
+}
+
+.container_12.push_8, .push_8 {
+	left:640px;
+}
+
+.container_12.push_9, .push_9 {
+	left:720px;
+}
+
+.container_12.push_10, .push_10 {
+	left:800px;
+}
+
+.container_12.push_11, .push_11 {
+	left:880px;
+}
+
+.container_12.push_12, .push_12 {
+	left:960px;
+}
+
+
+
+/* Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12.pull_1 {
+	left:-80px;
+}
+
+.container_12.pull_2 {
+	left:-160px;
+}
+
+.container_12.pull_3 {
+	left:-240px;
+}
+
+.container_12.pull_4 {
+	left:-320px;
+}
+
+.container_12.pull_5 {
+	left:-400px;
+}
+
+.container_12.pull_6 {
+	left:-480px;
+}
+
+.container_12.pull_7 {
+	left:-560px;
+}
+
+.container_12.pull_8 {
+	left:-640px;
+}
+
+.container_12.pull_9 {
+	left:-720px;
+}
+
+.container_12.pull_10 {
+	left:-800px;
+}
+
+.container_12.pull_11 {
+	left:-880px;
+}
+
+.container_12.pull_12 {
+	left:-960px;
+}
+
+
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}

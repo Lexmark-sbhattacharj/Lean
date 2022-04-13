@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="LeanDataModel" />
+  <Alias Key="Target" Value="LeanDataModel.Store" />
+  <EntityContainerMapping CdmEntityContainer="LeanDataModelContainer" StorageEntityContainer="LeanDataModelStoreContainer">
+    <FunctionImportMapping FunctionImportName="ADD_LHW_TABLES_FROM_HW" FunctionName="LeanDataModel.Store.ADD_LHW_TABLES_FROM_HW" />
+    <FunctionImportMapping FunctionImportName="CREATE_SPECIAL_BIDS" FunctionName="LeanDataModel.Store.CREATE_SPECIAL_BIDS" />
+    <FunctionImportMapping FunctionImportName="DELETE_SPECIAL_BIDS" FunctionName="LeanDataModel.Store.DELETE_SPECIAL_BIDS" />
+    <FunctionImportMapping FunctionImportName="GET_ALL_MISMATCH_LHW_TABLES_FROM_HW" FunctionName="LeanDataModel.Store.GET_ALL_MISMATCH_LHW_TABLES_FROM_HW" />
+    <FunctionImportMapping FunctionImportName="GET_SPECIAL_BIDS" FunctionName="LeanDataModel.Store.GET_SPECIAL_BIDS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_SPECIAL_BIDS_Result">
+          <ScalarProperty Name="idSpecialBid" ColumnName="idSpecialBid" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_GenReportPullbyDate" FunctionName="LeanDataModel.Store.sp_GenReportPullbyDate" />
+    <FunctionImportMapping FunctionImportName="Split" FunctionName="LeanDataModel.Store.Split" />
+    <FunctionImportMapping FunctionImportName="TEST_Line" FunctionName="LeanDataModel.Store.TEST_Line">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.TEST_Line_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+          <ScalarProperty Name="Planner" ColumnName="Planner" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UPDATE_LHW_TABLES_FROM_HW" FunctionName="LeanDataModel.Store.UPDATE_LHW_TABLES_FROM_HW" />
+    <FunctionImportMapping FunctionImportName="UPDATE_SPECIAL_BIDS" FunctionName="LeanDataModel.Store.UPDATE_SPECIAL_BIDS" />
+    <EntitySetMapping Name="DomainNames">
+      <EntityTypeMapping TypeName="LeanDataModel.DomainName">
+        <MappingFragment StoreEntitySet="DomainName">
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeanApps">
+      <EntityTypeMapping TypeName="LeanDataModel.LeanApp">
+        <MappingFragment StoreEntitySet="LeanApp">
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="id_site" ColumnName="id_site" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Create_BulkAM_Catalog" FunctionName="LeanDataModel.Store.Create_BulkAM_Catalog" />
+    <FunctionImportMapping FunctionImportName="Delete_BulkAM_Catalog" FunctionName="LeanDataModel.Store.Delete_BulkAM_Catalog" />
+    <FunctionImportMapping FunctionImportName="Update_BulkAM_Catalog" FunctionName="LeanDataModel.Store.Update_BulkAM_Catalog" />
+    <FunctionImportMapping FunctionImportName="GET_BulkAM_Catalog" FunctionName="LeanDataModel.Store.GET_BulkAM_Catalog">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_BulkAM_Catalog_Result">
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="Bulk" ColumnName="Bulk" />
+          <ScalarProperty Name="AM" ColumnName="AM" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CREATE_Overproduce_Special_Permission" FunctionName="LeanDataModel.Store.CREATE_Overproduce_Special_Permission" />
+    <FunctionImportMapping FunctionImportName="DELETE_Overproduce_Special_Permission" FunctionName="LeanDataModel.Store.DELETE_Overproduce_Special_Permission" />
+    <FunctionImportMapping FunctionImportName="GET_Overproduce_Special_Permission" FunctionName="LeanDataModel.Store.GET_Overproduce_Special_Permission">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_Overproduce_Special_Permission_Result">
+          <ScalarProperty Name="idOverproduce" ColumnName="idOverproduce" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UPDATE_Overproduce_Special_Permission" FunctionName="LeanDataModel.Store.UPDATE_Overproduce_Special_Permission" />
+    <FunctionImportMapping FunctionImportName="GET_IDMATERIAL_VKBINPUT" FunctionName="LeanDataModel.Store.GET_IDMATERIAL_VKBINPUT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_IDMATERIAL_VKBINPUT_Result">
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_LOCALIZATION_VKBINPUT" FunctionName="LeanDataModel.Store.GET_LOCALIZATION_VKBINPUT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_LOCALIZATION_VKBINPUT_Result">
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CREATE_LINE" FunctionName="LeanDataModel.Store.CREATE_LINE" />
+    <FunctionImportMapping FunctionImportName="DELETE_LINE" FunctionName="LeanDataModel.Store.DELETE_LINE" />
+    <FunctionImportMapping FunctionImportName="GET_LINE" FunctionName="LeanDataModel.Store.GET_LINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_LINE_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+          <ScalarProperty Name="Planner" ColumnName="Planner" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UPDATE_LINE" FunctionName="LeanDataModel.Store.UPDATE_LINE" />
+    <FunctionImportMapping FunctionImportName="GET_VKB_Global_Line" FunctionName="LeanDataModel.Store.GET_VKB_Global_Line">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_VKB_Global_Line_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Final_Version" ColumnName="Final_Version" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Update_VKB_Global_Line" FunctionName="LeanDataModel.Store.Update_VKB_Global_Line" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_DISTRIBUTION_CENTERS" FunctionName="LeanDataModel.Store.DELETE_INVENTORY_DISTRIBUTION_CENTERS" />
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTORY_DISTRIBUTION_CENTERS" FunctionName="LeanDataModel.Store.INSERT_INVENTORY_DISTRIBUTION_CENTERS" />
+    <FunctionImportMapping FunctionImportName="GET_REPORT_DETAILS" FunctionName="LeanDataModel.Store.GET_REPORT_DETAILS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_REPORT_DETAILS_Result">
+          <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+          <ScalarProperty Name="ReportServer" ColumnName="ReportServer" />
+          <ScalarProperty Name="ReportPath" ColumnName="ReportPath" />
+          <ScalarProperty Name="ReportDescription" ColumnName="ReportDescription" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VKB_CHECKLIST" FunctionName="LeanDataModel.Store.GET_VKB_CHECKLIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_VKB_CHECKLIST_Result">
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Processed" ColumnName="Processed" />
+          <ScalarProperty Name="FinalVersion" ColumnName="FinalVersion" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DELETE_DEMAND_BACKORDER" FunctionName="LeanDataModel.Store.DELETE_DEMAND_BACKORDER" />
+    <FunctionImportMapping FunctionImportName="DELETE_DEMAND_CUSTOMER_BACKORDER" FunctionName="LeanDataModel.Store.DELETE_DEMAND_CUSTOMER_BACKORDER" />
+    <FunctionImportMapping FunctionImportName="DELETE_DEMAND_SWE" FunctionName="LeanDataModel.Store.DELETE_DEMAND_SWE" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_INTRANSIT" FunctionName="LeanDataModel.Store.DELETE_INVENTORY_INTRANSIT" />
+    <FunctionImportMapping FunctionImportName="GET_PRODUCTION_PRIORITIZE" FunctionName="LeanDataModel.Store.GET_PRODUCTION_PRIORITIZE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_PRODUCTION_PRIORITIZE_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Production_Order" ColumnName="Production_Order" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="Pieces" ColumnName="Pieces" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="SAP_Order" ColumnName="SAP_Order" />
+          <ScalarProperty Name="Minutes_Lost" ColumnName="Minutes_Lost" />
+          <ScalarProperty Name="Pieces_Lost" ColumnName="Pieces_Lost" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="idToner" ColumnName="idToner" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Pages" ColumnName="Pages" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INSERT_DEMAND_BACKORDER" FunctionName="LeanDataModel.Store.INSERT_DEMAND_BACKORDER" />
+    <FunctionImportMapping FunctionImportName="INSERT_DEMAND_CUSTOMER_BACKORDER" FunctionName="LeanDataModel.Store.INSERT_DEMAND_CUSTOMER_BACKORDER" />
+    <FunctionImportMapping FunctionImportName="INSERT_DEMAND_SWE" FunctionName="LeanDataModel.Store.INSERT_DEMAND_SWE" />
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTORY_INTRANSIT" FunctionName="LeanDataModel.Store.INSERT_INVENTORY_INTRANSIT" />
+    <FunctionImportMapping FunctionImportName="GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY" FunctionName="LeanDataModel.Store.GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_VKB_GLOBAL_LINE_FOR_PROD_PRIORITY_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UPDATE_Production_Prioritize" FunctionName="LeanDataModel.Store.UPDATE_Production_Prioritize" />
+    <FunctionImportMapping FunctionImportName="GET_MATERIAL_VKB_Detail_PartNumber_PROD_PRIORITY" FunctionName="LeanDataModel.Store.GET_MATERIAL_VKB_Detail_PartNumber_PROD_PRIORITY">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_MATERIAL_VKB_Detail_PartNumber_PROD_PRIORITY_Result">
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DELETE_DAILY_UPLOADS_CHECKLIST" FunctionName="LeanDataModel.Store.DELETE_DAILY_UPLOADS_CHECKLIST" />
+    <FunctionImportMapping FunctionImportName="GET_DAILY_UPLOADS_CHECKLIST" FunctionName="LeanDataModel.Store.GET_DAILY_UPLOADS_CHECKLIST">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_DAILY_UPLOADS_CHECKLIST_Result">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Uploaded" ColumnName="Uploaded" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_DEMAND_FOR_BACKORDER" FunctionName="LeanDataModel.Store.GET_DEMAND_FOR_BACKORDER">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_DEMAND_FOR_BACKORDER_Result">
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_SPLIT_LINE" FunctionName="LeanDataModel.Store.GET_SPLIT_LINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_SPLIT_LINE_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_SPLIT_MATERIAL" FunctionName="LeanDataModel.Store.GET_SPLIT_MATERIAL">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_SPLIT_MATERIAL_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_VKB_DETAILS" FunctionName="LeanDataModel.Store.GET_VKB_DETAILS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_VKB_DETAILS_Result">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="C__of_RED" ColumnName="% of RED" />
+          <ScalarProperty Name="PN" ColumnName="PN" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="LOC" ColumnName="LOC" />
+          <ScalarProperty Name="KANBAN_QTY" ColumnName="KANBAN_QTY" />
+          <ScalarProperty Name="Customer_Orders__w_in_LT_window_" ColumnName="Customer Orders (w/in LT window)" />
+          <ScalarProperty Name="Current_BackOrder__Units_" ColumnName="Current BackOrder (Units)" />
+          <ScalarProperty Name="BTO__Units_" ColumnName="BTO (Units)" />
+          <ScalarProperty Name="Special_Bids__Units_" ColumnName="Special Bids (Units)" />
+          <ScalarProperty Name="SAP_INV__Units_" ColumnName="SAP INV (Units)" />
+          <ScalarProperty Name="SAP_INV_IN_Transit__Units_" ColumnName="SAP INV-IN-Transit (Units)" />
+          <ScalarProperty Name="SAP_KANBAN_total__Pallets_" ColumnName="SAP KANBAN total (Pallets)" />
+          <ScalarProperty Name="HEIJUNKA_KANBAN__Pallets_" ColumnName="HEIJUNKA KANBAN (Pallets)" />
+          <ScalarProperty Name="Total_KANBAN__Pallets_" ColumnName="Total KANBAN (Pallets)" />
+          <ScalarProperty Name="KANBAN_NEEDED_FOR_ORANGE" ColumnName="KANBAN NEEDED FOR ORANGE" />
+          <ScalarProperty Name="KANBAN_NEEDED_FOR_RED" ColumnName="KANBAN NEEDED FOR RED" />
+          <ScalarProperty Name="KANBAN_NEEDED_FOR_YELLOW" ColumnName="KANBAN NEEDED FOR YELLOW" />
+          <ScalarProperty Name="KANBAN_NEEDED_FOR_GREEN" ColumnName="KANBAN NEEDED FOR GREEN" />
+          <ScalarProperty Name="Red_Kanban__Pallets_" ColumnName="Red Kanban (Pallets)" />
+          <ScalarProperty Name="Yellow_Kanban__Pallets_" ColumnName="Yellow Kanban (Pallets)" />
+          <ScalarProperty Name="Green_Kanban__Pallets_" ColumnName="Green Kanban (Pallets)" />
+          <ScalarProperty Name="Excess_Inventory__Units_" ColumnName="Excess Inventory (Units)" />
+          <ScalarProperty Name="Recommended_Production" ColumnName="Recommended Production" />
+          <ScalarProperty Name="Planned_HEIJUNKA_Board" ColumnName="Planned HEIJUNKA Board" />
+          <ScalarProperty Name="TotalInv_" ColumnName="TotalInv%" />
+          <ScalarProperty Name="KanbanNeededForCustomerBO_Pallets" ColumnName="KanbanNeededForCustomerBO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForBTO_Pallets" ColumnName="KanbanNeededForBTO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForSpecialBid_Pallets" ColumnName="KanbanNeededForSpecialBid_Pallets" />
+          <ScalarProperty Name="KanbanNeededForProjectedBO_Pallets" ColumnName="KanbanNeededForProjectedBO_Pallets" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+          <ScalarProperty Name="UDC" ColumnName="UDC" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="AverageDemand" ColumnName="AverageDemand" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="High_Priority_Units" ColumnName="High_Priority_Units" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_COUNT_SPLIT" FunctionName="LeanDataModel.Store.GET_COUNT_SPLIT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_COUNT_SPLIT_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Production_Order" ColumnName="Production_Order" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="SAP_Order" ColumnName="SAP_Order" />
+          <ScalarProperty Name="Minutes_Lost" ColumnName="Minutes_Lost" />
+          <ScalarProperty Name="Pieces_Lost" ColumnName="Pieces_Lost" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_SPLITS" FunctionName="LeanDataModel.Store.GET_SPLITS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_SPLITS_Result">
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UPDATE_SPLITS_TO_PROD_PRIORITY" FunctionName="LeanDataModel.Store.UPDATE_SPLITS_TO_PROD_PRIORITY" />
+    <FunctionImportMapping FunctionImportName="GET_VIRTUALKANBAN_LINE" FunctionName="LeanDataModel.Store.GET_VIRTUALKANBAN_LINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_VIRTUALKANBAN_LINE_Result">
+          <ScalarProperty Name="Planner" ColumnName="Planner" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INSERT_IS_CHECKED" FunctionName="LeanDataModel.Store.INSERT_IS_CHECKED" />
+    <FunctionImportMapping FunctionImportName="UPDATE_IS_CHECKED" FunctionName="LeanDataModel.Store.UPDATE_IS_CHECKED" />
+    <FunctionImportMapping FunctionImportName="DELETE_DISTRIBUTION_EXCEP" FunctionName="LeanDataModel.Store.DELETE_DISTRIBUTION_EXCEP" />
+    <FunctionImportMapping FunctionImportName="DELETE_DISTRIBUTION_NETWORK" FunctionName="LeanDataModel.Store.DELETE_DISTRIBUTION_NETWORK" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_DOCKAREA" FunctionName="LeanDataModel.Store.DELETE_INVENTORY_DOCKAREA" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_INTRANSIT_JABIL" FunctionName="LeanDataModel.Store.DELETE_INVENTORY_INTRANSIT_JABIL" />
+    <FunctionImportMapping FunctionImportName="DELETE_INVENTORY_REBALANCING" FunctionName="LeanDataModel.Store.DELETE_INVENTORY_REBALANCING" />
+    <FunctionImportMapping FunctionImportName="DELETE_PARTNUMBER_WEEKDEMAND" FunctionName="LeanDataModel.Store.DELETE_PARTNUMBER_WEEKDEMAND" />
+    <FunctionImportMapping FunctionImportName="DELETE_VKBINPUT" FunctionName="LeanDataModel.Store.DELETE_VKBINPUT" />
+    <FunctionImportMapping FunctionImportName="GET_INVENTDOCKAREA_BULKAMCAT" FunctionName="LeanDataModel.Store.GET_INVENTDOCKAREA_BULKAMCAT">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_INVENTDOCKAREA_BULKAMCAT_Result">
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="Bulk" ColumnName="Bulk" />
+          <ScalarProperty Name="AM" ColumnName="AM" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INSERT_DISTRIBUTION_EXCEP" FunctionName="LeanDataModel.Store.INSERT_DISTRIBUTION_EXCEP" />
+    <FunctionImportMapping FunctionImportName="INSERT_DISTRIBUTION_NETWORK" FunctionName="LeanDataModel.Store.INSERT_DISTRIBUTION_NETWORK" />
+    <FunctionImportMapping FunctionImportName="INSERT_Inventory_DockArea" FunctionName="LeanDataModel.Store.INSERT_Inventory_DockArea" />
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTORY_INTRANSIT_JABIL" FunctionName="LeanDataModel.Store.INSERT_INVENTORY_INTRANSIT_JABIL" />
+    <FunctionImportMapping FunctionImportName="INSERT_INVENTORY_REBALANCING" FunctionName="LeanDataModel.Store.INSERT_INVENTORY_REBALANCING" />
+    <FunctionImportMapping FunctionImportName="INSERT_PARTNUMBER_WEEKDEMAND" FunctionName="LeanDataModel.Store.INSERT_PARTNUMBER_WEEKDEMAND" />
+    <FunctionImportMapping FunctionImportName="INSERT_VKBINPUT" FunctionName="LeanDataModel.Store.INSERT_VKBINPUT" />
+    <FunctionImportMapping FunctionImportName="ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW" FunctionName="LeanDataModel.Store.ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW" />
+    <FunctionImportMapping FunctionImportName="GET_VKBINPUT_INSERTLINE" FunctionName="LeanDataModel.Store.GET_VKBINPUT_INSERTLINE" />
+    <FunctionImportMapping FunctionImportName="GET_VKBINPUT_LINE" FunctionName="LeanDataModel.Store.GET_VKBINPUT_LINE">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_VKBINPUT_LINE_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="INSERT_VKBINPUT_LINE" FunctionName="LeanDataModel.Store.INSERT_VKBINPUT_LINE" />
+    <FunctionImportMapping FunctionImportName="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP" FunctionName="LeanDataModel.Store.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP_Result">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalizationMaterial_Excep" ColumnName="idLocalizationMaterial_Excep" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK" FunctionName="LeanDataModel.Store.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanDataModel.GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK_Result">
+          <ScalarProperty Name="idLocalization_Source" ColumnName="idLocalization_Source" />
+          <ScalarProperty Name="idLocalization_Dest" ColumnName="idLocalization_Dest" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DELETE_VIRTUALKANBAN_PROD_PRIORITIZE" FunctionName="LeanDataModel.Store.DELETE_VIRTUALKANBAN_PROD_PRIORITIZE" />
+    <FunctionImportMapping FunctionImportName="DELETE_VIRTUALKANBAN_VKBDETAILPARTNO" FunctionName="LeanDataModel.Store.DELETE_VIRTUALKANBAN_VKBDETAILPARTNO" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_PROD_PRIORITIZE" FunctionName="LeanDataModel.Store.INSERT_VIRTUALKANBAN_PROD_PRIORITIZE" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_VKBDETAILPARTNO" FunctionName="LeanDataModel.Store.INSERT_VIRTUALKANBAN_VKBDETAILPARTNO" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_VKBGLOBALLINE" FunctionName="LeanDataModel.Store.INSERT_VIRTUALKANBAN_VKBGLOBALLINE" />
+    <FunctionImportMapping FunctionImportName="UPDATE_VIRTUALKANBAN_ISCHECKED" FunctionName="LeanDataModel.Store.UPDATE_VIRTUALKANBAN_ISCHECKED" />
+    <FunctionImportMapping FunctionImportName="UPDATE_VIRTUALKANBAN_LINE" FunctionName="LeanDataModel.Store.UPDATE_VIRTUALKANBAN_LINE" />
+    <FunctionImportMapping FunctionImportName="UPDATE_VIRTUALKANBAN_VKBGLOBALLINE" FunctionName="LeanDataModel.Store.UPDATE_VIRTUALKANBAN_VKBGLOBALLINE" />
+    <FunctionImportMapping FunctionImportName="DELETE_VIRTUALKANBAN_SIGNALDELAY" FunctionName="LeanDataModel.Store.DELETE_VIRTUALKANBAN_SIGNALDELAY" />
+    <FunctionImportMapping FunctionImportName="INSERT_VIRTUALKANBAN_SIGNALDELAY" FunctionName="LeanDataModel.Store.INSERT_VIRTUALKANBAN_SIGNALDELAY" />
+  </EntityContainerMapping>
+</Mapping>

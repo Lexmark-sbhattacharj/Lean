@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CPSDataModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="CPSDataModelStoreContainer">
+    <EntitySet Name="DomainName" EntityType="CPSDataModel.Store.DomainName" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="LeanApp" EntityType="CPSDataModel.Store.LeanApp" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="DomainName">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Domain" Type="varchar" Nullable="false" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="LeanApp">
+    <Key>
+      <PropertyRef Name="Lean_Application" />
+    </Key>
+    <Property Name="Lean_Application" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Creator" Type="nvarchar" MaxLength="15" />
+    <Property Name="CreationDate" Type="datetime" />
+    <Property Name="id_site" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <Function Name="ADD_LHW_TABLES_FROM_HW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LEAN_APP" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Create_BulkAM_Catalog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Bulk" Type="nvarchar" Mode="In" />
+    <Parameter Name="AM" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="CREATE_Overproduce_Special_Permission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="Localization_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="uploadUser" Type="nvarchar" Mode="In" />
+    <Parameter Name="Active" Type="bit" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="CREATE_SPECIAL_BIDS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalization" Type="varchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="varchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="uploadUser" Type="varchar" Mode="In" />
+    <Parameter Name="Comments" Type="varchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Delete_BulkAM_Catalog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+    <Parameter Name="original_Bulk" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_DAILY_UPLOADS_CHECKLIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_DEMAND_BACKORDER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_DEMAND_CUSTOMER_BACKORDER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_DEMAND_SWE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_DISTRIBUTION_EXCEP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_app" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_DISTRIBUTION_NETWORK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_app" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_INVENTORY_DISTRIBUTION_CENTERS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_INVENTORY_DOCKAREA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_app" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_INVENTORY_INTRANSIT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_INVENTORY_INTRANSIT_JABIL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_app" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_LINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="original_idLine" Type="int" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_Overproduce_Special_Permission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="original_idOverproduce" Type="int" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_PARTNUMBER_WEEKDEMAND" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="intWeek" Type="int" Mode="In" />
+    <Parameter Name="intYear" Type="int" Mode="In" />
+    <Parameter Name="Lean_app" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_SPECIAL_BIDS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="original_idSpecialBid" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DELETE_VIRTUALKANBAN_PROD_PRIORITIZE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="txtFechaCaptura" Type="datetime" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DELETE_VIRTUALKANBAN_VKBDETAILPARTNO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idVKB" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DELETE_VKBINPUT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_app" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_ALL_MISMATCH_LHW_TABLES_FROM_HW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LEAN_APP" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="GET_BulkAM_Catalog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+    <Parameter Name="Filter" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_CAPABILITIES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_COUNT_SPLIT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLine" Type="int" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_DAILY_UPLOADS_CHECKLIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="GET_DEMAND_FOR_BACKORDER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization_Dest" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeadTime" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GET_IDMATERIAL_VKBINPUT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_INVENTDOCKAREA_BULKAMCAT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_LEAN_APP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GET_LINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_LOCALIZATION_VKBINPUT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_MATERIAL_VKB_Detail_PartNumber_PROD_PRIORITY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Material" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_Overproduce_Special_Permission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="varchar" Mode="In" />
+    <Parameter Name="Filter" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONEXCEP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_PARTNO_WEEKSDEMAND_DISTRIBUTIONNETWORK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_PRODUCTION_PRIORITIZE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="idLine" Type="int" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_REPORT_DETAILS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+    <Parameter Name="Geo" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_SPECIAL_BIDS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="varchar" Mode="In" />
+    <Parameter Name="Filter" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="GET_SPLIT_LINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLine" Type="int" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_SPLIT_MATERIAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLine" Type="int" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_SPLITS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLine" Type="int" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="idMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_USER_SITES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_CAPABILITYFROMLINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ddlLinetxt" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_CHECK_UPLOAD_DATA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_DIST_EXCEP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_DIST_NETWORK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_IDLINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ddlLinetxt" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_IFNOT_FINALVERSION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_ISCHECKED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_PALLETSIZES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ddlLinetxt" Type="nvarchar" Mode="In" />
+    <Parameter Name="txtFechaCaptura" Type="datetime" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_PROD_PRIORITIES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="txtFechaCaptura" Type="datetime" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_SPECIALPERMISSION" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_VKBDETAIL_PN_CHK_FALSE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="ddlLinetxt" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_VKBDETAIL_PN_CHK_TRUE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="ddlLinetxt" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_VKBGLOBAL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="ddlLineText" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VIRTUALKANBAN_VKBGLOBALLINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="txtFechaCaptura" Type="datetime" Mode="In" />
+    <Parameter Name="ddlLinetxt" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VKB_CHECKLIST" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VKB_Global_Line" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="varchar" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="GET_VKBINPUT_INSERTLINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Line" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GET_VKBINPUT_LINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="GRANT_USER_ACCESS_TO_USERSITE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="idSite" Type="int" Mode="In" />
+  </Function>
+  <Function Name="IDLINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Line" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_DEMAND_BACKORDER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization" Type="nvarchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="sales_Doc" Type="nvarchar" Mode="In" />
+    <Parameter Name="item" Type="nvarchar" Mode="In" />
+    <Parameter Name="SLNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="Mat_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Doc_Ca" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_DEMAND_CUSTOMER_BACKORDER" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization" Type="nvarchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="sales_Doc" Type="nvarchar" Mode="In" />
+    <Parameter Name="item" Type="nvarchar" Mode="In" />
+    <Parameter Name="SLNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="Mat_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Doc_Ca" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_DEMAND_SWE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization" Type="nvarchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="sales_Doc" Type="nvarchar" Mode="In" />
+    <Parameter Name="item" Type="nvarchar" Mode="In" />
+    <Parameter Name="SLNo" Type="nvarchar" Mode="In" />
+    <Parameter Name="Mat_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Doc_Ca" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_DISTRIBUTION_EXCEP" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalizationMaterial_Excep" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_DISTRIBUTION_NETWORK" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GEO" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization_Source" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization_Dest" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeadTime" Type="int" Mode="In" />
+    <Parameter Name="LocalizationDesc" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_INVENTORY_DISTRIBUTION_CENTERS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization" Type="nvarchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="Upload_User" Type="varchar" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_Inventory_DockArea" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization" Type="nvarchar" Mode="In" />
+    <Parameter Name="Localization_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="Pallet_ID" Type="nvarchar" Mode="In" />
+    <Parameter Name="Pallet_No" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="Status" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_INVENTORY_INTRANSIT" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization" Type="nvarchar" Mode="In" />
+    <Parameter Name="Localization_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="Material_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_INVENTORY_INTRANSIT_JABIL" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization" Type="nvarchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bulk" Type="nvarchar" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_IS_CHECKED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_PARTNUMBER_WEEKDEMAND" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="weekNumber" Type="int" Mode="In" />
+    <Parameter Name="Year" Type="int" Mode="In" />
+    <Parameter Name="DemandQty" Type="int" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_VIRTUALKANBAN_PROD_PRIORITIZE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLine" Type="int" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="Production_Order" Type="int" Mode="In" />
+    <Parameter Name="Pallets" Type="int" Mode="In" />
+    <Parameter Name="PrimaryPriority" Type="float" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Minutes_Lost" Type="int" Mode="In" />
+    <Parameter Name="Pieces_Lost" Type="int" Mode="In" />
+    <Parameter Name="Lean_Application" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_VIRTUALKANBAN_VKBGLOBALLINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="txtFechaCaptura" Type="datetime" Mode="In" />
+    <Parameter Name="idLine" Type="int" Mode="In" />
+    <Parameter Name="chkFinalVersion" Type="bit" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="INSERT_VKBINPUT_LINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Line" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LEAN_APP" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="Split" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="String" Type="varchar" Mode="In" />
+    <Parameter Name="Delimiter" Type="char" Mode="In" />
+    <ReturnType>
+      <CollectionType>
+        <RowType>
+          <Property Name="items" Type="varchar" />
+        </RowType>
+      </CollectionType>
+    </ReturnType>
+  </Function>
+  <Function Name="TEST_Line" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LineID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Update_BulkAM_Catalog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Bulk" Type="nvarchar" Mode="In" />
+    <Parameter Name="AM" Type="nvarchar" Mode="In" />
+    <Parameter Name="idLocalization" Type="nvarchar" Mode="In" />
+    <Parameter Name="original_Bulk" Type="nvarchar" Mode="In" />
+    <Parameter Name="original_AM" Type="nvarchar" Mode="In" />
+    <Parameter Name="original_idLocalization" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_CAPABILITIES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+    <Parameter Name="Line" Type="nvarchar" Mode="In" />
+    <Parameter Name="Qty" Type="int" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_IS_CHECKED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="User_Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+    <Parameter Name="Checked" Type="numeric" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_Overproduce_Special_Permission" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Active" Type="bit" Mode="In" />
+    <Parameter Name="uploadUser" Type="nvarchar" Mode="In" />
+    <Parameter Name="original_idOverproduce" Type="int" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_Production_Prioritize" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLine_ddlLine" Type="int" Mode="In" />
+    <Parameter Name="idLine_gv_ddlLine" Type="int" Mode="In" />
+    <Parameter Name="FilterDate" Type="datetime" Mode="In" />
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+    <Parameter Name="Pallets_ddlLine" Type="int" Mode="In" />
+    <Parameter Name="Pallets_gv_ddlLine" Type="int" Mode="In" />
+    <Parameter Name="Production_Order" Type="int" Mode="In" />
+    <Parameter Name="SAP_Order" Type="nvarchar" Mode="In" />
+    <Parameter Name="Minutes_Lost" Type="int" Mode="In" />
+    <Parameter Name="Pieces_Lost" Type="int" Mode="In" />
+    <Parameter Name="Comments" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_SPECIAL_BIDS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLocalization" Type="varchar" Mode="In" />
+    <Parameter Name="idMaterial" Type="varchar" Mode="In" />
+    <Parameter Name="Active" Type="bit" Mode="In" />
+    <Parameter Name="Quantity" Type="int" Mode="In" />
+    <Parameter Name="uploadUser" Type="varchar" Mode="In" />
+    <Parameter Name="Comments" Type="varchar" Mode="In" />
+    <Parameter Name="Lean_App" Type="varchar" Mode="In" />
+    <Parameter Name="original_idSpecialBid" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_SPLITS_TO_PROD_PRIORITY" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="idLine_ddlLine" Type="int" Mode="In" />
+    <Parameter Name="idLine_Destiny" Type="int" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+    <Parameter Name="idLocalizationMaterial" Type="nvarchar" Mode="In" />
+    <Parameter Name="Pallets" Type="int" Mode="In" />
+    <Parameter Name="split_Pallets" Type="int" Mode="In" />
+    <Parameter Name="Lean_App" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_VIRTUALKANBAN_ISCHECKED" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Is_Checked" Type="numeric" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_VIRTUALKANBAN_LINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="OldTotalCapacity" Type="int" Mode="In" />
+    <Parameter Name="ddlLineTxt" Type="nvarchar" Mode="In" />
+    <Parameter Name="LeanApp" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="UPDATE_VIRTUALKANBAN_VKBGLOBALLINE" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="chkFinalVersion" Type="bit" Mode="In" />
+    <Parameter Name="Upload_User" Type="nvarchar" Mode="In" />
+    <Parameter Name="Upload_Date" Type="datetime" Mode="In" />
+    <Parameter Name="idVKB" Type="int" Mode="In" />
+  </Function>
+  <Function Name="Update_VKB_Global_Line" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Final_Version" Type="bit" Mode="In" />
+    <Parameter Name="uploadUser" Type="nvarchar" Mode="In" />
+    <Parameter Name="original_idLine" Type="int" Mode="In" />
+    <Parameter Name="Date" Type="datetime" Mode="In" />
+  </Function>
+</Schema>

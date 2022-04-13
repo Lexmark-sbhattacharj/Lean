@@ -1,0 +1,327 @@
+/* Footer Module */
+
+#footerMain {
+	background: #fff;
+	border-top: 3px solid #d6cec9;
+	border-bottom: 3px solid #d6cec9;
+}
+#footerContent {
+	display: block;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 5px 0 30px;		/*padding: 60px 0 30px; ORIGINAL*/
+}
+
+#footerContent ul li a:link, #footerContent ul li a:visited {
+	text-decoration: none;
+	color: #5c5551;
+}
+
+#footerContent ul li a:hover, #footerContent ul li a:active {
+	text-decoration: none;
+	color:#f53527;
+}
+
+/*#footerContent > div, #footerContent nav > div, #footerContent nav > article {
+	margin-top: 60px;
+}*/
+
+#footerContent ul li, #footerContent p {
+	font-size: 12px;
+}
+
+#footerContent h4 {
+	color: #999390;
+	font-size:16px;
+	font-weight: normal;
+	margin-bottom: 0;
+	line-height: 20px;
+}
+
+#footerContent ul {
+	margin: 0 0 36px 0;
+	padding: 0;
+}
+
+#footerContent ul li {
+	margin-top: 8px;
+	margin-left: 0;
+	list-style-type: none;
+
+}
+
+/*#footerConnect h4 {
+	margin-bottom: 16px;
+}
+
+#footerConnect p {
+	font-size: 12px;
+}
+
+#footerConnect p span {
+	font-family:'ProximaNovaRegularItalic', Sans-Serif;
+}*/
+
+#footerContent form input.fourCol, #footerContent form div.select.fourCol {
+	width:260px; 
+}
+
+#footerContent .alpha, 
+#footerContent .first {
+  margin-left: 0;
+}
+
+#footerContent .omega, 
+#footerContent .last {
+  margin-right: 0;
+}
+
+#footerContent .right {
+	float:right;
+}
+
+#formContact h4 {
+	clear:both;
+	color: #3d342f;
+	padding-top:8px;
+}
+
+/* footerSub */
+
+#footerSub {
+	background:  #F5F3F2;
+	clear: left;
+	color: #999390;
+	height: 30px;				/*height: 70px; ORIGINAL */
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 35px;
+}
+
+#subCopy {
+	font-size: 12px;
+}
+
+#sub800 {
+	font-size: 12px;
+	font-family:'ProximaNovaBold', Sans-Serif;
+}
+
+.ie7 #sub800 {
+	cursor:pointer;
+}
+
+#subSocial {
+	margin-right: 0;
+}
+
+#subSocial li {
+	float: left;
+	list-style-type: none;
+	margin: 0 0 0 50px;
+}
+
+#subSocial li a {
+	display: block;
+	height: 20px;
+	text-indent: -9000px;
+	width: 28px;
+}
+
+#subSocial li .subLIn {
+	background: url(/common/images/srd2013/sprite.png) no-repeat -111px 3px;
+	float:left;
+}
+#subSocial li .subTwi {
+	background: url(/common/images/srd2013/sprite.png) no-repeat -114px -50px;
+	float;left;
+}
+#subSocial li .subYouT {
+	background: url(/common/images/srd2013/sprite.png) no-repeat -86px -36px;
+}
+#subSocial li .subSlid {
+	background: url(/common/images/srd2013/sprite.png) no-repeat -45px -41px;
+}
+#subSocial li .subLIn:hover {
+	background: url(/common/images/srd2013/sprite.png) no-repeat -114px -24px;
+}
+#subSocial li .subTwi:hover {
+	background: url(/common/images/srd2013/sprite.png) no-repeat -39px -76px;
+}
+#subSocial li .subYouT:hover {
+	background: url(/common/images/srd2013/sprite.png) no-repeat -84px -67px;
+}
+#subSocial li .subSlid:hover {
+	background: url(/common/images/srd2013/sprite.png) no-repeat -0px -72px;
+}
+
+/* connect */
+
+#footerContent #footerConnect {
+	background-color: #f4f3f1;
+	border-top: 3px solid #d8cec6;
+	padding: 20px 0px;
+}
+
+#footerContent #footerConnect #footerConnectInner {
+	width: 147px;
+	margin: 0 auto;
+}
+
+#footerContent #footerConnect #footerConnectInner h4 {
+	margin-bottom: 20px;
+	color: #7f7b78;
+}
+
+#footerContent #footerConnect #footerConnectInner .btn {
+	width: 127px;
+}
+
+/* end connect */
+
+
+/* contactWidget */
+
+#footerContent .contactContainer h4 {
+	color: #999390;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding:0 0 0 10px;
+}
+
+#footerContent .contactContainer p {
+	font-size:12px;
+	padding:0 0 0 10px;
+	margin:0;
+}
+
+#footerContent .contactContainer .errorContainer {
+	padding:0;
+	color:red;
+}
+
+
+#footerContent .contactWidget fieldset {
+	border:0;
+	padding:5px 0 12px 0;
+	position:relative;
+}
+
+#footerContent .contactWidget form .fname, .contactWidget form .lname {
+	width:96px;
+}
+
+#footerContent .contactWidget form input.lname {
+	margin-left: 20px;
+}
+
+#footerContent .contactWidget form input.fourCol, .contactWidget form div.select.fourCol {
+	width:260px; 
+}
+
+#footerContent .contactWidget form label {
+	font-size:12px;
+}
+
+#formContact h4 {
+	clear:both;
+	color: #3d342f;
+	padding-top:8px;
+}
+
+#footerContent .contactWidget form label {
+	position:absolute;
+	font-size:12px;
+}
+
+#footerContent .contactWidget form label div.errTip {
+	position:absolute;
+	left:-240px;
+	top:11px;
+	height:25px;
+	background:url(/common/images/srd2013/error-bg-point.png) no-repeat top right;
+	padding:0 14px 0 0;
+	width:255px;
+	z-index:100;
+	visibility:hidden;
+}
+
+#footerContent .contactWidget form label div.errTip span {
+	background:url(/common/images/srd2013/error-bg-tile.png) repeat-x;
+	height:21px;
+	padding:4px 10px 0 10px;
+	display:block;
+	color:#fff;
+	right:14px;
+	position:absolute;
+}
+
+#footerContent .contactWidget label.error {
+	position:absolute;
+	top:0;
+	left:-23px;
+	padding-top:18px;
+}
+
+#footerContent .contactWidget input.error {
+	border:1px solid red;
+}
+
+#footerContent .contactWidget label.error[for='lname'] {
+	position:absolute;
+	top:0;
+	padding-top:18px;
+	left:141px;
+}
+
+#footerContent .contactWidget label.error[for='lname'] {
+	position:absolute;
+	top:0;
+	padding-top:18px;
+	left:141px;
+}
+
+#footerContent input[type="text"], 
+#footerContent input[type="tel"],
+#footerContent input[type="email"] {
+	font-family:'ProximaNovaLight', Sans-Serif;
+    background: none repeat scroll 0 0 #f5f3f2;
+    border-top: 2px solid #D6CEC9;
+    border-right:0;
+    border-bottom:0;
+    border-left: 2px solid #D6CEC9;
+    height: 22px;
+    padding: 5px 30px 5px 5px;
+    color:#3d342f;
+    font-size:0.9em;
+    -webkit-appearance: none;
+	-webkit-border-radius:0px;
+}
+
+#footerContent .select {
+   height: 22px;
+   padding: 5px 30px 5px 5px;
+   border-top: 0;
+   border-right: 2px solid #D6CEC9;
+   border-bottom: 2px solid #D6CEC9;
+   border-left: 0;
+   overflow: hidden;
+   background: #f5f3f2 url(/common/images/srd2013/select-arrows.png) no-repeat 96% 50%;
+}
+
+#footerContent .select select {
+	font-family:'ProximaNovaLight', Sans-Serif;
+	background: transparent;
+	width:306px;
+	height: 22px;
+	border:0;
+	font-size:0.9em;
+	color:#999390;
+	-webkit-appearance: none;
+}
+
+/* END contactWidget */
+
+/* end Footer Module */
+

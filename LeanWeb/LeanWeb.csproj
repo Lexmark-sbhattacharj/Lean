@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F28DEBF7-9695-4891-9CD0-9B49ADF717F8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeanWeb</RootNamespace>
+    <AssemblyName>LeanWeb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\..\CommonPullSystem\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Altairis.CsrFence, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Altairis.CsrFence.1.0.1.0\lib\net45\Altairis.CsrFence.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.LCC11">
+      <HintPath>obj\Debug\Interop.LCC11.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.JsonWebTokens.5.4.0\lib\net45\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.5.4.0\lib\net45\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.4.0\lib\net45\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CommonPullSystem\Bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\microsoft-web-helpers.2.1.20710.2\lib\net40\Microsoft.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.Portable.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=be81bb0f53eab22f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FubarCoder.RestSharp.Portable.Core.3.3.0\lib\portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\RestSharp.Portable.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.DirectoryServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.4.0\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System-Web-Helpers.dll.1.0.0\lib\Net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20505.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20505.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.20505.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="App_Themes\common\css\srd2013\back-lexmark-table.css" />
+    <Content Include="App_Themes\common\css\srd2013\be-lexmark-table.css" />
+    <Content Include="App_Themes\common\css\srd2013\be-lexmark-top.css" />
+    <Content Include="App_Themes\common\css\srd2013\be-lexmark.css" />
+    <Content Include="App_Themes\common\css\srd2013\Copy of style.css" />
+    <Content Include="App_Themes\common\css\srd2013\family-select.css" />
+    <Content Include="App_Themes\common\css\srd2013\footer.css" />
+    <Content Include="App_Themes\common\css\srd2013\globalReset.css" />
+    <Content Include="App_Themes\common\css\srd2013\header-footer.css" />
+    <Content Include="App_Themes\common\css\srd2013\header123.css" />
+    <Content Include="App_Themes\common\css\srd2013\jquery-ui.css" />
+    <Content Include="App_Themes\common\css\srd2013\jquery-ui_old.css" />
+    <Content Include="App_Themes\common\css\srd2013\jquery.multiselect.css" />
+    <Content Include="App_Themes\common\css\srd2013\jquery.multiselect.filter.css" />
+    <Content Include="App_Themes\common\css\srd2013\lex-1280-grid-fixed.css" />
+    <Content Include="App_Themes\common\css\srd2013\lexmark-wip.css" />
+    <Content Include="App_Themes\common\css\srd2013\lxk-framework.css" />
+    <Content Include="App_Themes\common\css\srd2013\menu-styles.css" />
+    <Content Include="App_Themes\common\css\srd2013\modal.css" />
+    <Content Include="App_Themes\common\css\srd2013\new_lxk-framework.css" />
+    <Content Include="App_Themes\common\css\srd2013\slide-in-panel.css" />
+    <Content Include="App_Themes\common\css\srd2013\style.css" />
+    <Content Include="App_Themes\common\css\srd2013\twelveCol-layout.css" />
+    <Content Include="App_Themes\common\css\srd2013\utilities.css" />
+    <Content Include="App_Themes\common\css\srd2013\visibility.css" />
+    <Content Include="App_Themes\common\images\srd2013\18_button.gif" />
+    <Content Include="App_Themes\common\images\srd2013\attach.gif" />
+    <Content Include="App_Themes\common\images\srd2013\banner.png" />
+    <Content Include="App_Themes\common\images\srd2013\body-grad-tile.gif" />
+    <Content Include="App_Themes\common\images\srd2013\cal.gif" />
+    <Content Include="App_Themes\common\images\srd2013\Calendar.ico" />
+    <Content Include="App_Themes\common\images\srd2013\check.png" />
+    <Content Include="App_Themes\common\images\srd2013\Copy of header-logo-2013-full-after-login.png" />
+    <Content Include="App_Themes\common\images\srd2013\Copy of header-logo-2013-full.png" />
+    <Content Include="App_Themes\common\images\srd2013\Copy of sprite-ui-icon-lib.png" />
+    <Content Include="App_Themes\common\images\srd2013\Delete.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\delete.png" />
+    <Content Include="App_Themes\common\images\srd2013\header-bg.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\header-logo-2013-full-after-login.png" />
+    <Content Include="App_Themes\common\images\srd2013\header-logo-2013-full.png" />
+    <Content Include="App_Themes\common\images\srd2013\header-logo-blank.png" />
+    <Content Include="App_Themes\common\images\srd2013\home.png" />
+    <Content Include="App_Themes\common\images\srd2013\index.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\index.png" />
+    <Content Include="App_Themes\common\images\srd2013\lexmark-logo-142x28.png" />
+    <Content Include="App_Themes\common\images\srd2013\lexmark-logo.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\lexmark-symbol-desktop-32x32.png" />
+    <Content Include="App_Themes\common\images\srd2013\lexmark_logo.png" />
+    <Content Include="App_Themes\common\images\srd2013\lex_logo.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\logo.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\logo_top.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\main.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\menu-triangle-active.png" />
+    <Content Include="App_Themes\common\images\srd2013\menu-triangle.png" />
+    <Content Include="App_Themes\common\images\srd2013\next.gif" />
+    <Content Include="App_Themes\common\images\srd2013\nextview.gif" />
+    <Content Include="App_Themes\common\images\srd2013\next_year.gif" />
+    <Content Include="App_Themes\common\images\srd2013\pixel.gif" />
+    <Content Include="App_Themes\common\images\srd2013\prev.gif" />
+    <Content Include="App_Themes\common\images\srd2013\prev_year.gif" />
+    <Content Include="App_Themes\common\images\srd2013\sprite-ui-icon-lib.png" />
+    <Content Include="App_Themes\common\images\srd2013\s_239544855_241261887.gif" />
+    <Content Include="App_Themes\common\images\srd2013\Tn1.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\Tn2.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\Tn3.jpg" />
+    <Content Include="App_Themes\common\images\srd2013\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-icons_222222_256x240.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-icons_2e83ff_256x240.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-icons_454545_256x240.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-icons_888888_256x240.png" />
+    <Content Include="App_Themes\common\images\srd2013\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="App_Themes\common\images\srd2013\vwicn081.gif" />
+    <Content Include="App_Themes\common\images\srd2013\vwicn082.gif" />
+    <Content Include="App_Themes\common\images\srd2013\Wait.gif" />
+    <Content Include="App_Themes\common\js\srd2013\account.js" />
+    <Content Include="App_Themes\common\js\srd2013\be-lexmark.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery-1.8.2.min.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery-ui-mod.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery-ui.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery-ui.min.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery.ba-throttle-debounce.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery.min.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery.multiselect.filter.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery.multiselect.filter.min.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery.multiselect.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery.multiselect.min.js" />
+    <Content Include="App_Themes\common\js\srd2013\jquery.tablesorter.min.js" />
+    <Content Include="App_Themes\common\js\srd2013\main.js" />
+    <Content Include="App_Themes\common\js\srd2013\modernizr-2.6.3.js" />
+    <Content Include="App_Themes\common\js\srd2013\modernizr.js" />
+    <Content Include="App_Themes\common\js\srd2013\require.js" />
+    <Content Include="App_Themes\common\js\srd2013\sso-welcome.js" />
+    <Content Include="App_Themes\common\js\srd2013\sso-welcome_18_2_2014.js" />
+    <Content Include="App_Themes\Images\Calendar.ico" />
+    <Content Include="App_Themes\Images\lexmark-logo-142x28.png" />
+    <Content Include="App_Themes\Images\loading.gif" />
+    <Content Include="App_Themes\Images\table_edit.ico" />
+    <Content Include="App_Themes\Images\table_error.ico" />
+    <Content Include="App_Themes\Images\table_save.ico" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="LeanHome.aspx" />
+    <Content Include="LeanLogin.aspx" />
+    <Content Include="LeanLogout.aspx" />
+    <Content Include="PrivacyPolicy.aspx" />
+    <Content Include="roles_ConsultReports\Reports.aspx" />
+    <Content Include="roles_UserControl\User_Role_Assignment.aspx" />
+    <Content Include="roles_UserControl\User_Sites_Assignment.aspx" />
+    <Content Include="role_DailyUploads\DailyUploadsChecklist.aspx" />
+    <Content Include="role_DailyUploads\DemandCustomerBackOrder.aspx" />
+    <Content Include="role_DailyUploads\DemandForBackOrder.aspx" />
+    <Content Include="role_DailyUploads\DemandSWE.aspx" />
+    <Content Include="role_DailyUploads\InventoryDistrCenters.aspx" />
+    <Content Include="role_DailyUploads\InventoryDockArea.aspx" />
+    <Content Include="role_DailyUploads\InventoryInTransit.aspx" />
+    <Content Include="role_DailyUploads\InventoryInTransitJabil.aspx" />
+    <Content Include="role_DailyUploads\InventoryRebalancing.aspx" />
+    <Content Include="role_DailyUploads\PrinterSWELoad.aspx" />
+    <Content Include="role_DailyUploads\TriggerLHWUpdates.aspx" />
+    <Content Include="role_DefineParameters\BulkAMCrossReference.aspx" />
+    <Content Include="role_DefineParameters\Lines.aspx" />
+    <Content Include="role_DefineParameters\OverproduceSpecialPermission.aspx" />
+    <Content Include="role_DefineParameters\SpecialBid.aspx" />
+    <Content Include="role_DefineParameters\SpecialBidMassUpload.aspx" />
+    <Content Include="role_DefineParameters\unblockFinalVKB.aspx" />
+    <Content Include="role_ModifyVKB\Capability.aspx" />
+    <Content Include="role_ModifyVKB\MyVKB.aspx" />
+    <Content Include="role_ModifyVKB\PlannedHeijunkaMassUpload.aspx" />
+    <Content Include="role_ModifyVKB\VirtualKanban.aspx" />
+    <Content Include="role_ModifyVKB\VirtualKanbanChecklist.aspx" />
+    <Content Include="role_PeriodicUploads\DistributionExcep.aspx" />
+    <Content Include="role_PeriodicUploads\DistributionNetwork.aspx" />
+    <Content Include="role_PeriodicUploads\PartNumberWeeksDemand.aspx" />
+    <Content Include="role_PeriodicUploads\VKBInput.aspx" />
+    <Content Include="role_ProductionPlanners\PrioritizeProduction.aspx" />
+    <Content Include="role_ProductionPlanners\UpdateProdPriority.aspx" />
+    <Content Include="Sites.aspx" />
+    <Content Include="TermsCondition.aspx" />
+    <Content Include="TermsofUse.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\clsGlobal.cs" />
+    <Compile Include="App_Code\LdapAuthentication.cs" />
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lean.Master.cs">
+      <DependentUpon>Lean.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lean.Master.designer.cs">
+      <DependentUpon>Lean.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LeanHome.aspx.cs">
+      <DependentUpon>LeanHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeanHome.aspx.designer.cs">
+      <DependentUpon>LeanHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeanLogin.aspx.cs">
+      <DependentUpon>LeanLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeanLogin.aspx.designer.cs">
+      <DependentUpon>LeanLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LeanLogout.aspx.cs">
+      <DependentUpon>LeanLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LeanLogout.aspx.designer.cs">
+      <DependentUpon>LeanLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrivacyPolicy.aspx.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrivacyPolicy.aspx.designer.cs">
+      <DependentUpon>PrivacyPolicy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="roles_ConsultReports\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="roles_ConsultReports\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="roles_UserControl\User_Role_Assignment.aspx.cs">
+      <DependentUpon>User_Role_Assignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="roles_UserControl\User_Role_Assignment.aspx.designer.cs">
+      <DependentUpon>User_Role_Assignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="roles_UserControl\User_Sites_Assignment.aspx.cs">
+      <DependentUpon>User_Sites_Assignment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="roles_UserControl\User_Sites_Assignment.aspx.designer.cs">
+      <DependentUpon>User_Sites_Assignment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\DailyUploadsChecklist.aspx.cs">
+      <DependentUpon>DailyUploadsChecklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\DailyUploadsChecklist.aspx.designer.cs">
+      <DependentUpon>DailyUploadsChecklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\DemandCustomerBackOrder.aspx.cs">
+      <DependentUpon>DemandCustomerBackOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\DemandCustomerBackOrder.aspx.designer.cs">
+      <DependentUpon>DemandCustomerBackOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\DemandForBackOrder.aspx.cs">
+      <DependentUpon>DemandForBackOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\DemandForBackOrder.aspx.designer.cs">
+      <DependentUpon>DemandForBackOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\DemandSWE.aspx.cs">
+      <DependentUpon>DemandSWE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\DemandSWE.aspx.designer.cs">
+      <DependentUpon>DemandSWE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryDistrCenters.aspx.cs">
+      <DependentUpon>InventoryDistrCenters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryDistrCenters.aspx.designer.cs">
+      <DependentUpon>InventoryDistrCenters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryDockArea.aspx.cs">
+      <DependentUpon>InventoryDockArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryDockArea.aspx.designer.cs">
+      <DependentUpon>InventoryDockArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryInTransit.aspx.cs">
+      <DependentUpon>InventoryInTransit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryInTransit.aspx.designer.cs">
+      <DependentUpon>InventoryInTransit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryInTransitJabil.aspx.cs">
+      <DependentUpon>InventoryInTransitJabil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryInTransitJabil.aspx.designer.cs">
+      <DependentUpon>InventoryInTransitJabil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryRebalancing.aspx.cs">
+      <DependentUpon>InventoryRebalancing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\InventoryRebalancing.aspx.designer.cs">
+      <DependentUpon>InventoryRebalancing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\PrinterSWELoad.aspx.cs">
+      <DependentUpon>PrinterSWELoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\PrinterSWELoad.aspx.designer.cs">
+      <DependentUpon>PrinterSWELoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DailyUploads\TextFileData.cs" />
+    <Compile Include="role_DailyUploads\TriggerLHWUpdates.aspx.cs">
+      <DependentUpon>TriggerLHWUpdates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DailyUploads\TriggerLHWUpdates.aspx.designer.cs">
+      <DependentUpon>TriggerLHWUpdates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DefineParameters\AjaxControlToolkit.cs" />
+    <Compile Include="role_DefineParameters\BulkAMCrossReference.aspx.cs">
+      <DependentUpon>BulkAMCrossReference.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DefineParameters\BulkAMCrossReference.aspx.designer.cs">
+      <DependentUpon>BulkAMCrossReference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DefineParameters\Lines.aspx.cs">
+      <DependentUpon>Lines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DefineParameters\Lines.aspx.designer.cs">
+      <DependentUpon>Lines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DefineParameters\OverproduceSpecialPermission.aspx.cs">
+      <DependentUpon>OverproduceSpecialPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DefineParameters\OverproduceSpecialPermission.aspx.designer.cs">
+      <DependentUpon>OverproduceSpecialPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DefineParameters\SpecialBid.aspx.cs">
+      <DependentUpon>SpecialBid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DefineParameters\SpecialBid.aspx.designer.cs">
+      <DependentUpon>SpecialBid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DefineParameters\SpecialBidMassUpload.aspx.cs">
+      <DependentUpon>SpecialBidMassUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DefineParameters\SpecialBidMassUpload.aspx.designer.cs">
+      <DependentUpon>SpecialBidMassUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_DefineParameters\unblockFinalVKB.aspx.cs">
+      <DependentUpon>unblockFinalVKB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_DefineParameters\unblockFinalVKB.aspx.designer.cs">
+      <DependentUpon>unblockFinalVKB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_ModifyVKB\Capability.aspx.cs">
+      <DependentUpon>Capability.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_ModifyVKB\Capability.aspx.designer.cs">
+      <DependentUpon>Capability.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_ModifyVKB\MyVKB.aspx.cs">
+      <DependentUpon>MyVKB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_ModifyVKB\MyVKB.aspx.designer.cs">
+      <DependentUpon>MyVKB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_ModifyVKB\PlannedHeijunkaMassUpload.aspx.cs">
+      <DependentUpon>PlannedHeijunkaMassUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_ModifyVKB\PlannedHeijunkaMassUpload.aspx.designer.cs">
+      <DependentUpon>PlannedHeijunkaMassUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_ModifyVKB\VirtualKanban.aspx.cs">
+      <DependentUpon>VirtualKanban.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_ModifyVKB\VirtualKanban.aspx.designer.cs">
+      <DependentUpon>VirtualKanban.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_ModifyVKB\VirtualKanbanChecklist.aspx.cs">
+      <DependentUpon>VirtualKanbanChecklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_ModifyVKB\VirtualKanbanChecklist.aspx.designer.cs">
+      <DependentUpon>VirtualKanbanChecklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_PeriodicUploads\DistributionExcep.aspx.cs">
+      <DependentUpon>DistributionExcep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_PeriodicUploads\DistributionExcep.aspx.designer.cs">
+      <DependentUpon>DistributionExcep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_PeriodicUploads\DistributionNetwork.aspx.cs">
+      <DependentUpon>DistributionNetwork.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_PeriodicUploads\DistributionNetwork.aspx.designer.cs">
+      <DependentUpon>DistributionNetwork.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_PeriodicUploads\PartNumberWeeksDemand.aspx.cs">
+      <DependentUpon>PartNumberWeeksDemand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_PeriodicUploads\PartNumberWeeksDemand.aspx.designer.cs">
+      <DependentUpon>PartNumberWeeksDemand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_PeriodicUploads\VKBInput.aspx.cs">
+      <DependentUpon>VKBInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_PeriodicUploads\VKBInput.aspx.designer.cs">
+      <DependentUpon>VKBInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_ProductionPlanners\PrioritizeProduction.aspx.cs">
+      <DependentUpon>PrioritizeProduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_ProductionPlanners\PrioritizeProduction.aspx.designer.cs">
+      <DependentUpon>PrioritizeProduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="role_ProductionPlanners\UpdateProdPriority.aspx.cs">
+      <DependentUpon>UpdateProdPriority.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="role_ProductionPlanners\UpdateProdPriority.aspx.designer.cs">
+      <DependentUpon>UpdateProdPriority.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sites.aspx.cs">
+      <DependentUpon>Sites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sites.aspx.designer.cs">
+      <DependentUpon>Sites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsCondition.aspx.cs">
+      <DependentUpon>TermsCondition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermsCondition.aspx.designer.cs">
+      <DependentUpon>TermsCondition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TermsofUse.aspx.cs">
+      <DependentUpon>TermsofUse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TermsofUse.aspx.designer.cs">
+      <DependentUpon>TermsofUse.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lean.Master" />
+    <Content Include="App_Themes\common\fonts\proximanova-bold-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanova-bold-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\proximanova-bold-webfont.woff" />
+    <Content Include="App_Themes\common\fonts\proximanova-boldit-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanova-boldit-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\proximanova-boldit-webfont.woff" />
+    <Content Include="App_Themes\common\fonts\proximanova-light-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanova-light-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\proximanova-light-webfont.woff" />
+    <Content Include="App_Themes\common\fonts\proximanova-lightitalic-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanova-lightitalic-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\proximanova-lightitalic-webfont.woff" />
+    <Content Include="App_Themes\common\fonts\proximanova-regular-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanova-regular-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\proximanova-regular-webfont.woff" />
+    <Content Include="App_Themes\common\fonts\proximanova-regularitalic-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanova-regularitalic-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\proximanova-regularitalic-webfont.woff" />
+    <Content Include="App_Themes\common\fonts\proximanova-semibold-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanova-semibold-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\proximanova-semibold-webfont.woff" />
+    <Content Include="App_Themes\common\fonts\proximanova-semibolditalic-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanova-semibolditalic-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\proximanova-semibolditalic-webfont.woff" />
+    <Content Include="App_Themes\common\fonts\proximanova-thin-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanova-thin-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\ProximaNova-Thin-webfont.woff" />
+    <Content Include="App_Themes\common\fonts\proximanovacond-lightit-webfont.eot" />
+    <Content Include="App_Themes\common\fonts\proximanovacond-lightit-webfont.ttf" />
+    <Content Include="App_Themes\common\fonts\proximanovacond-lightit-webfont.woff" />
+    <Content Include="App_Themes\common\js\srd2013\account.js.bak" />
+    <Content Include="App_Themes\common\js\srd2013\bet-lexmark.js.bak" />
+    <Content Include="App_Themes\common\js\srd2013\jquery-ui-mod.js.bak" />
+    <Content Include="App_Themes\common\js\srd2013\jquery-ui.js.bak" />
+    <Content Include="App_Themes\common\js\srd2013\main.js.bak" />
+    <Content Include="App_Themes\common\js\srd2013\modernizr.js.bak" />
+    <Content Include="App_Themes\common\js\srd2013\New Text Document.txt.bak" />
+    <Content Include="App_Themes\common\js\srd2013\new_jquery.ba-throttle-debounce.js.bak" />
+    <Content Include="App_Themes\common\js\srd2013\require.js.bak" />
+    <Content Include="App_Themes\common\js\srd2013\sso-welcome.js.bak" />
+    <Content Include="App_Themes\common\js\srd2013\sso-welcome_18_2_2014.js.bak" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lean.ExceptionManagement\Lean.ExceptionManagement.csproj">
+      <Project>{9b9ef615-3853-48d3-bf2e-3e31095c9ae8}</Project>
+      <Name>Lean.ExceptionManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lean.Report\Lean.Report.csproj">
+      <Project>{e50245e2-a55e-4f27-9bdb-700255240936}</Project>
+      <Name>Lean.Report</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lean.Utilities\Lean.Utilities.csproj">
+      <Project>{e78fe7e4-2eae-4678-aaa4-17af0ab2ff9a}</Project>
+      <Name>Lean.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeanBusiness\LeanBusiness.csproj">
+      <Project>{707ac8ae-ea82-404b-ac6a-8eb990745464}</Project>
+      <Name>LeanBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeanData\LeanData.csproj">
+      <Project>{2013a182-a286-4f6e-8fab-776ed2713053}</Project>
+      <Name>LeanData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Themes\CSS\" />
+    <Folder Include="App_Themes\Fonts\" />
+    <Folder Include="App_Themes\JS\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ACTIVEXLib">
+      <Guid>{EA3E6E3C-5130-49C1-8EDE-F889CD0F4429}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="LCC11">
+      <Guid>{EDCD5812-6A06-43C3-AFAC-46EF5D14E22C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Access.Dao">
+      <Guid>{4AC9E1DA-5BAD-4AC7-86E3-24F4CDCECA28}</Guid>
+      <VersionMajor>12</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDAOSP">
+      <Guid>{E0E270C2-C0BE-11D0-8FE4-00A0C90A6341}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>1033</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSDASC">
+      <Guid>{2206CEB0-19C1-11D1-89E0-00C04FD7A829}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MsoEuro">
+      <Guid>{76F6F3F5-9937-11D2-93BB-00105A994D2C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>61998</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50643/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

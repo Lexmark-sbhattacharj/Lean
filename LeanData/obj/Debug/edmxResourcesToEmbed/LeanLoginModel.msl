@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LeanModelStoreContainer" CdmEntityContainer="LeanLoginModel">
+    <EntitySetMapping Name="DomainNames">
+      <EntityTypeMapping TypeName="LeanModel.DomainName">
+        <MappingFragment StoreEntitySet="DomainName">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="LeanModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BulkAM_Catalog">
+      <EntityTypeMapping TypeName="LeanModel.BulkAM_Catalog">
+        <MappingFragment StoreEntitySet="BulkAM_Catalog">
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="Bulk" ColumnName="Bulk" />
+          <ScalarProperty Name="AM" ColumnName="AM" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BulkAM_Catalog_1">
+      <EntityTypeMapping TypeName="LeanModel.BulkAM_Catalog_1">
+        <MappingFragment StoreEntitySet="BulkAM_Catalog_1">
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="Bulk" ColumnName="Bulk" />
+          <ScalarProperty Name="AM" ColumnName="AM" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerServiceLevel_Catalog">
+      <EntityTypeMapping TypeName="LeanModel.CustomerServiceLevel_Catalog">
+        <MappingFragment StoreEntitySet="CustomerServiceLevel_Catalog">
+          <ScalarProperty Name="CSL_Percentage" ColumnName="CSL_Percentage" />
+          <ScalarProperty Name="ZFactor" ColumnName="ZFactor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Demand_BackOrder">
+      <EntityTypeMapping TypeName="LeanModel.Demand_BackOrder">
+        <MappingFragment StoreEntitySet="Demand_BackOrder">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="sales_Doc" ColumnName="sales_Doc" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="SLNo" ColumnName="SLNo" />
+          <ScalarProperty Name="Mat_Date" ColumnName="Mat_Date" />
+          <ScalarProperty Name="Doc_Ca" ColumnName="Doc_Ca" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="bolSWE" ColumnName="bolSWE" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Demand_Customer_BackOrder">
+      <EntityTypeMapping TypeName="LeanModel.Demand_Customer_BackOrder">
+        <MappingFragment StoreEntitySet="Demand_Customer_BackOrder">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="sales_Doc" ColumnName="sales_Doc" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="SLNo" ColumnName="SLNo" />
+          <ScalarProperty Name="Mat_Date" ColumnName="Mat_Date" />
+          <ScalarProperty Name="Doc_Ca" ColumnName="Doc_Ca" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Demand_Special_Bid">
+      <EntityTypeMapping TypeName="LeanModel.Demand_Special_Bid">
+        <MappingFragment StoreEntitySet="Demand_Special_Bid">
+          <ScalarProperty Name="idSpecialBid" ColumnName="idSpecialBid" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Distibution_Excep">
+      <EntityTypeMapping TypeName="LeanModel.Distibution_Excep">
+        <MappingFragment StoreEntitySet="Distibution_Excep">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalizationMaterial_Excep" ColumnName="idLocalizationMaterial_Excep" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Distribution_Network">
+      <EntityTypeMapping TypeName="LeanModel.Distribution_Network">
+        <MappingFragment StoreEntitySet="Distribution_Network">
+          <ScalarProperty Name="GEO" ColumnName="GEO" />
+          <ScalarProperty Name="idLocalization_Source" ColumnName="idLocalization_Source" />
+          <ScalarProperty Name="idLocalization_Dest" ColumnName="idLocalization_Dest" />
+          <ScalarProperty Name="LeadTime" ColumnName="LeadTime" />
+          <ScalarProperty Name="LocalizationDesc" ColumnName="LocalizationDesc" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DomainName1">
+      <EntityTypeMapping TypeName="LeanModel.DomainName1">
+        <MappingFragment StoreEntitySet="DomainName1">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Families">
+      <EntityTypeMapping TypeName="LeanModel.Family">
+        <MappingFragment StoreEntitySet="Family">
+          <ScalarProperty Name="Family1" ColumnName="Family" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="AverageCost" ColumnName="AverageCost" />
+          <ScalarProperty Name="InitialInventory" ColumnName="InitialInventory" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeneralConf_VKB">
+      <EntityTypeMapping TypeName="LeanModel.GeneralConf_VKB">
+        <MappingFragment StoreEntitySet="GeneralConf_VKB">
+          <ScalarProperty Name="idConfig" ColumnName="idConfig" />
+          <ScalarProperty Name="CSL_Percentage" ColumnName="CSL_Percentage" />
+          <ScalarProperty Name="ShutDownDays" ColumnName="ShutDownDays" />
+          <ScalarProperty Name="WeekOnDemand" ColumnName="WeekOnDemand" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HW_Demand_BackOrder">
+      <EntityTypeMapping TypeName="LeanModel.HW_Demand_BackOrder">
+        <MappingFragment StoreEntitySet="HW_Demand_BackOrder">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="sales_Doc" ColumnName="sales_Doc" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="SLNo" ColumnName="SLNo" />
+          <ScalarProperty Name="Mat_Date" ColumnName="Mat_Date" />
+          <ScalarProperty Name="Doc_Ca" ColumnName="Doc_Ca" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="bolSWE" ColumnName="bolSWE" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+          <ScalarProperty Name="Proctype" ColumnName="Proctype" />
+          <ScalarProperty Name="SpecProcType" ColumnName="SpecProcType" />
+          <ScalarProperty Name="TranslationMaterial" ColumnName="TranslationMaterial" />
+          <ScalarProperty Name="TranslationQuantity" ColumnName="TranslationQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HW_Demand_Customer_BackOrder">
+      <EntityTypeMapping TypeName="LeanModel.HW_Demand_Customer_BackOrder">
+        <MappingFragment StoreEntitySet="HW_Demand_Customer_BackOrder">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="sales_Doc" ColumnName="sales_Doc" />
+          <ScalarProperty Name="item" ColumnName="item" />
+          <ScalarProperty Name="SLNo" ColumnName="SLNo" />
+          <ScalarProperty Name="Mat_Date" ColumnName="Mat_Date" />
+          <ScalarProperty Name="Doc_Ca" ColumnName="Doc_Ca" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+          <ScalarProperty Name="ProcType" ColumnName="ProcType" />
+          <ScalarProperty Name="SpecProcType" ColumnName="SpecProcType" />
+          <ScalarProperty Name="TranslationMaterial" ColumnName="TranslationMaterial" />
+          <ScalarProperty Name="TranslationQuantity" ColumnName="TranslationQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HW_Inventory_DistributionCenters">
+      <EntityTypeMapping TypeName="LeanModel.HW_Inventory_DistributionCenters">
+        <MappingFragment StoreEntitySet="HW_Inventory_DistributionCenters">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+          <ScalarProperty Name="TranslationMaterial" ColumnName="TranslationMaterial" />
+          <ScalarProperty Name="TranslationQuantity" ColumnName="TranslationQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HW_Inventory_InTransit">
+      <EntityTypeMapping TypeName="LeanModel.HW_Inventory_InTransit">
+        <MappingFragment StoreEntitySet="HW_Inventory_InTransit">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+          <ScalarProperty Name="TranslationMaterial" ColumnName="TranslationMaterial" />
+          <ScalarProperty Name="TranslationMaterialName" ColumnName="TranslationMaterialName" />
+          <ScalarProperty Name="TranslationQuantity" ColumnName="TranslationQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventory_DistributionCenters">
+      <EntityTypeMapping TypeName="LeanModel.Inventory_DistributionCenters">
+        <MappingFragment StoreEntitySet="Inventory_DistributionCenters">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventory_DockArea">
+      <EntityTypeMapping TypeName="LeanModel.Inventory_DockArea">
+        <MappingFragment StoreEntitySet="Inventory_DockArea">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Pallet_ID" ColumnName="Pallet_ID" />
+          <ScalarProperty Name="Pallet_No" ColumnName="Pallet_No" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventory_InTransit">
+      <EntityTypeMapping TypeName="LeanModel.Inventory_InTransit">
+        <MappingFragment StoreEntitySet="Inventory_InTransit">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Material_Name" ColumnName="Material_Name" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventory_JabilInTransit">
+      <EntityTypeMapping TypeName="LeanModel.Inventory_JabilInTransit">
+        <MappingFragment StoreEntitySet="Inventory_JabilInTransit">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Bulk" ColumnName="Bulk" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Inventory_Rebalancing">
+      <EntityTypeMapping TypeName="LeanModel.Inventory_Rebalancing">
+        <MappingFragment StoreEntitySet="Inventory_Rebalancing">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idSource" ColumnName="idSource" />
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Is_Checked">
+      <EntityTypeMapping TypeName="LeanModel.Is_Checked">
+        <MappingFragment StoreEntitySet="Is_Checked">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+          <ScalarProperty Name="Is_Checked1" ColumnName="Is_Checked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LeanApps">
+      <EntityTypeMapping TypeName="LeanModel.LeanApp">
+        <MappingFragment StoreEntitySet="LeanApp">
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="id_site" ColumnName="id_site" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Lines">
+      <EntityTypeMapping TypeName="LeanModel.Line">
+        <MappingFragment StoreEntitySet="Line">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line1" ColumnName="Line" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+          <ScalarProperty Name="Planner" ColumnName="Planner" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Overproduce_Special_Permission">
+      <EntityTypeMapping TypeName="LeanModel.Overproduce_Special_Permission">
+        <MappingFragment StoreEntitySet="Overproduce_Special_Permission">
+          <ScalarProperty Name="idOverproduce" ColumnName="idOverproduce" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartNumber_TonerYield">
+      <EntityTypeMapping TypeName="LeanModel.PartNumber_TonerYield">
+        <MappingFragment StoreEntitySet="PartNumber_TonerYield">
+          <ScalarProperty Name="idLocalization" ColumnName="idLocalization" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="idToner" ColumnName="idToner" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="UOM" ColumnName="UOM" />
+          <ScalarProperty Name="Pages" ColumnName="Pages" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartNumber_WeekDemand">
+      <EntityTypeMapping TypeName="LeanModel.PartNumber_WeekDemand">
+        <MappingFragment StoreEntitySet="PartNumber_WeekDemand">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="weekNumber" ColumnName="weekNumber" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="DemandQty" ColumnName="DemandQty" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Platforms">
+      <EntityTypeMapping TypeName="LeanModel.Platform">
+        <MappingFragment StoreEntitySet="Platform">
+          <ScalarProperty Name="Platform1" ColumnName="Platform" />
+          <ScalarProperty Name="ExtraCapacity" ColumnName="ExtraCapacity" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Production_DailyPlatformGoal">
+      <EntityTypeMapping TypeName="LeanModel.Production_DailyPlatformGoal">
+        <MappingFragment StoreEntitySet="Production_DailyPlatformGoal">
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ProductionGoal" ColumnName="ProductionGoal" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Production_PalletsProduced">
+      <EntityTypeMapping TypeName="LeanModel.Production_PalletsProduced">
+        <MappingFragment StoreEntitySet="Production_PalletsProduced">
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="PalletsProduced" ColumnName="PalletsProduced" />
+          <ScalarProperty Name="ProductionFailure" ColumnName="ProductionFailure" />
+          <ScalarProperty Name="Changeovers" ColumnName="Changeovers" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Production_Prioritize">
+      <EntityTypeMapping TypeName="LeanModel.Production_Prioritize">
+        <MappingFragment StoreEntitySet="Production_Prioritize">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Production_Order" ColumnName="Production_Order" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="SAP_Order" ColumnName="SAP_Order" />
+          <ScalarProperty Name="Minutes_Lost" ColumnName="Minutes_Lost" />
+          <ScalarProperty Name="Pieces_Lost" ColumnName="Pieces_Lost" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports_Catalog">
+      <EntityTypeMapping TypeName="LeanModel.Reports_Catalog">
+        <MappingFragment StoreEntitySet="Reports_Catalog">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+          <ScalarProperty Name="ReportServer" ColumnName="ReportServer" />
+          <ScalarProperty Name="ReportPath" ColumnName="ReportPath" />
+          <ScalarProperty Name="ReportDescription" ColumnName="ReportDescription" />
+          <ScalarProperty Name="ReportGEO" ColumnName="ReportGEO" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Signal_Delay">
+      <EntityTypeMapping TypeName="LeanModel.Signal_Delay">
+        <MappingFragment StoreEntitySet="Signal_Delay">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="Material_Request" ColumnName="Material_Request" />
+          <ScalarProperty Name="Material_Type_Request" ColumnName="Material_Type_Request" />
+          <ScalarProperty Name="User_Upload" ColumnName="User_Upload" />
+          <ScalarProperty Name="Creation_Date" ColumnName="Creation_Date" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VKB_Detail_PartNumber">
+      <EntityTypeMapping TypeName="LeanModel.VKB_Detail_PartNumber">
+        <MappingFragment StoreEntitySet="VKB_Detail_PartNumber">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="UDC" ColumnName="UDC" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="PrimaryPriority" ColumnName="PrimaryPriority" />
+          <ScalarProperty Name="C_Red" ColumnName="%Red" />
+          <ScalarProperty Name="Customer_Backorder_Units" ColumnName="Customer_Backorder_Units" />
+          <ScalarProperty Name="BTO_Units" ColumnName="BTO_Units" />
+          <ScalarProperty Name="Special_Bids_Units" ColumnName="Special_Bids_Units" />
+          <ScalarProperty Name="Projected_Backorder_Units" ColumnName="Projected_Backorder_Units" />
+          <ScalarProperty Name="InvOnDisCenter_Units" ColumnName="InvOnDisCenter_Units" />
+          <ScalarProperty Name="InvInTransit_Units" ColumnName="InvInTransit_Units" />
+          <ScalarProperty Name="SAPKanbanTotal_Pallets" ColumnName="SAPKanbanTotal_Pallets" />
+          <ScalarProperty Name="HeijunkaKanban_Pallets" ColumnName="HeijunkaKanban_Pallets" />
+          <ScalarProperty Name="TotalKanban_Pallets" ColumnName="TotalKanban_Pallets" />
+          <ScalarProperty Name="TotalInv_" ColumnName="TotalInv%" />
+          <ScalarProperty Name="GreenPorc" ColumnName="GreenPorc" />
+          <ScalarProperty Name="YellowPorc" ColumnName="YellowPorc" />
+          <ScalarProperty Name="RedPorc" ColumnName="RedPorc" />
+          <ScalarProperty Name="KanbanNeededForCustomerBO_Pallets" ColumnName="KanbanNeededForCustomerBO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForBTO_Pallets" ColumnName="KanbanNeededForBTO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForSpecialBid_Pallets" ColumnName="KanbanNeededForSpecialBid_Pallets" />
+          <ScalarProperty Name="KanbanNeededForProjectedBO_Pallets" ColumnName="KanbanNeededForProjectedBO_Pallets" />
+          <ScalarProperty Name="KanbanNeededForOrange_Pallets" ColumnName="KanbanNeededForOrange_Pallets" />
+          <ScalarProperty Name="KanbanNeededForRed_Pallets" ColumnName="KanbanNeededForRed_Pallets" />
+          <ScalarProperty Name="KanbanNeededForYellow_Pallets" ColumnName="KanbanNeededForYellow_Pallets" />
+          <ScalarProperty Name="KanbanNeededForGreen_Pallets" ColumnName="KanbanNeededForGreen_Pallets" />
+          <ScalarProperty Name="MinKanban_Pallets" ColumnName="MinKanban_Pallets" />
+          <ScalarProperty Name="TargetKanban_Pallets" ColumnName="TargetKanban_Pallets" />
+          <ScalarProperty Name="MaxKanban_Pallets" ColumnName="MaxKanban_Pallets" />
+          <ScalarProperty Name="ExcessKanban_Pallets" ColumnName="ExcessKanban_Pallets" />
+          <ScalarProperty Name="HeijunkaBoard_Pallets" ColumnName="HeijunkaBoard_Pallets" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="AverageDemand" ColumnName="AverageDemand" />
+          <ScalarProperty Name="Pallet_Qty" ColumnName="Pallet_Qty" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="High_Priority_Units" ColumnName="High_Priority_Units" />
+          <ScalarProperty Name="Remd_Pallet" ColumnName="Remd_Pallet" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VKB_Global_Line">
+      <EntityTypeMapping TypeName="LeanModel.VKB_Global_Line">
+        <MappingFragment StoreEntitySet="VKB_Global_Line">
+          <ScalarProperty Name="idVKB" ColumnName="idVKB" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Final_Version" ColumnName="Final_Version" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VKB_Input">
+      <EntityTypeMapping TypeName="LeanModel.VKB_Input">
+        <MappingFragment StoreEntitySet="VKB_Input">
+          <ScalarProperty Name="idLocalizationMaterial" ColumnName="idLocalizationMaterial" />
+          <ScalarProperty Name="idMaterial" ColumnName="idMaterial" />
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="PPVT" ColumnName="PPVT" />
+          <ScalarProperty Name="Type_SWE_AM" ColumnName="Type_SWE_AM" />
+          <ScalarProperty Name="Yield" ColumnName="Yield" />
+          <ScalarProperty Name="Brand" ColumnName="Brand" />
+          <ScalarProperty Name="AverageDemand" ColumnName="AverageDemand" />
+          <ScalarProperty Name="SD" ColumnName="SD" />
+          <ScalarProperty Name="CV" ColumnName="CV" />
+          <ScalarProperty Name="Max_Pallet" ColumnName="Max_Pallet" />
+          <ScalarProperty Name="Target_Pallet" ColumnName="Target_Pallet" />
+          <ScalarProperty Name="Min_Pallet" ColumnName="Min_Pallet" />
+          <ScalarProperty Name="Pallet_Qty" ColumnName="Pallet_Qty" />
+          <ScalarProperty Name="UDC" ColumnName="UDC" />
+          <ScalarProperty Name="Localization_Name" ColumnName="Localization_Name" />
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="Family" ColumnName="Family" />
+          <ScalarProperty Name="Upload_User" ColumnName="Upload_User" />
+          <ScalarProperty Name="Upload_Date" ColumnName="Upload_Date" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionName="LeanModel.Store.Split" FunctionImportName="Split">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanModel.Split_Result">
+          <ScalarProperty Name="items" ColumnName="items" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="LeanModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="LeanModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="LeanModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="LeanModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="LeanModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="LeanModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="LeanModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="ADD_LHW_TABLES_FROM_HW" FunctionName="LeanModel.Store.ADD_LHW_TABLES_FROM_HW" />
+    <FunctionImportMapping FunctionImportName="GET_ALL_MISMATCH_LHW_TABLES_FROM_HW" FunctionName="LeanModel.Store.GET_ALL_MISMATCH_LHW_TABLES_FROM_HW" />
+    <FunctionImportMapping FunctionImportName="ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW" FunctionName="LeanModel.Store.ROLLBACK_ALL_MISMATCH_HW_TABLES_FROM_LHW" />
+    <FunctionImportMapping FunctionImportName="sp_GenReportPullbyDate" FunctionName="LeanModel.Store.sp_GenReportPullbyDate" />
+    <FunctionImportMapping FunctionImportName="TEST_Line" FunctionName="LeanModel.Store.TEST_Line">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="LeanModel.TEST_Line_Result">
+          <ScalarProperty Name="idLine" ColumnName="idLine" />
+          <ScalarProperty Name="Line" ColumnName="Line" />
+          <ScalarProperty Name="Capability" ColumnName="Capability" />
+          <ScalarProperty Name="Planner" ColumnName="Planner" />
+          <ScalarProperty Name="Lean_Application" ColumnName="Lean_Application" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="UPDATE_LHW_TABLES_FROM_HW" FunctionName="LeanModel.Store.UPDATE_LHW_TABLES_FROM_HW" />
+  </EntityContainerMapping>
+</Mapping>
